@@ -36,9 +36,9 @@ const portfolioItems = [
     type: 'video',
     category: 'Videoclip',
     src: 'https://images.unsplash.com/photo-1514525253440-b393452e8d26?auto=format&fit=crop&q=80&w=1000',
-    videoUrl: '#',
-    title: 'Neon Nights - The Band',
-    description: 'Video musical oficial. Estética Cyberpunk.'
+    videoUrl: 'https://youtu.be/lEz1hHGvNMc?si=2xUl1TSNYtzkTvJp',
+    title: 'KANEIS - LAKYLA',
+    description: 'Video musical oficial para el artista KANEIS.'
   },
   {
     id: 4,
