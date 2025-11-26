@@ -10,7 +10,7 @@ const portfolioItems = [
     id: 1,
     type: 'photo',
     category: 'Retrato',
-    src: 'https://unsplash.com/es/fotos/7y_LsKNWAuA',
+    src: 'https://unsplash.com/es/fotos/wkIf1LRAye4',
     title: 'Mirada Urbana',
     description: 'Sesión de moda en Madrid centro.'
   },
@@ -123,7 +123,7 @@ const App = () => {
           <div className="relative mx-auto w-32 h-32 md:w-40 md:h-40 mb-10 rounded-full bg-neutral-900 border-[3px] border-dashed border-neutral-500 ring-4 ring-neutral-900 shadow-2xl p-1.5 flex items-center justify-center">
             <div className="w-full h-full rounded-full overflow-hidden border-2 border-neutral-800">
               <img 
-                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=300" 
+                src="https://unsplash.com/es/fotos/wkIf1LRAye4" 
                 alt="ROMPPAO Profile" 
                 className="w-full h-full object-cover"
               />
