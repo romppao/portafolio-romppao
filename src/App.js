@@ -10,7 +10,7 @@ const portfolioItems = [
     id: 1,
     type: 'photo',
     category: 'Retrato',
-    src: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=1000',
+    src: 'https://unsplash.com/es/fotos/a1hBFKBzqWk',
     title: 'Mirada Urbana',
     description: 'Sesión de moda en Madrid centro.'
   },
@@ -27,26 +27,26 @@ const portfolioItems = [
     id: 3,
     type: 'photo',
     category: 'Paisaje',
-    src: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&q=80&w=1000',
-    title: 'Amanecer en los Alpes',
-    description: 'Fotografía de larga exposición.'
+    src: 'https://unsplash.com/es/fotos/4FEgXdHQswA,
+    title: 'Amanecer en la pedrixa',
+    description: 'Fotografía de paisaje.'
   },
   {
     id: 5,
     type: 'video',
     category: 'Videoclip',
     src: 'https://images.unsplash.com/photo-1514525253440-b393452e8d26?auto=format&fit=crop&q=80&w=1000',
-    videoUrl: '#',
-    title: 'Neon Nights - The Band',
-    description: 'Video musical oficial. Estética Cyberpunk.'
+    videoUrl: 'https://youtu.be/lEz1hHGvNMc?si=2xUl1TSNYtzkTvJp',
+    title: 'KANEIS - LAKYLA',
+    description: 'Video musical oficial para el artista KANEIS.'
   },
   {
     id: 4,
     type: 'photo',
     category: 'Blanco y Negro',
-    src: 'https://images.unsplash.com/photo-1552168324-d612d77725e3?auto=format&fit=crop&q=80&w=1000',
+    src: 'https://unsplash.com/es/fotos/7y_LsKNWAuA',
     title: 'Sombras',
-    description: 'Estudio de luz y sombra en estudio.'
+    description: 'La elegancia no tiene color.'
   },
   {
     id: 7,
@@ -123,7 +123,7 @@ const App = () => {
           <div className="relative mx-auto w-32 h-32 md:w-40 md:h-40 mb-10 rounded-full bg-neutral-900 border-[3px] border-dashed border-neutral-500 ring-4 ring-neutral-900 shadow-2xl p-1.5 flex items-center justify-center">
             <div className="w-full h-full rounded-full overflow-hidden border-2 border-neutral-800">
               <img 
-                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=300" 
+                src="https://unsplash.com/es/fotos/wkIf1LRAye4" 
                 alt="ROMPPAO Profile" 
                 className="w-full h-full object-cover"
               />
@@ -244,7 +244,7 @@ const App = () => {
 
       <section id="about" className="py-20 bg-neutral-900">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-white mb-8">Sobre el Artista</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">Sobre mi</h2>
           <p className="text-neutral-400 text-lg leading-relaxed mb-8">
             Soy un creador visual, fotógrafo, filmmaker independiente con base en Madrid. Mi trabajo es más que sujetar una cámara y darle a un botón, intento transformar lo más cotidiano en momentos inolvidables.
           </p>
