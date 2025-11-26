@@ -10,7 +10,7 @@ const portfolioItems = [
     id: 1,
     type: 'photo',
     category: 'Retrato',
-    src: 'https://unsplash.com/es/fotos/wkIf1LRAye4',
+    src: 'https://unsplash.com/es/fotos/a1hBFKBzqWk',
     title: 'Mirada Urbana',
     description: 'Sesión de moda en Madrid centro.'
   },
@@ -27,9 +27,9 @@ const portfolioItems = [
     id: 3,
     type: 'photo',
     category: 'Paisaje',
-    src: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&q=80&w=1000',
-    title: 'Amanecer en los Alpes',
-    description: 'Fotografía de larga exposición.'
+    src: 'https://unsplash.com/es/fotos/4FEgXdHQswA',
+    title: 'El cielo en la mirada',
+    description: 'Fotografía de paisaje.'
   },
   {
     id: 5,
@@ -44,9 +44,9 @@ const portfolioItems = [
     id: 4,
     type: 'photo',
     category: 'Blanco y Negro',
-    src: 'https://images.unsplash.com/photo-1552168324-d612d77725e3?auto=format&fit=crop&q=80&w=1000',
+    src: 'https://unsplash.com/es/fotos/7y_LsKNWAuA',
     title: 'Sombras',
-    description: 'Estudio de luz y sombra en estudio.'
+    description: 'La elegancia no tiene color.'
   },
   {
     id: 7,
@@ -61,9 +61,9 @@ const portfolioItems = [
     id: 8,
     type: 'photo',
     category: 'Boxeo',
-    src: 'https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?auto=format&fit=crop&q=80&w=1000',
-    title: 'El Último Round',
-    description: 'Documentando el entrenamiento previo al campeonato.'
+    src: 'https://unsplash.com/es/fotos/csUVa7qB85I',
+    title: 'Primer Round',
+    description: 'Instate previo al combate.'
   },
   {
     id: 6,
