@@ -1,7 +1,194 @@
-📸 Portfolio Web de ROMPPAO - Documentación TécnicaEste documento explica "al pie de la letra" el funcionamiento, estructura y composición del código fuente de la página web (App.jsx).1. Visión General del ProyectoEs una página web tipo SPA (Single Page Application) desarrollada con React.Su diseño es "Dark Mode" minimalista, orientado a destacar contenido visual (fotografía y video), con una experiencia de usuario fluida sin recargas de página.Tecnologías ClaveReact: Librería principal para la interfaz y lógica.Tailwind CSS: Framework de estilos (responsividad, colores, espaciado).Lucide React: Paquete de iconos (Cámaras, claqueta, teléfono, etc.).2. Estructura del Archivo App.jsxEl código se organiza verticalmente en 3 bloques lógicos:A. Bloque de Importaciones (Líneas 1-2)import React, { useState } from 'react';
-import { ... } from 'lucide-react';
-Aquí cargamos las herramientas necesarias:useState: El "cerebro" que permite que la página reaccione (ej: cambiar de filtro, abrir una foto).Iconos: Importamos elementos visuales como Phone, Camera, Instagram.B. Bloque de Datos: portfolioItems (Líneas 6-95 aprox)Esta constante actúa como la Base de Datos local. Es un array [] lleno de objetos {}.Composición de un Objeto (Proyecto):id: Identificador único numérico (1, 2, 3...).type: Define el grupo principal. Solo puede ser 'photo' o 'video'.category: La etiqueta específica para los sub-filtros.Valores válidos Foto: 'Retrato', 'Blanco y Negro', 'Boxeo', 'Paisaje'.Valores válidos Video: 'Videoclip', 'Comercial', 'Vlogging'.src: La URL de la imagen de portada. Aquí es donde pegas tus fotos.videoUrl: (Solo videos) Enlace al video de YouTube.title / description: Textos visibles al pasar el ratón.C. El Componente App (Lógica y Vista)Es la función principal que pinta la web.1. Los "Estados" (Memoria de la web)const [filter, setFilter] = useState('all'); 
-const [videoSubFilter, setVideoSubFilter] = useState('all');
-const [photoSubFilter, setPhotoSubFilter] = useState('all');
-const [selectedItem, setSelectedItem] = useState(null);
-Filtros: Guardan qué botón has pulsado. Si filter es 'video', la web sabe que debe ocultar las fotos.SelectedItem: Si está null, no hay nada abierto. Si tiene datos, se abre el "Modal" (pantalla completa).2. El Motor de Filtrado (filteredItems)Esta sección es el corazón de la galería. Filtra el array portfolioItems en tiempo real siguiendo 3 pasos:¿El filtro principal es 'todo'? -> Pasa. Si no, ¿coincide el type?Si es video -> ¿Coincide la category con el sub-filtro de video?Si es foto -> ¿Coincide la category con el sub-filtro de foto?3. Composición Visual (El return)El HTML (JSX) está dividido en secciones semánticas claras:<nav> (Navbar): Barra superior fija. Contiene el logo y enlaces de anclaje (#work, #contact).<header> (Hero):Foto de perfil con bordes discontinuos (efecto carrete) usando border-dashed.Título y eslogan.<section id="work"> (Portafolio):Botonera: Renderiza condicionalmente los botones. Si eliges "Video", el código hace aparecer ({filter === 'video' && ...}) los botones de subcategorías.Grid: Una rejilla responsive (grid-cols-1 en móvil, grid-cols-3 en PC).Tarjetas: Cada imagen tiene un efecto group-hover que muestra el texto oscuro al pasar el ratón.<section id="about">: Texto biográfico simple.<footer> (Contacto):Enlace mailto: para correo.Enlace https://wa.me/34... para WhatsApp directo.Modal (Lightbox):Es un bloque que "flota" sobre todo (fixed inset-0 z-[60]).Solo existe si selectedItem es verdadero.Detecta si es video (muestra iframe de YouTube) o foto (muestra img).4. Guía de Edición RápidaPara cambiar tus fotos de portada:Ve al bloque portfolioItems. Busca la línea src: '...' y cambia lo de dentro de las comillas por tu enlace.Para añadir un video nuevo:Copia un bloque existente, pégalo al final del array y asegúrate de:Cambiar el id.Poner type: 'video'.Poner una categoría válida (ej: 'Videoclip').Poner la URL de YouTube en videoUrl.Para cambiar colores:El proyecto usa clases de Tailwind.Rojo: Busca red-500 o red-600 y cámbialo por otro color (ej: blue-500).Fondo: bg-neutral-950 es el fondo oscuro.5. AutoríaCódigo generado y personalizado para ROMPPAO - Fotografía y Filmmaking.
+# 📸 Portfolio Web ROMPPAO - Guía de Funcionamiento
+
+## 🎯 ¿Qué es este proyecto?
+
+Este es un **portafolio web personal** para mostrar fotografías y videos de manera profesional. Funciona como una galería interactiva donde los visitantes pueden filtrar contenido por tipo (fotos/videos) y categorías específicas.
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+### **React**
+- Framework de JavaScript para crear páginas web interactivas
+- Permite que la página cambie sin necesidad de recargar el navegador
+
+### **Tailwind CSS**
+- Sistema de estilos que hace la página responsive (se adapta a móviles, tablets y ordenadores)
+- Estilo "Dark Mode" con diseño minimalista
+
+### **Lucide React**
+- Colección de iconos modernos (cámara, Instagram, teléfono, etc.)
+
+---
+
+## 📁 Estructura del Código
+
+### **1. Sistema de Datos (portfolioItems)**
+
+Los proyectos se guardan en una lista de objetos. Cada proyecto tiene:
+
+```javascript
+{
+  id: 1,                          // Número único identificador
+  type: 'photo',                  // Tipo: 'photo' o 'video'
+  category: 'Retrato',            // Subcategoría del proyecto
+  src: 'url-de-la-imagen.jpg',    // Enlace de la imagen
+  videoUrl: 'enlace-youtube',     // (Solo videos) URL del video
+  title: 'Título del proyecto',   // Nombre que aparece al pasar el ratón
+  description: 'Descripción breve' // Texto descriptivo
+}
+```
+
+#### **Categorías disponibles:**
+- **Fotos**: Retrato, Blanco y Negro, Boxeo, Paisaje
+- **Videos**: Videoclip, Comercial, Vlogging
+
+---
+
+## ⚙️ Cómo Funciona la Página
+
+### **Sistema de Filtros**
+
+La página tiene 3 "estados" que controlan lo que ves:
+
+1. **filter**: Qué tipo de contenido mostrar
+   - `'all'` → Muestra todo
+   - `'photo'` → Solo fotos
+   - `'video'` → Solo videos
+
+2. **selectedCategory**: Subcategoría seleccionada
+   - Ejemplo: 'Retrato', 'Boxeo', 'Videoclip'
+
+3. **selectedItem**: Proyecto abierto en pantalla completa
+   - `null` → Galería normal
+   - `objeto` → Modal con proyecto ampliado
+
+### **Flujo de Funcionamiento:**
+
+```
+1. Usuario entra a la página
+2. Se muestran TODOS los proyectos
+3. Usuario hace clic en "FOTOS" → filter cambia a 'photo'
+4. Página filtra y muestra solo fotos
+5. Usuario selecciona "Boxeo" → selectedCategory = 'Boxeo'
+6. Página muestra solo fotos de boxeo
+7. Usuario hace clic en una foto → selectedItem guarda ese proyecto
+8. Se abre modal en pantalla completa
+```
+
+---
+
+## 🎨 Secciones de la Página
+
+### **1. Hero Section (Cabecera)**
+- Título grande: "ROMPPAO"
+- Subtítulo: "FOTOGRAFÍA Y FILMMAKING"
+- Botones para contacto e Instagram
+
+### **2. Barra de Filtros**
+- Botones: TODO / FOTOS / VIDEOS
+- Al hacer clic, cambia qué proyectos se muestran
+
+### **3. Subcategorías**
+- Aparecen según el filtro activo
+- Permiten filtrar aún más específicamente
+
+### **4. Galería de Proyectos**
+- Cuadrícula responsive (1-4 columnas según pantalla)
+- Al pasar el ratón: muestra título y descripción
+- Al hacer clic: abre el proyecto en grande
+
+### **5. Modal (Ventana emergente)**
+- Muestra proyecto seleccionado a pantalla completa
+- Videos: reproduce embed de YouTube
+- Fotos: imagen ampliada
+- Botón X para cerrar
+
+---
+
+## 🔧 Cómo Añadir Contenido Nuevo
+
+### **Agregar una Foto:**
+
+1. Ve al bloque `portfolioItems`
+2. Copia un objeto existente
+3. Pega al final del array
+4. Modifica:
+   ```javascript
+   {
+     id: 99,                    // Cambia por número nuevo
+     type: 'photo',
+     category: 'Retrato',       // Elige categoría válida
+     src: 'TU-ENLACE-AQUI.jpg', // URL de tu imagen
+     title: 'Título nuevo',
+     description: 'Descripción'
+   }
+   ```
+
+### **Agregar un Video:**
+
+```javascript
+{
+  id: 100,
+  type: 'video',
+  category: 'Videoclip',              // Videoclip/Comercial/Vlogging
+  src: 'miniatura-del-video.jpg',     // Imagen de portada
+  videoUrl: 'ENLACE-DE-YOUTUBE',      // URL completa del video
+  title: 'Nombre del video',
+  description: 'Descripción'
+}
+```
+
+---
+
+## 🎨 Personalización de Colores
+
+Los colores principales se controlan con clases de Tailwind:
+
+- **Fondo oscuro**: `bg-neutral-950` (negro suave)
+- **Texto principal**: `text-white`
+- **Acentos rojos**: `red-500`, `red-600` (para botones hover)
+- **Fondos suaves**: `bg-neutral-900` (para tarjetas)
+
+**Para cambiar el color principal:**
+- Busca todas las clases `red-XXX`
+- Reemplaza por otro color: `blue-500`, `green-600`, etc.
+
+---
+
+## 📱 Responsive Design
+
+La página se adapta automáticamente:
+
+- **Móvil**: 1 columna
+- **Tablet**: 2 columnas  
+- **Portátil**: 3 columnas
+- **Escritorio grande**: 4 columnas
+
+Clases Tailwind que controlan esto:
+```
+grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
+```
+
+---
+
+## 🚀 Resumen de Funcionamiento
+
+1. **Carga inicial**: Se muestran todos los proyectos
+2. **Filtro por tipo**: Al hacer clic en FOTOS/VIDEOS, se filtran por `type`
+3. **Filtro por categoría**: Filtra dentro del tipo seleccionado
+4. **Abrir proyecto**: Al hacer clic en una imagen, se guarda en `selectedItem` y se muestra el modal
+5. **Cerrar modal**: Se resetea `selectedItem` a `null`
+
+---
+
+## 📝 Notas Importantes
+
+- Todos los enlaces de imágenes deben ser URLs válidas
+- Videos solo funcionan con enlaces de YouTube
+- Las categorías deben coincidir exactamente (mayúsculas/minúsculas)
+- Cada proyecto necesita un `id` único
+
+---
+
+**Creado por ROMPPAO** | Fotografía y Filmmaking
