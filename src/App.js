@@ -10,7 +10,7 @@ const portfolioItems = [
     id: 1,
     type: 'photo',
     category: 'Retrato',
-    src: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=1000',
+    src: 'https://unsplash.com/es/fotos/7y_LsKNWAuA',
     title: 'Mirada Urbana',
     description: 'Sesión de moda en Madrid centro.'
   },
