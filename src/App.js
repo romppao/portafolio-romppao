@@ -27,8 +27,8 @@ const portfolioItems = [
     id: 3,
     type: 'photo',
     category: 'Paisaje',
-    src: 'https://unsplash.com/es/fotos/4FEgXdHQswA,
-    title: 'Amanecer en la pedrixa',
+    src: 'https://unsplash.com/es/fotos/4FEgXdHQswA',
+    title: 'Amanecer en la pedriza',
     description: 'Fotografía de paisaje.'
   },
   {
