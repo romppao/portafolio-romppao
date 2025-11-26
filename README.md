@@ -1,70 +1,7 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📸 Portfolio Web de ROMPPAO - Documentación TécnicaEste documento explica "al pie de la letra" el funcionamiento, estructura y composición del código fuente de la página web (App.jsx).1. Visión General del ProyectoEs una página web tipo SPA (Single Page Application) desarrollada con React.Su diseño es "Dark Mode" minimalista, orientado a destacar contenido visual (fotografía y video), con una experiencia de usuario fluida sin recargas de página.Tecnologías ClaveReact: Librería principal para la interfaz y lógica.Tailwind CSS: Framework de estilos (responsividad, colores, espaciado).Lucide React: Paquete de iconos (Cámaras, claqueta, teléfono, etc.).2. Estructura del Archivo App.jsxEl código se organiza verticalmente en 3 bloques lógicos:A. Bloque de Importaciones (Líneas 1-2)import React, { useState } from 'react';
+import { ... } from 'lucide-react';
+Aquí cargamos las herramientas necesarias:useState: El "cerebro" que permite que la página reaccione (ej: cambiar de filtro, abrir una foto).Iconos: Importamos elementos visuales como Phone, Camera, Instagram.B. Bloque de Datos: portfolioItems (Líneas 6-95 aprox)Esta constante actúa como la Base de Datos local. Es un array [] lleno de objetos {}.Composición de un Objeto (Proyecto):id: Identificador único numérico (1, 2, 3...).type: Define el grupo principal. Solo puede ser 'photo' o 'video'.category: La etiqueta específica para los sub-filtros.Valores válidos Foto: 'Retrato', 'Blanco y Negro', 'Boxeo', 'Paisaje'.Valores válidos Video: 'Videoclip', 'Comercial', 'Vlogging'.src: La URL de la imagen de portada. Aquí es donde pegas tus fotos.videoUrl: (Solo videos) Enlace al video de YouTube.title / description: Textos visibles al pasar el ratón.C. El Componente App (Lógica y Vista)Es la función principal que pinta la web.1. Los "Estados" (Memoria de la web)const [filter, setFilter] = useState('all'); 
+const [videoSubFilter, setVideoSubFilter] = useState('all');
+const [photoSubFilter, setPhotoSubFilter] = useState('all');
+const [selectedItem, setSelectedItem] = useState(null);
+Filtros: Guardan qué botón has pulsado. Si filter es 'video', la web sabe que debe ocultar las fotos.SelectedItem: Si está null, no hay nada abierto. Si tiene datos, se abre el "Modal" (pantalla completa).2. El Motor de Filtrado (filteredItems)Esta sección es el corazón de la galería. Filtra el array portfolioItems en tiempo real siguiendo 3 pasos:¿El filtro principal es 'todo'? -> Pasa. Si no, ¿coincide el type?Si es video -> ¿Coincide la category con el sub-filtro de video?Si es foto -> ¿Coincide la category con el sub-filtro de foto?3. Composición Visual (El return)El HTML (JSX) está dividido en secciones semánticas claras:<nav> (Navbar): Barra superior fija. Contiene el logo y enlaces de anclaje (#work, #contact).<header> (Hero):Foto de perfil con bordes discontinuos (efecto carrete) usando border-dashed.Título y eslogan.<section id="work"> (Portafolio):Botonera: Renderiza condicionalmente los botones. Si eliges "Video", el código hace aparecer ({filter === 'video' && ...}) los botones de subcategorías.Grid: Una rejilla responsive (grid-cols-1 en móvil, grid-cols-3 en PC).Tarjetas: Cada imagen tiene un efecto group-hover que muestra el texto oscuro al pasar el ratón.<section id="about">: Texto biográfico simple.<footer> (Contacto):Enlace mailto: para correo.Enlace https://wa.me/34... para WhatsApp directo.Modal (Lightbox):Es un bloque que "flota" sobre todo (fixed inset-0 z-[60]).Solo existe si selectedItem es verdadero.Detecta si es video (muestra iframe de YouTube) o foto (muestra img).4. Guía de Edición RápidaPara cambiar tus fotos de portada:Ve al bloque portfolioItems. Busca la línea src: '...' y cambia lo de dentro de las comillas por tu enlace.Para añadir un video nuevo:Copia un bloque existente, pégalo al final del array y asegúrate de:Cambiar el id.Poner type: 'video'.Poner una categoría válida (ej: 'Videoclip').Poner la URL de YouTube en videoUrl.Para cambiar colores:El proyecto usa clases de Tailwind.Rojo: Busca red-500 o red-600 y cámbialo por otro color (ej: blue-500).Fondo: bg-neutral-950 es el fondo oscuro.5. AutoríaCódigo generado y personalizado para ROMPPAO - Fotografía y Filmmaking.
