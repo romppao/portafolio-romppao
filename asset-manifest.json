@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/portafolio-romppao/static/css/main.e6c13ad2.css",
+    "main.js": "/portafolio-romppao/static/js/main.97983108.js",
+    "static/js/453.d211ecb2.chunk.js": "/portafolio-romppao/static/js/453.d211ecb2.chunk.js",
+    "index.html": "/portafolio-romppao/index.html",
+    "main.e6c13ad2.css.map": "/portafolio-romppao/static/css/main.e6c13ad2.css.map",
+    "main.97983108.js.map": "/portafolio-romppao/static/js/main.97983108.js.map",
+    "453.d211ecb2.chunk.js.map": "/portafolio-romppao/static/js/453.d211ecb2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.97983108.js"
+  ]
+}
