@@ -64,6 +64,87 @@ const portfolioItems = [
     title: 'Sombras',
     description: 'La elegancia no tiene color.'
   },
+  {
+    id: 11,
+    type: 'photo',
+    category: 'Blanco y Negro',
+    src: `${process.env.PUBLIC_URL}/images/blancoynegro-2.jpg`,
+    alt: 'Retrato urbano en blanco y negro - Confianza - ROMPPAO fotógrafo Madrid',
+    title: 'Confianza Urbana',
+    description: 'Mirada directa, actitud firme.'
+  },
+  {
+    id: 12,
+    type: 'photo',
+    category: 'Blanco y Negro',
+    src: `${process.env.PUBLIC_URL}/images/blancoynegro-3.jpg`,
+    alt: 'Retrato de perfil en blanco y negro - Contemplación - ROMPPAO fotógrafo Madrid',
+    title: 'Contemplación',
+    description: 'El momento antes del siguiente paso.'
+  },
+  {
+    id: 13,
+    type: 'photo',
+    category: 'Blanco y Negro',
+    src: `${process.env.PUBLIC_URL}/images/blancoynegro-4.jpg`,
+    alt: 'Retrato urbano con brazos cruzados en blanco y negro - ROMPPAO fotógrafo Madrid',
+    title: 'Actitud',
+    description: 'Seguridad en cada gesto.'
+  },
+  {
+    id: 14,
+    type: 'photo',
+    category: 'Blanco y Negro',
+    src: `${process.env.PUBLIC_URL}/images/blancoynegro-5.jpg`,
+    alt: 'Retrato de espaldas en blanco y negro - Perspectiva - ROMPPAO fotógrafo Madrid',
+    title: 'Perspectiva',
+    description: 'Lo que no se ve, también cuenta.'
+  },
+  {
+    id: 15,
+    type: 'photo',
+    category: 'Blanco y Negro',
+    src: `${process.env.PUBLIC_URL}/images/blancoynegro-6.jpg`,
+    alt: 'Retrato sonriente en blanco y negro - Alegría Natural - ROMPPAO fotógrafo Madrid',
+    title: 'Alegría Natural',
+    description: 'La luz que nace desde dentro.'
+  },
+  {
+    id: 16,
+    type: 'photo',
+    category: 'Blanco y Negro',
+    src: `${process.env.PUBLIC_URL}/images/blancoynegro-7.jpg`,
+    alt: 'Fotografía de estilo urbano en blanco y negro - Hermandad - ROMPPAO fotógrafo Madrid',
+    title: 'Hermandad',
+    description: 'Dos mundos, un mismo camino.'
+  },
+  {
+    id: 17,
+    type: 'photo',
+    category: 'Blanco y Negro',
+    src: `${process.env.PUBLIC_URL}/images/blancoynegro-8.jpg`,
+    alt: 'Retrato nocturno urbano en blanco y negro - Noche en la Ciudad - ROMPPAO fotógrafo Madrid',
+    title: 'Noche en la Ciudad',
+    description: 'Cuando las luces cuentan historias.'
+  },
+  {
+    id: 18,
+    type: 'photo',
+    category: 'Blanco y Negro',
+    src: `${process.env.PUBLIC_URL}/images/blancoynegro-9.jpg`,
+    alt: 'Retrato de perfil con gafas en blanco y negro - Visión Lateral - ROMPPAO fotógrafo Madrid',
+    title: 'Visión Lateral',
+    description: 'Detalles que definen.'
+  },
+  {
+    id: 19,
+    type: 'photo',
+    category: 'Blanco y Negro',
+    src: `${process.env.PUBLIC_URL}/images/blancoynegro-10.jpg`,
+    alt: 'Retrato frontal con gafas redondas en blanco y negro - Mirada Intelectual - ROMPPAO',
+    title: 'Mirada Intelectual',
+    description: 'Estilo que trasciende el tiempo.'
+  },
 
   {
     id: 8,

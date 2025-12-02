@@ -10,7 +10,7 @@
 
 ## 🎨 Sobre este Proyecto
 
-Este es mi portfolio profesional como fotógrafo y filmmaker en Madrid. El sitio web fue **diseñado, desarrollado y optimizado completamente por mí (ROMPPAO)** sin ayuda de nadie, mostrando mis mejores trabajos en fotografía (retratos, paisajes, boxeo, blanco y negro) y mis videoclips musicales para artistas como KANEIS, Bad Key y más.
+Este es mi portfolio profesional como fotógrafo y filmmaker en Madrid. El sitio web fue **diseñado, desarrollado y optimizado completamente por mí (ROMPPAO)** mostrando mis mejores trabajos en fotografía (retratos, paisajes, boxeo, blanco y negro) y mis videoclips musicales para artistas como KANEIS, Bad Key y más.
 
 **Características principales:**
 - ✨ Diseño moderno y elegante
