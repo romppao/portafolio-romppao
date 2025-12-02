@@ -16,6 +16,33 @@ const portfolioItems = [
     title: 'Mirada Urbana',
     description: 'Sesión de moda en Madrid centro.'
   },
+  {
+    id: 20,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-2.jpg`,
+    alt: 'Fotografía de retrato urbano - Sesión callejera con grupo - ROMPPAO fotógrafo Madrid',
+    title: 'Energía Colectiva',
+    description: 'Actitud urbana, miradas auténticas.'
+  },
+  {
+    id: 21,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-3.jpg`,
+    alt: 'Fotografía de retrato urbano - Perspectiva desde primer plano - ROMPPAO fotógrafo Madrid',
+    title: 'Perspectivas',
+    description: 'Lo que está detrás también cuenta.'
+  },
+  {
+    id: 22,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-4.jpg`,
+    alt: 'Fotografía de retrato urbano desde ángulo bajo - Grupo street style - ROMPPAO fotógrafo Madrid',
+    title: 'Desde Abajo',
+    description: 'Ángulos que elevan la escena.'
+  },
 
   {
     id: 3,
