@@ -88,6 +88,24 @@ const portfolioItems = [
     title: 'Líneas y Cadenas',
     description: 'Perfil que marca estilo.'
   },
+  {
+    id: 28,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-10.jpg`,
+    alt: 'Fotografía de retrato urbano lateral - Fondo ATM camiseta deportiva - ROMPPAO fotógrafo Madrid',
+    title: 'Mirada Lateral',
+    description: 'Perfil urbano, fondo metropolitano.'
+  },
+  {
+    id: 29,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-11.jpg`,
+    alt: 'Fotografía de retrato urbano frontal - Brazos cruzados con camiseta deportiva - ROMPPAO fotógrafo Madrid',
+    title: 'Actitud Deportiva',
+    description: 'Confianza, estilo y carácter.'
+  },
 
   {
     id: 3,
@@ -227,6 +245,42 @@ const portfolioItems = [
     alt: 'Fotografía de boxeo profesional - Saul instantes previos al combate - ROMPPAO',
     title: 'Saul',
     description: 'Instantes previos a la guerra.'
+  },
+  {
+    id: 30,
+    type: 'photo',
+    category: 'Boxeo',
+    src: `${process.env.PUBLIC_URL}/images/boxeo-2.jpg`,
+    alt: 'Fotografía de boxeo - Entrenamiento en el ring con su entrenador - ROMPPAO fotógrafo Madrid',
+    title: 'Bajo las Cuerdas',
+    description: 'Intensidad desde el ángulo del combate.'
+  },
+  {
+    id: 31,
+    type: 'photo',
+    category: 'Boxeo',
+    src: `${process.env.PUBLIC_URL}/images/boxeo-3.jpg`,
+    alt: 'Fotografía de boxeo - Boxeador en guardia frontal - ROMPPAO fotógrafo Madrid',
+    title: 'En Guardia',
+    description: 'Concentración antes del primer golpe.'
+  },
+  {
+    id: 32,
+    type: 'photo',
+    category: 'Boxeo',
+    src: `${process.env.PUBLIC_URL}/images/boxeo-4.jpg`,
+    alt: 'Fotografía de boxeo - Retrato de perfil de boxeador concentrado - ROMPPAO fotógrafo Madrid',
+    title: 'Mentalidad de Campeón',
+    description: 'La concentración lo es todo.'
+  },
+  {
+    id: 33,
+    type: 'photo',
+    category: 'Boxeo',
+    src: `${process.env.PUBLIC_URL}/images/boxeo-5.jpg`,
+    alt: 'Fotografía de boxeo - Boxer con su entrenador en esquina del ring - ROMPPAO fotógrafo Madrid',
+    title: 'La Esquina',
+    description: 'Consejos que cambian el rumbo.'
   },
   {
     id: 6,
