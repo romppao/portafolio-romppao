@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Camera, Clapperboard, Mail, Instagram, X as CloseIcon, ChevronRight, Play, Film, Tv, Video, User, Moon, Mountain, Trophy, Phone } from 'lucide-react';
-// Cache buster: 2024-12-02-20:58
+// Cache buster: 2024-12-02-21:28 - Removed 'Todo' filters
 
 // =========================================================================
 //  ZONA DE DATOS (Puedes editar las URLs de las imágenes aquí)
@@ -172,9 +172,9 @@ const portfolioItems = [
 // =========================================================================
 
 const App = () => {
-  const [filter, setFilter] = useState('all');
-  const [videoSubFilter, setVideoSubFilter] = useState('all');
-  const [photoSubFilter, setPhotoSubFilter] = useState('all');
+  const [filter, setFilter] = useState('photo');
+  const [videoSubFilter, setVideoSubFilter] = useState('Videoclip');
+  const [photoSubFilter, setPhotoSubFilter] = useState('Blanco y Negro');
   const [selectedItem, setSelectedItem] = useState(null);
 
   // Helper function to extract YouTube video ID from different URL formats
@@ -203,11 +203,11 @@ const App = () => {
   };
 
   const filteredItems = portfolioItems.filter(item => {
-    if (filter !== 'all' && item.type !== filter) return false;
-    if (filter === 'video' && videoSubFilter !== 'all') {
+    if (item.type !== filter) return false;
+    if (filter === 'video') {
       return item.category === videoSubFilter;
     }
-    if (filter === 'photo' && photoSubFilter !== 'all') {
+    if (filter === 'photo') {
       return item.category === photoSubFilter;
     }
     return true;
@@ -215,8 +215,8 @@ const App = () => {
 
   const handleMainFilterChange = (newFilter) => {
     setFilter(newFilter);
-    if (newFilter !== 'video') setVideoSubFilter('all');
-    if (newFilter !== 'photo') setPhotoSubFilter('all');
+    if (newFilter !== 'video') setVideoSubFilter('Videoclip');
+    if (newFilter !== 'photo') setPhotoSubFilter('Blanco y Negro');
   };
 
   return (
@@ -278,12 +278,6 @@ const App = () => {
         <div className="flex flex-col items-center mb-12">
           <div className="flex justify-center space-x-2 md:space-x-4 mb-6">
             <button
-              onClick={() => handleMainFilterChange('all')}
-              className={`px-6 py-2 rounded-full text-sm transition-all ${filter === 'all' ? 'bg-red-600 text-white' : 'bg-neutral-900 text-neutral-400 hover:text-white'}`}
-            >
-              Todo
-            </button>
-            <button
               onClick={() => handleMainFilterChange('photo')}
               className={`px-6 py-2 rounded-full text-sm flex items-center transition-all ${filter === 'photo' ? 'bg-red-600 text-white' : 'bg-neutral-900 text-neutral-400 hover:text-white'}`}
             >
@@ -299,9 +293,6 @@ const App = () => {
 
           {filter === 'video' && (
             <div className="flex justify-center flex-wrap gap-2 animate-[fadeIn_0.5s_ease-out]">
-              <button onClick={() => setVideoSubFilter('all')} className={`px-4 py-1.5 rounded-full text-xs font-medium border transition-all ${videoSubFilter === 'all' ? 'border-red-500 text-red-500 bg-red-500/10' : 'border-neutral-800 text-neutral-500 hover:border-neutral-600 hover:text-neutral-300'}`}>
-                Todos los videos
-              </button>
               <button onClick={() => setVideoSubFilter('Videoclip')} className={`px-4 py-1.5 rounded-full text-xs font-medium border flex items-center transition-all ${videoSubFilter === 'Videoclip' ? 'border-red-500 text-red-500 bg-red-500/10' : 'border-neutral-800 text-neutral-500 hover:border-neutral-600 hover:text-neutral-300'}`}>
                 <Film className="w-3 h-3 mr-1.5" /> Videoclips
               </button>
@@ -316,9 +307,6 @@ const App = () => {
 
           {filter === 'photo' && (
             <div className="flex justify-center flex-wrap gap-2 animate-[fadeIn_0.5s_ease-out]">
-              <button onClick={() => setPhotoSubFilter('all')} className={`px-4 py-1.5 rounded-full text-xs font-medium border transition-all ${photoSubFilter === 'all' ? 'border-red-500 text-red-500 bg-red-500/10' : 'border-neutral-800 text-neutral-500 hover:border-neutral-600 hover:text-neutral-300'}`}>
-                Todas las fotos
-              </button>
               <button onClick={() => setPhotoSubFilter('Retrato')} className={`px-4 py-1.5 rounded-full text-xs font-medium border flex items-center transition-all ${photoSubFilter === 'Retrato' ? 'border-red-500 text-red-500 bg-red-500/10' : 'border-neutral-800 text-neutral-500 hover:border-neutral-600 hover:text-neutral-300'}`}>
                 <User className="w-3 h-3 mr-1.5" /> Retrato
               </button>
