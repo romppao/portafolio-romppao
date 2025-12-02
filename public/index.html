@@ -1,43 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html lang="es">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="ROMPPAO | Fotógrafo y Filmmaker Profesional en Madrid" />
+  <meta name="description"
+    content="ROMPPAO - Fotógrafo profesional y filmmaker en Madrid. Especializado en retratos, fotografía de boxeo, paisajes, y videoclips musicales. Proyectos para KANEIS, Bad Key y más." />
+  <meta name="keywords"
+    content="fotógrafo Madrid, filmmaker Madrid, fotografía retratos, videoclips musicales, fotografía boxeo, fotografía paisajes, ROMPPAO, portfolio fotografía, videografía profesional" />
+  <meta name="author" content="ROMPPAO" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://romppao.github.io/portafolio-romppao/" />
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://romppao.github.io/portafolio-romppao/" />
+  <meta property="og:site_name" content="ROMPPAO Portfolio" />
+  <meta property="og:title" content="ROMPPAO | Fotógrafo y Filmmaker Profesional en Madrid" />
+  <meta property="og:description"
+    content="Portfolio profesional de fotografía y filmmaking. Retratos, paisajes, fotografía de boxeo y videoclips musicales. Basado en Madrid, España." />
+  <meta property="og:image" content="%PUBLIC_URL%/images/profile.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://romppao.github.io/portafolio-romppao/" />
+  <meta name="twitter:title" content="ROMPPAO | Fotógrafo y Filmmaker Profesional en Madrid" />
+  <meta name="twitter:description"
+    content="Portfolio profesional de fotografía y filmmaking. Retratos, paisajes, fotografía de boxeo y videoclips musicales." />
+  <meta name="twitter:image" content="%PUBLIC_URL%/images/profile.jpg" />
+  <meta name="twitter:creator" content="@romppao" />
+
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <!-- Schema.org Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://romppao.github.io/portafolio-romppao/#person",
+        "name": "ROMPPAO",
+        "jobTitle": "Fotógrafo y Filmmaker",
+        "description": "Fotógrafo profesional y filmmaker especializado en retratos, fotografía de boxeo, paisajes y videoclips musicales en Madrid.",
+        "url": "https://romppao.github.io/portafolio-romppao/",
+        "image": "https://romppao.github.io/portafolio-romppao/images/profile.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Madrid",
+          "addressCountry": "ES"
+        },
+        "sameAs": [
+          "https://www.instagram.com/romppao",
+          "https://www.youtube.com/@romppao"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://romppao.github.io/portafolio-romppao/#service",
+        "name": "ROMPPAO Fotografía y Filmmaking",
+        "description": "Servicios profesionales de fotografía y filmmaking en Madrid. Especializado en retratos, fotografía deportiva (boxeo), paisajes y videoclips musicales.",
+        "provider": {
+          "@id": "https://romppao.github.io/portafolio-romppao/#person"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Madrid"
+        },
+        "serviceType": ["Fotografía de Retratos", "Fotografía Deportiva", "Fotografía de Paisajes", "Videoclips Musicales", "Filmmaking"]
+      },
+      {
+        "@type": "ImageGallery",
+        "@id": "https://romppao.github.io/portafolio-romppao/#gallery",
+        "name": "Portfolio ROMPPAO",
+        "description": "Galería de trabajos de fotografía y filmmaking",
+        "creator": {
+          "@id": "https://romppao.github.io/portafolio-romppao/#person"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <title>ROMPPAO | Fotógrafo y Filmmaker Profesional en Madrid</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
 </html>

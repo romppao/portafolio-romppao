@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Main Portfolio Page -->
+  <url>
+    <loc>https://romppao.github.io/portafolio-romppao/</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    
+    <!-- Portfolio Images -->
+    <image:image>
+      <image:loc>https://romppao.github.io/portafolio-romppao/images/profile.jpg</image:loc>
+      <image:caption>ROMPPAO - Fotógrafo y Filmmaker Profesional</image:caption>
+      <image:title>Foto de perfil ROMPPAO</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://romppao.github.io/portafolio-romppao/images/retrato-1.jpg</image:loc>
+      <image:caption>Mirada Urban - Sesión de moda en Madrid centro</image:caption>
+      <image:title>Fotografía de retrato urbano</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://romppao.github.io/portafolio-romppao/images/blancoynegro-1.jpg</image:loc>
+      <image:caption>Sombras - La elegancia no tiene color</image:caption>
+      <image:title>Fotografía en blanco y negro</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://romppao.github.io/portafolio-romppao/images/paisaje-1.jpg</image:loc>
+      <image:caption>Amanecer en la pedriza - Fotografía de paisaje</image:caption>
+      <image:title>Fotografía de paisaje en la Pedriza</image:title>
+    </image:image>
+    
+   <image:image>
+      <image:loc>https://romppao.github.io/portafolio-romppao/images/boxeo-1.jpg</image:loc>
+      <image:caption>Saul - Instantes previos a la guerra</image:caption>
+      <image:title>Fotografía de boxeo</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://romppao.github.io/portafolio-romppao/images/paisaje-2.jpg</image:loc>
+      <image:caption>Lejos del ruido - Refugio en los bosques de la pedriza</image:caption>
+      <image:title>Fotografía de paisaje vertical</image:title>
+    </image:image>
+  </url>
+  
+</urlset>
