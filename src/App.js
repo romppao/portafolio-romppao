@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Camera, Clapperboard, Mail, Instagram, X as CloseIcon, ChevronRight, Play, Film, Tv, Video, User, Moon, Mountain, Trophy, Phone } from 'lucide-react';
+// Cache buster: 2024-12-02-20:58
 
 // =========================================================================
 //  ZONA DE DATOS (Puedes editar las URLs de las imágenes aquí)
