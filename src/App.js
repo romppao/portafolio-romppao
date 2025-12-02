@@ -43,6 +43,51 @@ const portfolioItems = [
     title: 'Desde Abajo',
     description: 'Ángulos que elevan la escena.'
   },
+  {
+    id: 23,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-5.jpg`,
+    alt: 'Fotografía de retrato urbano - Expresión vibrante con colores amarillos - ROMPPAO fotógrafo Madrid',
+    title: 'Vibra Dorada',
+    description: 'Color, actitud y luz urbana.'
+  },
+  {
+    id: 24,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-6.jpg`,
+    alt: 'Fotografía de retrato urbano - Mirada hacia arriba con gorra LA - ROMPPAO fotógrafo Madrid',
+    title: 'Elevación',
+    description: 'Mirando hacia donde vamos.'
+  },
+  {
+    id: 25,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-7.jpg`,
+    alt: 'Fotografía de retrato urbano frontal - Expresión intensa con ATM de fondo - ROMPPAO fotógrafo Madrid',
+    title: 'Presencia',
+    description: 'Cuando la mirada dice todo.'
+  },
+  {
+    id: 26,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-8.jpg`,
+    alt: 'Fotografía de retrato urbano doble - Camiseta amarilla con diseño gráfico - ROMPPAO fotógrafo Madrid',
+    title: 'Dualidad Urbana',
+    description: 'Dos energías, un mismo espacio.'
+  },
+  {
+    id: 27,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-9.jpg`,
+    alt: 'Fotografía de retrato urbano lateral - Perfil con cadenas y gorra LA - ROMPPAO fotógrafo Madrid',
+    title: 'Líneas y Cadenas',
+    description: 'Perfil que marca estilo.'
+  },
 
   {
     id: 3,
