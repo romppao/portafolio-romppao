@@ -21,7 +21,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Videos locales (demasiado grandes para GitHub)
-/public/videos/*.mp4
-/public/videos/*.webm
