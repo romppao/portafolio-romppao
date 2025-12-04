@@ -177,6 +177,78 @@ const portfolioItems = [
     description: 'Video oficial. Filmado por ROMPPAO.'
   },
   {
+    id: 37,
+    type: 'video',
+    category: 'Vlogging',
+    src: 'https://img.youtube.com/vi/sJ7J5kEa2pE/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/sJ7J5kEa2pE?si=dvTr4n_FnZ1j1vMx',
+    alt: 'Vlog Gudus Live - ME INFILTRO EN CASA DE THEGREFG| 48H EN ANDORRA - Filmado por ROMPPAO',
+    title: 'Gudus Live',
+    description: 'ME INFILTRO EN CASA DE THEGREFG| 48H EN ANDORRA'
+  },
+  // =========================================================================
+  // EJEMPLO: Cómo añadir un video LOCAL en la sección COMERCIAL
+  // =========================================================================
+  // Descomenta y personaliza este ejemplo cuando subas tu primer video:
+  // 
+  // {
+  //   id: 38,
+  //   type: 'video',
+  //   category: 'Comercial',
+  //   src: `${process.env.PUBLIC_URL}/videos/thumbnails/nombre-miniatura.jpg`,
+  //   videoUrl: `${process.env.PUBLIC_URL}/videos/nombre-video.mp4`,
+  //   alt: 'Video comercial [nombre del cliente] - ROMPPAO filmmaker Madrid',
+  //   title: 'Nombre del Cliente o Proyecto',
+  //   description: 'Breve descripción del proyecto comercial.'
+  // },
+  // 
+  // INSTRUCCIONES:
+  // 1. Sube tu video a: public/videos/nombre-video.mp4
+  // 2. Sube la miniatura a: public/videos/thumbnails/nombre-miniatura.jpg
+  // 3. Descomenta el código de arriba y personaliza los valores
+  // 4. Cambia el ID por el siguiente número disponible
+  // =========================================================================
+  {
+    id: 38,
+    type: 'video',
+    category: 'Comercial',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/layali-clip-1-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/layali-clip-1.mp4`,
+    alt: 'Video comercial LAYALI - Producción Audiovisual - ROMPPAO filmmaker Madrid',
+    title: 'LAYALI',
+    description: 'Producción Audiovisual'
+  },
+  {
+    id: 39,
+    type: 'video',
+    category: 'Comercial',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/layali-clip-2-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/layali-clip-2.mp4`,
+    alt: 'Video comercial LAYALI - Producción Audiovisual - ROMPPAO filmmaker Madrid',
+    title: 'LAYALI',
+    description: 'Producción Audiovisual'
+  },
+  {
+    id: 40,
+    type: 'video',
+    category: 'Comercial',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/layali-clip-3-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/layali-clip-3.mp4`,
+    alt: 'Video comercial LAYALI - Producción Audiovisual - ROMPPAO filmmaker Madrid',
+    title: 'LAYALI',
+    description: 'Producción Audiovisual'
+  },
+  {
+    id: 41,
+    type: 'video',
+    category: 'Comercial',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/layali-clip-4-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/layali-clip-4.mp4`,
+    alt: 'Video comercial LAYALI - Producción Audiovisual - ROMPPAO filmmaker Madrid',
+    title: 'LAYALI',
+    description: 'Producción Audiovisual'
+  },
+  {
     id: 4,
     type: 'photo',
     category: 'Blanco y Negro',
@@ -333,6 +405,12 @@ const App = () => {
   const [photoSubFilter, setPhotoSubFilter] = useState('Boxeo');
   const [selectedItem, setSelectedItem] = useState(null);
 
+  // Helper function to check if video is from YouTube
+  const isYouTubeVideo = (url) => {
+    if (!url) return false;
+    return url.includes('youtube.com') || url.includes('youtu.be');
+  };
+
   // Helper function to extract YouTube video ID from different URL formats
   const getYouTubeVideoId = (url) => {
     if (!url) return null;
@@ -482,8 +560,19 @@ const App = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredItems.length > 0 ? (
             filteredItems.map((item) => (
-              <div key={item.id} className="group relative aspect-[4/5] cursor-pointer overflow-hidden rounded-lg bg-neutral-900" onClick={() => setSelectedItem(item)}>
-                <img src={item.src} alt={item.alt} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100" loading="lazy" />
+              <div
+                key={item.id}
+                className={`group relative cursor-pointer overflow-hidden rounded-lg bg-neutral-900 ${item.type === 'video' ? 'aspect-video' : 'aspect-[4/5]'
+                  }`}
+                onClick={() => setSelectedItem(item)}
+              >
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className={`h-full w-full transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100 ${item.type === 'video' ? 'object-cover' : 'object-cover'
+                    }`}
+                  loading="lazy"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                   <span className="text-red-500 text-xs font-bold uppercase tracking-wider mb-2">{item.category}</span>
                   <h3 className="text-white text-xl font-bold">{item.title}</h3>
@@ -550,15 +639,28 @@ const App = () => {
           <div className="max-w-5xl w-full max-h-[90vh] flex flex-col items-center" onClick={e => e.stopPropagation()}>
             {selectedItem.type === 'video' ? (
               <div className="w-full aspect-video bg-black rounded-lg overflow-hidden border border-neutral-800 shadow-2xl">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src={`https://www.youtube.com/embed/${getYouTubeVideoId(selectedItem.videoUrl) || 'dQw4w9WgXcQ'}`}
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+                {isYouTubeVideo(selectedItem.videoUrl) ? (
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src={`https://www.youtube.com/embed/${getYouTubeVideoId(selectedItem.videoUrl) || 'dQw4w9WgXcQ'}`}
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                ) : (
+                  <video
+                    controls
+                    autoPlay
+                    className="w-full h-full"
+                    poster={selectedItem.src}
+                  >
+                    <source src={selectedItem.videoUrl} type="video/mp4" />
+                    <source src={selectedItem.videoUrl} type="video/webm" />
+                    Tu navegador no soporta el elemento de video.
+                  </video>
+                )}
               </div>
             ) : (
               <img src={selectedItem.src} alt={selectedItem.alt} className="max-h-[80vh] w-auto rounded shadow-2xl" />
