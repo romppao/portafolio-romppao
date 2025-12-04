@@ -677,6 +677,10 @@ const App = () => {
                     <span className="text-red-500 mr-2">•</span>
                     <span>Retoque fotográfico</span>
                   </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2">•</span>
+                    <span>Edición y diseño de sonido</span>
+                  </li>
                 </ul>
               </div>
 
