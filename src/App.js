@@ -593,12 +593,140 @@ const App = () => {
         </div>
       </section>
 
+
       <section id="about" className="py-20 bg-neutral-900">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-white mb-8">Sobre mi</h2>
-          <p className="text-neutral-400 text-lg leading-relaxed mb-8">
+          <p className="text-neutral-400 text-lg leading-relaxed mb-16">
             Soy un creador visual, fotógrafo, filmmaker independiente con base en Madrid. Mi trabajo es más que sujetar una cámara y darle a un botón, intento transformar lo más cotidiano en momentos inolvidables.
           </p>
+
+          {/* Sección de Servicios */}
+          <div className="mt-20">
+            <h3 className="text-2xl font-bold text-white mb-12">Servicios</h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left mb-12">
+              {/* Fotografía */}
+              <div className="bg-neutral-800/50 p-6 rounded-lg border border-neutral-700 hover:border-red-500/50 transition-colors">
+                <div className="flex items-center mb-4">
+                  <Camera className="w-6 h-6 text-red-500 mr-3" />
+                  <h4 className="text-xl font-bold text-white">Fotografía</h4>
+                </div>
+                <ul className="space-y-2 text-neutral-300">
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2">•</span>
+                    <span>Retratos</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2">•</span>
+                    <span>Fotografía deportiva (boxeo, eventos deportivos)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2">•</span>
+                    <span>Cobertura de eventos y celebraciones</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2">•</span>
+                    <span>Fotografía de paisajes</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Videografía */}
+              <div className="bg-neutral-800/50 p-6 rounded-lg border border-neutral-700 hover:border-red-500/50 transition-colors">
+                <div className="flex items-center mb-4">
+                  <Clapperboard className="w-6 h-6 text-red-500 mr-3" />
+                  <h4 className="text-xl font-bold text-white">Videografía</h4>
+                </div>
+                <ul className="space-y-2 text-neutral-300">
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2">•</span>
+                    <span>Vlogs y contenido deportivo</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2">•</span>
+                    <span>Aftermovies de eventos</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2">•</span>
+                    <span>Vídeos promocionales y redes sociales</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2">•</span>
+                    <span>Proyectos creativos personalizados</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Edición y postproducción */}
+              <div className="bg-neutral-800/50 p-6 rounded-lg border border-neutral-700 hover:border-red-500/50 transition-colors">
+                <div className="flex items-center mb-4">
+                  <Film className="w-6 h-6 text-red-500 mr-3" />
+                  <h4 className="text-xl font-bold text-white">Edición y postproducción</h4>
+                </div>
+                <ul className="space-y-2 text-neutral-300">
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2">•</span>
+                    <span>Color grading</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2">•</span>
+                    <span>Edición de vídeo</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2">•</span>
+                    <span>Retoque fotográfico</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Disponibilidad */}
+              <div className="bg-neutral-800/50 p-6 rounded-lg border border-neutral-700 hover:border-red-500/50 transition-colors">
+                <div className="flex items-center mb-4">
+                  <svg className="w-6 h-6 text-red-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <h4 className="text-xl font-bold text-white">Disponibilidad</h4>
+                </div>
+                <ul className="space-y-2 text-neutral-300 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2">•</span>
+                    <span><strong className="text-white">Zona:</strong> Madrid y alrededores</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2">•</span>
+                    <span><strong className="text-white">Horarios:</strong> Tardes/noches entre semana, fines de semana completos</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2">•</span>
+                    <span><strong className="text-white">Sesiones:</strong> Hasta 3h (entre semana) / 6h (fin de semana)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2">•</span>
+                    <span><strong className="text-white">Entrega:</strong> 1-2 semanas (foto), 2 semanas (vídeo)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2">•</span>
+                    <span><strong className="text-white">Express:</strong> Disponible con coste adicional</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Información adicional y botón */}
+            <div className="bg-gradient-to-r from-neutral-800 to-neutral-800/50 p-6 rounded-lg border border-neutral-700 mb-8">
+              <p className="text-neutral-300 text-sm mb-6">
+                Para información detallada sobre disponibilidad específica y presupuestos personalizados, contáctame por correo o WhatsApp.
+              </p>
+              <button
+                onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+                className="px-8 py-3 bg-red-600 text-white font-bold rounded-full hover:bg-red-700 transition-all hover:scale-105 inline-flex items-center"
+              >
+                Solicitar presupuesto
+                <ChevronRight className="ml-2 w-5 h-5" />
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
