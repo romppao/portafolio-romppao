@@ -471,15 +471,13 @@ const App = () => {
 
       <header className="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="relative mx-auto w-32 h-32 md:w-40 md:h-40 mb-10 rounded-full bg-neutral-900 border-[3px] border-dashed border-neutral-500 ring-4 ring-neutral-900 shadow-2xl p-1.5 flex items-center justify-center">
-            <div className="w-full h-full rounded-full overflow-hidden border-2 border-neutral-800">
-              <img
-                src={`${process.env.PUBLIC_URL}/images/profile.jpg`}
-                alt="ROMPPAO Profile"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
+          <div className="relative mx-auto w-40 h-40 md:w-52 md:h-52 mb-10 rounded-full overflow-hidden border-[3px] border-orange-600 shadow-2xl">
+            <img
+              src={`${process.env.PUBLIC_URL}/images/profile.jpg`}
+              alt="ROMPPAO Profile"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
           </div>
 
           <h1 className="text-4xl md:text-7xl font-bold text-white mb-6 tracking-tight">
