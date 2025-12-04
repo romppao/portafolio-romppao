@@ -10,15 +10,16 @@
 
 ## 🎨 Sobre este Proyecto
 
-Este es mi portfolio profesional como fotógrafo y filmmaker en Madrid. El sitio web fue **diseñado, desarrollado y optimizado completamente por mí (ROMPPAO)** mostrando mis mejores trabajos en fotografía (retratos, paisajes, boxeo, blanco y negro) y mis videoclips musicales para artistas como KANEIS, Bad Key y más.
+Este es mi portfolio profesional como fotógrafo y filmmaker en Madrid. El sitio web fue **diseñado, desarrollado y optimizado completamente por mí (ROMPPAO)** mostrando mis mejores trabajos en fotografía (11 retratos urbanos, 10 fotos B&N, 5 fotos de boxeo, 2 paisajes) y 6 videoclips musicales para artistas como KANEIS, MKBLOOND, Vare Gang, Bad Key y más.
 
 **Características principales:**
-- ✨ Diseño moderno y elegante
+- ✨ Diseño moderno y elegante con animaciones
 - 📱 Totalmente responsive (se adapta a móviles, tablets y PC)
 - 🚀 Optimizado para velocidad de carga
 - 🔍 SEO optimizado para aparecer en Google
 - 🎬 Integración con YouTube para videoclips
 - 🖼️ Galería de imágenes con filtros por categoría
+- 🎥 Sistema de reproducción de videos en modal
 
 ---
 
@@ -62,13 +63,16 @@ Una vez publicado, tu portfolio estará disponible en:
 portafolio-romppao/
 │
 ├── public/                    # Archivos públicos
-│   ├── images/               # 📸 TUS IMÁGENES AQUÍ
+│   ├── images/               # 📸 TUS IMÁGENES AQUÍ (28 imágenes totales)
 │   │   ├── profile.jpg       # Foto de perfil
-│   │   ├── retrato-1.jpg     # Foto de retrato
-│   │   ├── blancoynegro-1.jpg # Foto blanco y negro
-│   │   ├── paisaje-1.jpg     # Foto de paisaje 1
-│   │   ├── paisaje-2.jpg     # Foto de paisaje 2
-│   │   └── boxeo-1.jpg       # Foto de boxeo
+│   │   ├── retrato-1.jpg     # 11 fotos de retratos urbanos
+│   │   ├── retrato-11.jpg    # (retrato-1 a retrato-11)
+│   │   ├── blancoynegro-1.jpg # 10 fotos en blanco y negro
+│   │   ├── blancoynegro-10.jpg # (blancoynegro-1 a blancoynegro-10)
+│   │   ├── boxeo-1.jpg       # 5 fotos de boxeo
+│   │   ├── boxeo-5.jpg       # (boxeo-1 a boxeo-5)
+│   │   ├── paisaje-1.jpg     # 2 fotos de paisaje
+│   │   └── paisaje-2.jpg     # (paisaje-1 y paisaje-2)
 │   │
 │   ├── index.html            # HTML principal (SEO)
 │   ├── favicon.jpg           # Icono del navegador
@@ -79,6 +83,8 @@ portafolio-romppao/
 │   ├── App.js                # 🎯 ARCHIVO PRINCIPAL (EDITA AQUÍ)
 │   └── index.css             # Estilos CSS
 │
+├── optimize-images.js        # Script para optimizar imágenes
+├── optimize-single-image.js  # Script para optimizar una imagen
 ├── README.md                 # Este archivo
 └── package.json              # Configuración del proyecto
 ```
@@ -132,7 +138,7 @@ portafolio-romppao/
 
 **Archivos**: 
 - Imágenes: `public/images/`
-- Código: `src/App.js` (líneas 8-78)
+- Código: `src/App.js` (líneas 9-293)
 
 #### Paso 1: Agregar la Imagen a la Carpeta
 
@@ -143,11 +149,11 @@ portafolio-romppao/
 #### Paso 2: Agregar el Código
 
 ```javascript
-// 📍 UBICACIÓN: Línea 8-78 en src/App.js
-// Busca el array 'portfolioItems' y agrega esto AL FINAL:
+// 📍 UBICACIÓN: Línea 9-293 en src/App.js
+// Busca el array 'portfolioItems' y agrega esto AL FINAL, ANTES del corchete de cierre:
 
 {
-  id: 11,                                      // Número único (incrementa el último)
+  id: 37,                                      // Número único (incrementa el último - actualmente hasta 36)
   type: 'photo',                               // 'photo' o 'video'
   category: 'Retrato',                         // Categoría del filtro
   src: `${process.env.PUBLIC_URL}/images/tu-imagen.jpg`,  // Nombre de tu archivo
@@ -169,10 +175,10 @@ portafolio-romppao/
 
 ```javascript
 {
-  id: 11,
+  id: 37,
   type: 'photo',
   category: 'Retrato',
-  src: `${process.env.PUBLIC_URL}/images/retrato-2.jpg`,
+  src: `${process.env.PUBLIC_URL}/images/retrato-12.jpg`,
   alt: 'Fotografía de retrato en estudio Madrid - ROMPPAO',
   title: 'Sesión de Estudio',
   description: 'Retrato profesional en estudio natural.'
@@ -183,7 +189,9 @@ portafolio-romppao/
 
 ### 3️⃣ Agregar o Eliminar Videos
 
-**Archivo**: `src/App.js` (líneas 26-52)
+**Archivo**: `src/App.js` (líneas 120-178)
+
+**Videoclips actuales**: 6 videoclips (KANEIS - LAKYLA, KANEIS - GENES, BAD KEY - PASO DE ELLA, VARE GANG - NO WORRIES, MKBLOOND - MALA, KANEIS - SOUVENIR)
 
 #### Paso 1: Subir Video a YouTube
 
@@ -195,15 +203,16 @@ portafolio-romppao/
 #### Paso 2: Agregar el Código
 
 ```javascript
-// 📍 UBICACIÓN: Entre las líneas 26-52
+// 📍 UBICACIÓN: Entre las líneas 120-178 (sección de videos)
+// El próximo ID sería 37 (actualmente hay hasta el 36)
 
 {
-  id: 12,                                      // Número único
+  id: 37,                                      // Número único (incrementa el último)
   type: 'video',                               // DEBE ser 'video'
   category: 'Videoclip',                       // O 'Comercial', 'Vlogging'
   src: 'https://img.youtube.com/vi/ABC123/maxresdefault.jpg',  // Miniatura automática
   videoUrl: 'https://youtu.be/ABC123',         // Tu enlace de YouTube
-  alt: 'Descripción del videoclip',
+  alt: 'Videoclip [TÍTULO] - [ARTISTA] - Video musical filmado por ROMPPAO',
   title: 'ARTISTA - TÍTULO',
   description: 'Video musical oficial. Filmado por ROMPPAO.'
 },
@@ -216,16 +225,24 @@ Reemplaza `ABC123` con el ID de tu video de YouTube:
 https://img.youtube.com/vi/ABC123/maxresdefault.jpg
 ```
 
-**Ejemplo**: Si tu video es `https://youtu.be/dQw4w9WgXcQ`, usa:
+**Ejemplo Real**: Video de "KANEIS - SOUVENIR" (`https://youtu.be/NWiLvYD6t4c`)
 ```
-https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg
+https://img.youtube.com/vi/NWiLvYD6t4c/maxresdefault.jpg
 ```
+
+**Todos los videoclips actuales**:
+- KANEIS, AITOR - LAKYLA (lEz1hHGvNMc)
+- KANEIS - GENES (SnJWY2C5VKs)
+- BAD KEY - PASO DE ELLA (CWED5hhsGu0)
+- VARE GANG, MKBLOOND, KXNNZ - NO WORRIES (RS-8J4NYboc)
+- MKBLOOND - MALA (1e4-du2hsR4)
+- KANEIS - SOUVENIR (NWiLvYD6t4c)
 
 ---
 
 ### 4️⃣ Cambiar Redes Sociales
 
-**Archivo**: `src/App.js` (líneas 198-223)
+**Archivo**: `src/App.js` (líneas 486-513)
 
 ```javascript
 // 📍 Instagram - Línea 200-209
@@ -454,13 +471,25 @@ Usa esta lista para asegurarte de que personalizaste todo:
 **Última actualización**: Diciembre 2025
 
 ### Changelog:
-- ✅ Diseño inicial completo
-- ✅ 6 imágenes del portfolio
-- ✅ 3 videoclips integrados
-- ✅ SEO optimizado
-- ✅ Imágenes optimizadas (1.7MB total)
-- ✅ Responsive design
+- ✅ Diseño inicial completo con animaciones
+- ✅ 28 fotografías del portfolio:
+  - 11 retratos urbanos
+  - 10 fotos en blanco y negro
+  - 5 fotos de boxeo
+  - 2 paisajes de La Pedriza
+- ✅ 6 videoclips musicales integrados:
+  - KANEIS, AITOR - LAKYLA
+  - KANEIS - GENES
+  - BAD KEY - PASO DE ELLA
+  - VARE GANG, MKBLOOND, KXNNZ - NO WORRIES
+  - MKBLOOND - MALA
+  - KANEIS - SOUVENIR
+- ✅ SEO optimizado con meta tags y structured data
+- ✅ Todas las imágenes optimizadas
+- ✅ Responsive design premium
 - ✅ Favicon personalizado
+- ✅ Sistema de filtros por categorías
+- ✅ Modal para reproducción de videos
 
 ---
 

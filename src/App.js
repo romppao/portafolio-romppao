@@ -147,6 +147,36 @@ const portfolioItems = [
     description: 'Videoclip oficial. Filmado por ROMPPAO.'
   },
   {
+    id: 34,
+    type: 'video',
+    category: 'Videoclip',
+    src: 'https://img.youtube.com/vi/RS-8J4NYboc/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/RS-8J4NYboc?si=gBUuW7XiQM6549iF',
+    alt: 'Videoclip NO WORRIES - Vare Gang ft. Mkbloond, KXNNZ - Video musical filmado por ROMPPAO',
+    title: 'VARE GANG, MKBLOOND, KXNNZ - NO WORRIES',
+    description: 'Video musical oficial. Filmado por ROMPPAO.'
+  },
+  {
+    id: 35,
+    type: 'video',
+    category: 'Videoclip',
+    src: 'https://img.youtube.com/vi/1e4-du2hsR4/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/1e4-du2hsR4?si=ClkFdAy2Q3fMn7Hk',
+    alt: 'Videoclip MALA - MKBLOOND - Video musical filmado por ROMPPAO',
+    title: 'MKBLOOND - MALA',
+    description: 'Video musical oficial. Filmado por ROMPPAO.'
+  },
+  {
+    id: 36,
+    type: 'video',
+    category: 'Videoclip',
+    src: 'https://img.youtube.com/vi/NWiLvYD6t4c/hqdefault.jpg',
+    videoUrl: 'https://youtu.be/NWiLvYD6t4c?si=5kJx8eLrQd_vXWgP',
+    alt: 'Videoclip Souvenir - Kaneis - Video musical filmado por ROMPPAO',
+    title: 'KANEIS - SOUVENIR',
+    description: 'Video oficial. Filmado por ROMPPAO.'
+  },
+  {
     id: 4,
     type: 'photo',
     category: 'Blanco y Negro',
@@ -300,7 +330,7 @@ const portfolioItems = [
 const App = () => {
   const [filter, setFilter] = useState('photo');
   const [videoSubFilter, setVideoSubFilter] = useState('Videoclip');
-  const [photoSubFilter, setPhotoSubFilter] = useState('Blanco y Negro');
+  const [photoSubFilter, setPhotoSubFilter] = useState('Boxeo');
   const [selectedItem, setSelectedItem] = useState(null);
 
   // Helper function to extract YouTube video ID from different URL formats
@@ -342,7 +372,7 @@ const App = () => {
   const handleMainFilterChange = (newFilter) => {
     setFilter(newFilter);
     if (newFilter !== 'video') setVideoSubFilter('Videoclip');
-    if (newFilter !== 'photo') setPhotoSubFilter('Blanco y Negro');
+    if (newFilter !== 'photo') setPhotoSubFilter('Boxeo');
   };
 
   return (
@@ -433,14 +463,14 @@ const App = () => {
 
           {filter === 'photo' && (
             <div className="flex justify-center flex-wrap gap-2 animate-[fadeIn_0.5s_ease-out]">
-              <button onClick={() => setPhotoSubFilter('Retrato')} className={`px-4 py-1.5 rounded-full text-xs font-medium border flex items-center transition-all ${photoSubFilter === 'Retrato' ? 'border-red-500 text-red-500 bg-red-500/10' : 'border-neutral-800 text-neutral-500 hover:border-neutral-600 hover:text-neutral-300'}`}>
-                <User className="w-3 h-3 mr-1.5" /> Retrato
+              <button onClick={() => setPhotoSubFilter('Boxeo')} className={`px-4 py-1.5 rounded-full text-xs font-medium border flex items-center transition-all ${photoSubFilter === 'Boxeo' ? 'border-red-500 text-red-500 bg-red-500/10' : 'border-neutral-800 text-neutral-500 hover:border-neutral-600 hover:text-neutral-300'}`}>
+                <Trophy className="w-3 h-3 mr-1.5" /> Boxeo
               </button>
               <button onClick={() => setPhotoSubFilter('Blanco y Negro')} className={`px-4 py-1.5 rounded-full text-xs font-medium border flex items-center transition-all ${photoSubFilter === 'Blanco y Negro' ? 'border-red-500 text-red-500 bg-red-500/10' : 'border-neutral-800 text-neutral-500 hover:border-neutral-600 hover:text-neutral-300'}`}>
                 <Moon className="w-3 h-3 mr-1.5" /> B&N
               </button>
-              <button onClick={() => setPhotoSubFilter('Boxeo')} className={`px-4 py-1.5 rounded-full text-xs font-medium border flex items-center transition-all ${photoSubFilter === 'Boxeo' ? 'border-red-500 text-red-500 bg-red-500/10' : 'border-neutral-800 text-neutral-500 hover:border-neutral-600 hover:text-neutral-300'}`}>
-                <Trophy className="w-3 h-3 mr-1.5" /> Boxeo
+              <button onClick={() => setPhotoSubFilter('Retrato')} className={`px-4 py-1.5 rounded-full text-xs font-medium border flex items-center transition-all ${photoSubFilter === 'Retrato' ? 'border-red-500 text-red-500 bg-red-500/10' : 'border-neutral-800 text-neutral-500 hover:border-neutral-600 hover:text-neutral-300'}`}>
+                <User className="w-3 h-3 mr-1.5" /> Retrato
               </button>
               <button onClick={() => setPhotoSubFilter('Paisaje')} className={`px-4 py-1.5 rounded-full text-xs font-medium border flex items-center transition-all ${photoSubFilter === 'Paisaje' ? 'border-red-500 text-red-500 bg-red-500/10' : 'border-neutral-800 text-neutral-500 hover:border-neutral-600 hover:text-neutral-300'}`}>
                 <Mountain className="w-3 h-3 mr-1.5" /> Paisaje
