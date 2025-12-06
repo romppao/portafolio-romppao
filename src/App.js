@@ -17,6 +17,51 @@ const portfolioItems = [
     description: 'Sesión de moda en Madrid centro.'
   },
   {
+    id: 42,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-12.jpg`,
+    alt: 'Fotografía de retrato urbano - Sonrisa auténtica con gorro - ROMPPAO fotógrafo Madrid',
+    title: 'Sonrisa Radiante',
+    description: 'La luz del momento capturada.'
+  },
+  {
+    id: 43,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-13.jpg`,
+    alt: 'Fotografía de retrato urbano - Mirada intensa con gorro - ROMPPAO fotógrafo Madrid',
+    title: 'Actitud Serena',
+    description: 'Confianza y estilo urbano.'
+  },
+  {
+    id: 44,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-14.jpg`,
+    alt: 'Fotografía de retrato urbano - Vista superior con líneas arquitectónicas - ROMPPAO fotógrafo Madrid',
+    title: 'Perspectiva Única',
+    description: 'Geometría urbana y carácter.'
+  },
+  {
+    id: 45,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-15.jpg`,
+    alt: 'Fotografía de retrato urbano - Mirada pensativa desde arriba - ROMPPAO fotógrafo Madrid',
+    title: 'Contemplación Urbana',
+    description: 'El momento antes del siguiente paso.'
+  },
+  {
+    id: 46,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-16.jpg`,
+    alt: 'Fotografía de retrato urbano - Pose dinámica con líneas arquitectónicas - ROMPPAO fotógrafo Madrid',
+    title: 'Geometría en Movimiento',
+    description: 'Arquitectura y actitud en armonía.'
+  },
+  {
     id: 20,
     type: 'photo',
     category: 'Retrato',
