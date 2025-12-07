@@ -62,6 +62,60 @@ const portfolioItems = [
     description: 'Arquitectura y actitud en armonía.'
   },
   {
+    id: 47,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-17.jpg`,
+    alt: 'Fotografía de retrato urbano - Mirada directa en ascensor - ROMPPAO fotógrafo Madrid',
+    title: 'Mirada Directa',
+    description: 'Confianza en espacios cerrados.'
+  },
+  {
+    id: 48,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-18.jpg`,
+    alt: 'Fotografía de retrato urbano - Mirada contemplativa hacia abajo - ROMPPAO fotógrafo Madrid',
+    title: 'Introspección',
+    description: 'Momentos de reflexión urbana.'
+  },
+  {
+    id: 49,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-19.jpg`,
+    alt: 'Fotografía de retrato urbano - Perfil lateral con mirada intensa - ROMPPAO fotógrafo Madrid',
+    title: 'Visión Lateral',
+    description: 'Perspectiva y carácter.'
+  },
+  {
+    id: 50,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-20.jpg`,
+    alt: 'Fotografía de retrato urbano - Figura anónima con gorro - ROMPPAO fotógrafo Madrid',
+    title: 'Misterio Urbano',
+    description: 'La identidad tras la capucha.'
+  },
+  {
+    id: 51,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-21.jpg`,
+    alt: 'Fotografía de retrato urbano - Pose con capucha y actitud - ROMPPAO fotógrafo Madrid',
+    title: 'Estilo Urbano',
+    description: 'Actitud y confianza callejera.'
+  },
+  {
+    id: 52,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-22.jpg`,
+    alt: 'Fotografía de retrato urbano - Vista cenital con gesto distintivo - ROMPPAO fotógrafo Madrid',
+    title: 'Perspectiva Cenital',
+    description: 'Ángulos únicos, expresión auténtica.'
+  },
+  {
     id: 20,
     type: 'photo',
     category: 'Retrato',
