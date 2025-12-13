@@ -554,8 +554,15 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-200 font-sans selection:bg-red-500 selection:text-white">
+      {/* Skip to main content for keyboard users */}
+      <a
+        href="#work"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:text-black focus:px-6 focus:py-3 focus:rounded-lg focus:font-bold focus:shadow-xl"
+      >
+        Saltar al contenido principal
+      </a>
 
-      <nav className="fixed top-0 w-full z-50 bg-neutral-950/80 backdrop-blur-md border-b border-neutral-800">
+      <nav role="navigation" aria-label="Navegación principal" className="fixed top-0 w-full z-50 bg-neutral-950/80 backdrop-blur-md border-b border-neutral-800">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="text-xl font-bold tracking-widest uppercase text-white">
             ROMPPAO
@@ -573,9 +580,10 @@ const App = () => {
           <div className="relative mx-auto w-40 h-40 md:w-52 md:h-52 mb-10 rounded-full overflow-hidden border-[3px] border-orange-600 shadow-2xl">
             <img
               src={`${process.env.PUBLIC_URL}/images/profile.jpg`}
-              alt="ROMPPAO Profile"
+              alt="ROMPPAO - Fotógrafo y filmmaker profesional en Madrid"
+              fetchPriority="high"
               className="w-full h-full object-cover"
-              loading="lazy"
+              loading="eager"
             />
           </div>
 
@@ -610,12 +618,16 @@ const App = () => {
           <div className="flex justify-center space-x-2 md:space-x-4 mb-6">
             <button
               onClick={() => handleMainFilterChange('photo')}
+              aria-label="Filtrar por fotografías"
+              aria-pressed={filter === 'photo'}
               className={`px-6 py-2 rounded-full text-sm flex items-center transition-all ${filter === 'photo' ? 'bg-red-600 text-white' : 'bg-neutral-900 text-neutral-400 hover:text-white'}`}
             >
               <Camera className="w-4 h-4 mr-2" /> Fotografía
             </button>
             <button
               onClick={() => handleMainFilterChange('video')}
+              aria-label="Filtrar por filmmaking"
+              aria-pressed={filter === 'video'}
               className={`px-6 py-2 rounded-full text-sm flex items-center transition-all ${filter === 'video' ? 'bg-red-600 text-white' : 'bg-neutral-900 text-neutral-400 hover:text-white'}`}
             >
               <Clapperboard className="w-4 h-4 mr-2" /> Filmmaking
@@ -834,7 +846,7 @@ const App = () => {
       <footer id="contact" className="py-20 px-6 border-t border-neutral-900">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">¿Trabajamos juntos?</h2>
-          <p className="text-neutral-400 mb-8">Actualmente aceptando proyectos para finales de 2025.</p>
+          <p className="text-neutral-300 mb-8">Actualmente aceptando proyectos para finales de 2025.</p>
 
           <div className="flex flex-col items-center gap-4 mb-12">
             <a href="mailto:rompaoondo@gmail.com" className="inline-flex items-center text-2xl font-bold text-white hover:text-red-500 transition-colors">

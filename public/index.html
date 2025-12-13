@@ -3,10 +3,21 @@
 
 <head>
   <meta charset="utf-8" />
-  <!-- Force deployment: 2024-12-02-20:35 -->
+  <!-- Force deployment: 2025-12-13-22:30 -->
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
+  <meta name="theme-color" content="#dc2626" />
+
+  <!-- Performance: Preconnect to external domains -->
+  <link rel="preconnect" href="https://img.youtube.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.youtube.com">
+
+  <!-- Performance: Preload critical resources -->
+  <link rel="preload" href="%PUBLIC_URL%/images/profile.jpg" as="image" type="image/jpeg">
+
+  <!-- Security: Content Security Policy -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; img-src 'self' https://img.youtube.com data:; frame-src https://www.youtube.com; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src 'self';">
 
   <!-- Primary Meta Tags -->
   <meta name="title" content="ROMPPAO | Fotógrafo y Filmmaker Profesional en Madrid" />
