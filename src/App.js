@@ -116,6 +116,24 @@ const portfolioItems = [
     description: 'Ángulos únicos, expresión auténtica.'
   },
   {
+    id: 53,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-23.jpg`,
+    alt: 'Fotografía de retrato urbano nocturno - Frente a mercado 24h con sudadera roja - ROMPPAO fotógrafo Madrid',
+    title: 'Noche Urbana',
+    description: 'Energía nocturna en la ciudad.'
+  },
+  {
+    id: 54,
+    type: 'photo',
+    category: 'Retrato',
+    src: `${process.env.PUBLIC_URL}/images/retrato-24.jpg`,
+    alt: 'Fotografía de retrato urbano nocturno - Pose confiada con sudadera roja - ROMPPAO fotógrafo Madrid',
+    title: 'Actitud Nocturna',
+    description: 'Estilo urbano bajo las luces de la noche.'
+  },
+  {
     id: 20,
     type: 'photo',
     category: 'Retrato',
