@@ -294,6 +294,16 @@ const portfolioItems = [
     description: 'Video oficial. Filmado por ROMPPAO.'
   },
   {
+    id: 55,
+    type: 'video',
+    category: 'Videoclip',
+    src: 'https://img.youtube.com/vi/z__HOyy9EDk/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/z__HOyy9EDk?si=CFfTgJ_PVpAjMJOy',
+    alt: 'Videoclip NOS VEMOS EN BLAI - GCD ft. Candy Live - Video musical filmado por ROMPPAO',
+    title: 'GCD ft. CANDY LIVE - NOS VEMOS EN BLAI',
+    description: 'Videoclip oficial. Filmado por ROMPPAO.'
+  },
+  {
     id: 37,
     type: 'video',
     category: 'Vlogging',
