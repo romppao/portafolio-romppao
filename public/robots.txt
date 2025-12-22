@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://romppao.github.io/portafolio-romppao/sitemap.xml
+Sitemap: https://romppao.es/sitemap.xml

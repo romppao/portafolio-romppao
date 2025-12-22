@@ -53,7 +53,7 @@ El sitio se abrirá automáticamente y se actualizará cada vez que guardes camb
 ### En Internet
 
 Una vez publicado, tu portfolio estará disponible en:
-**https://romppao.github.io/portafolio-romppao/**
+**https://romppao.es/**
 
 ---
 
@@ -368,7 +368,7 @@ npm run deploy
 ```
 
 3. **Espera 2-3 minutos** y tu sitio estará en:
-   `https://romppao.github.io/portafolio-romppao/`
+   `https://romppao.es/`
 
 ### Método 2: Vercel (Alternativa)
 
