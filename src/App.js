@@ -7,232 +7,32 @@ import { Camera, Clapperboard, Mail, Instagram, X as CloseIcon, ChevronRight, Pl
 // =========================================================================
 
 const portfolioItems = [
-  {
-    id: 1,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-1.jpg`,
-    alt: 'Fotografía de retrato urbano en Madrid - Sesión de moda profesional por ROMPPAO',
-    title: 'Mirada Urbana',
-    description: 'Sesión de moda en Madrid centro.'
-  },
-  {
-    id: 42,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-12.jpg`,
-    alt: 'Fotografía de retrato urbano - Sonrisa auténtica con gorro - ROMPPAO fotógrafo Madrid',
-    title: 'Sonrisa Radiante',
-    description: 'La luz del momento capturada.'
-  },
-  {
-    id: 43,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-13.jpg`,
-    alt: 'Fotografía de retrato urbano - Mirada intensa con gorro - ROMPPAO fotógrafo Madrid',
-    title: 'Actitud Serena',
-    description: 'Confianza y estilo urbano.'
-  },
-  {
-    id: 44,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-14.jpg`,
-    alt: 'Fotografía de retrato urbano - Vista superior con líneas arquitectónicas - ROMPPAO fotógrafo Madrid',
-    title: 'Perspectiva Única',
-    description: 'Geometría urbana y carácter.'
-  },
-  {
-    id: 45,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-15.jpg`,
-    alt: 'Fotografía de retrato urbano - Mirada pensativa desde arriba - ROMPPAO fotógrafo Madrid',
-    title: 'Contemplación Urbana',
-    description: 'El momento antes del siguiente paso.'
-  },
-  {
-    id: 46,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-16.jpg`,
-    alt: 'Fotografía de retrato urbano - Pose dinámica con líneas arquitectónicas - ROMPPAO fotógrafo Madrid',
-    title: 'Geometría en Movimiento',
-    description: 'Arquitectura y actitud en armonía.'
-  },
-  {
-    id: 47,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-17.jpg`,
-    alt: 'Fotografía de retrato urbano - Mirada directa en ascensor - ROMPPAO fotógrafo Madrid',
-    title: 'Mirada Directa',
-    description: 'Confianza en espacios cerrados.'
-  },
-  {
-    id: 48,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-18.jpg`,
-    alt: 'Fotografía de retrato urbano - Mirada contemplativa hacia abajo - ROMPPAO fotógrafo Madrid',
-    title: 'Introspección',
-    description: 'Momentos de reflexión urbana.'
-  },
-  {
-    id: 49,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-19.jpg`,
-    alt: 'Fotografía de retrato urbano - Perfil lateral con mirada intensa - ROMPPAO fotógrafo Madrid',
-    title: 'Visión Lateral',
-    description: 'Perspectiva y carácter.'
-  },
-  {
-    id: 50,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-20.jpg`,
-    alt: 'Fotografía de retrato urbano - Figura anónima con gorro - ROMPPAO fotógrafo Madrid',
-    title: 'Misterio Urbano',
-    description: 'La identidad tras la capucha.'
-  },
-  {
-    id: 51,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-21.jpg`,
-    alt: 'Fotografía de retrato urbano - Pose con capucha y actitud - ROMPPAO fotógrafo Madrid',
-    title: 'Estilo Urbano',
-    description: 'Actitud y confianza callejera.'
-  },
-  {
-    id: 52,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-22.jpg`,
-    alt: 'Fotografía de retrato urbano - Vista cenital con gesto distintivo - ROMPPAO fotógrafo Madrid',
-    title: 'Perspectiva Cenital',
-    description: 'Ángulos únicos, expresión auténtica.'
-  },
-  {
-    id: 53,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-23.jpg`,
-    alt: 'Fotografía de retrato urbano nocturno - Frente a mercado 24h con sudadera roja - ROMPPAO fotógrafo Madrid',
-    title: 'Noche Urbana',
-    description: 'Energía nocturna en la ciudad.'
-  },
-  {
-    id: 54,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-24.jpg`,
-    alt: 'Fotografía de retrato urbano nocturno - Pose confiada con sudadera roja - ROMPPAO fotógrafo Madrid',
-    title: 'Actitud Nocturna',
-    description: 'Estilo urbano bajo las luces de la noche.'
-  },
-  {
-    id: 20,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-2.jpg`,
-    alt: 'Fotografía de retrato urbano - Sesión callejera con grupo - ROMPPAO fotógrafo Madrid',
-    title: 'Energía Colectiva',
-    description: 'Actitud urbana, miradas auténticas.'
-  },
-  {
-    id: 21,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-3.jpg`,
-    alt: 'Fotografía de retrato urbano - Perspectiva desde primer plano - ROMPPAO fotógrafo Madrid',
-    title: 'Perspectivas',
-    description: 'Lo que está detrás también cuenta.'
-  },
-  {
-    id: 22,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-4.jpg`,
-    alt: 'Fotografía de retrato urbano desde ángulo bajo - Grupo street style - ROMPPAO fotógrafo Madrid',
-    title: 'Desde Abajo',
-    description: 'Ángulos que elevan la escena.'
-  },
-  {
-    id: 23,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-5.jpg`,
-    alt: 'Fotografía de retrato urbano - Expresión vibrante con colores amarillos - ROMPPAO fotógrafo Madrid',
-    title: 'Vibra Dorada',
-    description: 'Color, actitud y luz urbana.'
-  },
-  {
-    id: 24,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-6.jpg`,
-    alt: 'Fotografía de retrato urbano - Mirada hacia arriba con gorra LA - ROMPPAO fotógrafo Madrid',
-    title: 'Elevación',
-    description: 'Mirando hacia donde vamos.'
-  },
-  {
-    id: 25,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-7.jpg`,
-    alt: 'Fotografía de retrato urbano frontal - Expresión intensa con ATM de fondo - ROMPPAO fotógrafo Madrid',
-    title: 'Presencia',
-    description: 'Cuando la mirada dice todo.'
-  },
-  {
-    id: 26,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-8.jpg`,
-    alt: 'Fotografía de retrato urbano doble - Camiseta amarilla con diseño gráfico - ROMPPAO fotógrafo Madrid',
-    title: 'Dualidad Urbana',
-    description: 'Dos energías, un mismo espacio.'
-  },
-  {
-    id: 27,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-9.jpg`,
-    alt: 'Fotografía de retrato urbano lateral - Perfil con cadenas y gorra LA - ROMPPAO fotógrafo Madrid',
-    title: 'Líneas y Cadenas',
-    description: 'Perfil que marca estilo.'
-  },
-  {
-    id: 28,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-10.jpg`,
-    alt: 'Fotografía de retrato urbano lateral - Fondo ATM camiseta deportiva - ROMPPAO fotógrafo Madrid',
-    title: 'Mirada Lateral',
-    description: 'Perfil urbano, fondo metropolitano.'
-  },
-  {
-    id: 29,
-    type: 'photo',
-    category: 'Retrato',
-    src: `${process.env.PUBLIC_URL}/images/retrato-11.jpg`,
-    alt: 'Fotografía de retrato urbano frontal - Brazos cruzados con camiseta deportiva - ROMPPAO fotógrafo Madrid',
-    title: 'Actitud Deportiva',
-    description: 'Confianza, estilo y carácter.'
-  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
-  {
-    id: 3,
-    type: 'photo',
-    category: 'Paisaje',
-    src: `${process.env.PUBLIC_URL}/images/paisaje-1.jpg`,
-    alt: 'Fotografía de paisaje al amanecer en La Pedriza, Madrid - ROMPPAO',
-    title: 'Amanecer en la pedriza',
-    description: 'Fotografía de paisaje.'
-  },
+  
   {
     id: 5,
     type: 'video',
@@ -425,96 +225,16 @@ const portfolioItems = [
     title: 'LAYALI',
     description: 'Producción Audiovisual'
   },
-  {
-    id: 4,
-    type: 'photo',
-    category: 'Blanco y Negro',
-    src: `${process.env.PUBLIC_URL}/images/blancoynegro-1.jpg`,
-    alt: 'Fotografía artística en blanco y negro - Sombras - ROMPPAO fotógrafo Madrid',
-    title: 'Sombras',
-    description: 'La elegancia no tiene color.'
-  },
-  {
-    id: 11,
-    type: 'photo',
-    category: 'Blanco y Negro',
-    src: `${process.env.PUBLIC_URL}/images/blancoynegro-2.jpg`,
-    alt: 'Retrato urbano en blanco y negro - Confianza - ROMPPAO fotógrafo Madrid',
-    title: 'Confianza Urbana',
-    description: 'Mirada directa, actitud firme.'
-  },
-  {
-    id: 12,
-    type: 'photo',
-    category: 'Blanco y Negro',
-    src: `${process.env.PUBLIC_URL}/images/blancoynegro-3.jpg`,
-    alt: 'Retrato de perfil en blanco y negro - Contemplación - ROMPPAO fotógrafo Madrid',
-    title: 'Contemplación',
-    description: 'El momento antes del siguiente paso.'
-  },
-  {
-    id: 13,
-    type: 'photo',
-    category: 'Blanco y Negro',
-    src: `${process.env.PUBLIC_URL}/images/blancoynegro-4.jpg`,
-    alt: 'Retrato urbano con brazos cruzados en blanco y negro - ROMPPAO fotógrafo Madrid',
-    title: 'Actitud',
-    description: 'Seguridad en cada gesto.'
-  },
-  {
-    id: 14,
-    type: 'photo',
-    category: 'Blanco y Negro',
-    src: `${process.env.PUBLIC_URL}/images/blancoynegro-5.jpg`,
-    alt: 'Retrato de espaldas en blanco y negro - Perspectiva - ROMPPAO fotógrafo Madrid',
-    title: 'Perspectiva',
-    description: 'Lo que no se ve, también cuenta.'
-  },
-  {
-    id: 15,
-    type: 'photo',
-    category: 'Blanco y Negro',
-    src: `${process.env.PUBLIC_URL}/images/blancoynegro-6.jpg`,
-    alt: 'Retrato sonriente en blanco y negro - Alegría Natural - ROMPPAO fotógrafo Madrid',
-    title: 'Alegría Natural',
-    description: 'La luz que nace desde dentro.'
-  },
-  {
-    id: 16,
-    type: 'photo',
-    category: 'Blanco y Negro',
-    src: `${process.env.PUBLIC_URL}/images/blancoynegro-7.jpg`,
-    alt: 'Fotografía de estilo urbano en blanco y negro - Hermandad - ROMPPAO fotógrafo Madrid',
-    title: 'Hermandad',
-    description: 'Dos mundos, un mismo camino.'
-  },
-  {
-    id: 17,
-    type: 'photo',
-    category: 'Blanco y Negro',
-    src: `${process.env.PUBLIC_URL}/images/blancoynegro-8.jpg`,
-    alt: 'Retrato nocturno urbano en blanco y negro - Noche en la Ciudad - ROMPPAO fotógrafo Madrid',
-    title: 'Noche en la Ciudad',
-    description: 'Cuando las luces cuentan historias.'
-  },
-  {
-    id: 18,
-    type: 'photo',
-    category: 'Blanco y Negro',
-    src: `${process.env.PUBLIC_URL}/images/blancoynegro-9.jpg`,
-    alt: 'Retrato de perfil con gafas en blanco y negro - Visión Lateral - ROMPPAO fotógrafo Madrid',
-    title: 'Visión Lateral',
-    description: 'Detalles que definen.'
-  },
-  {
-    id: 19,
-    type: 'photo',
-    category: 'Blanco y Negro',
-    src: `${process.env.PUBLIC_URL}/images/blancoynegro-10.jpg`,
-    alt: 'Retrato frontal con gafas redondas en blanco y negro - Mirada Intelectual - ROMPPAO',
-    title: 'Mirada Intelectual',
-    description: 'Estilo que trasciende el tiempo.'
-  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
   {
     id: 8,
@@ -561,16 +281,7 @@ const portfolioItems = [
     title: 'La Esquina',
     description: 'Consejos que cambian el rumbo.'
   },
-  {
-    id: 6,
-    type: 'photo',
-    category: 'Paisaje',
-    src: `${process.env.PUBLIC_URL}/images/paisaje-2.jpg`,
-    alt: 'Fotografía de paisaje bosques de La Pedriza, Madrid - Lejos del ruido - ROMPPAO',
-    title: 'Lejos del ruido',
-    description: 'Refugio, en los bosques de la pedriza.'
-  }
-];
+  ];
 
 // =========================================================================
 //  COMPONENTE PRINCIPAL
@@ -731,15 +442,7 @@ const App = () => {
               <button onClick={() => setPhotoSubFilter('Boxeo')} className={`px-4 py-1.5 rounded-full text-xs font-medium border flex items-center transition-all ${photoSubFilter === 'Boxeo' ? 'border-red-500 text-red-500 bg-red-500/10' : 'border-neutral-800 text-neutral-500 hover:border-neutral-600 hover:text-neutral-300'}`}>
                 <Trophy className="w-3 h-3 mr-1.5" /> Boxeo
               </button>
-              <button onClick={() => setPhotoSubFilter('Blanco y Negro')} className={`px-4 py-1.5 rounded-full text-xs font-medium border flex items-center transition-all ${photoSubFilter === 'Blanco y Negro' ? 'border-red-500 text-red-500 bg-red-500/10' : 'border-neutral-800 text-neutral-500 hover:border-neutral-600 hover:text-neutral-300'}`}>
-                <Moon className="w-3 h-3 mr-1.5" /> B&N
-              </button>
-              <button onClick={() => setPhotoSubFilter('Retrato')} className={`px-4 py-1.5 rounded-full text-xs font-medium border flex items-center transition-all ${photoSubFilter === 'Retrato' ? 'border-red-500 text-red-500 bg-red-500/10' : 'border-neutral-800 text-neutral-500 hover:border-neutral-600 hover:text-neutral-300'}`}>
-                <User className="w-3 h-3 mr-1.5" /> Retrato
-              </button>
-              <button onClick={() => setPhotoSubFilter('Paisaje')} className={`px-4 py-1.5 rounded-full text-xs font-medium border flex items-center transition-all ${photoSubFilter === 'Paisaje' ? 'border-red-500 text-red-500 bg-red-500/10' : 'border-neutral-800 text-neutral-500 hover:border-neutral-600 hover:text-neutral-300'}`}>
-                <Mountain className="w-3 h-3 mr-1.5" /> Paisaje
-              </button>
+              
             </div>
           )}
         </div>
