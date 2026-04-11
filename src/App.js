@@ -163,6 +163,106 @@ const portfolioItems = [
     title: 'Relapse 01-X',
     description: 'Momentos previos a mi última pelea en boxeo amateur'
   },
+  {
+    id: 61,
+    type: 'video',
+    category: 'Contenido Artistas',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-vertical-ig-wg-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-vertical-ig-wg.mp4`,
+    alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
+  },
+  {
+    id: 62,
+    type: 'video',
+    category: 'Contenido Artistas',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-tr-1-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-tr-1.mp4`,
+    alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
+  },
+  {
+    id: 63,
+    type: 'video',
+    category: 'Contenido Artistas',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-tr-10-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-tr-10.mp4`,
+    alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
+  },
+  {
+    id: 64,
+    type: 'video',
+    category: 'Contenido Artistas',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-mk-120-1-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-mk-120-1.mp4`,
+    alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
+  },
+  {
+    id: 65,
+    type: 'video',
+    category: 'Contenido Artistas',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-kaneis-1k-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-kaneis-1k.mp4`,
+    alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
+  },
+  {
+    id: 66,
+    type: 'video',
+    category: 'Contenido Artistas',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-kaneis-kyla-ig-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-kaneis-kyla-ig.mp4`,
+    alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
+  },
+  {
+    id: 67,
+    type: 'video',
+    category: 'Contenido Artistas',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-kkk-y1-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-kkk-y1.mp4`,
+    alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
+  },
+  {
+    id: 68,
+    type: 'video',
+    category: 'Contenido Artistas',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-kkk-y3-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-kkk-y3.mp4`,
+    alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
+  },
+  {
+    id: 69,
+    type: 'video',
+    category: 'Contenido Artistas',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-mk-4-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-mk-4.mp4`,
+    alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
+  },
+  {
+    id: 70,
+    type: 'video',
+    category: 'Contenido Artistas',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-kai-cenat-mkbloond-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-kai-cenat-mkbloond.mp4`,
+    alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
+  },
   // =========================================================================
   // EJEMPLO: Cómo añadir un video LOCAL en la sección COMERCIAL
   // =========================================================================
@@ -185,6 +285,79 @@ const portfolioItems = [
   // 3. Descomenta el código de arriba y personaliza los valores
   // 4. Cambia el ID por el siguiente número disponible
   // =========================================================================
+  // =========================================================================
+  // ALPHA CPO SERVICES - Videos Comerciales
+  // =========================================================================
+  {
+    id: 71,
+    type: 'video',
+    category: 'Comercial',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/alpha-cpo-cover.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/alpha-cpo-1.mp4`,
+    alt: 'Video comercial ALPHA CPO SERVICES - Producción Audiovisual - ROMPPAO filmmaker Madrid',
+    title: 'ALPHA CPO SERVICES',
+    description: 'Producción Audiovisual'
+  },
+  {
+    id: 77,
+    type: 'video',
+    category: 'Comercial',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/alpha-cpo-cover.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/alpha-cpo-7.mp4`,
+    alt: 'Video comercial ALPHA CPO SERVICES - Producción Audiovisual - ROMPPAO filmmaker Madrid',
+    title: 'ALPHA CPO SERVICES',
+    description: 'Producción Audiovisual'
+  },
+  {
+    id: 72,
+    type: 'video',
+    category: 'Comercial',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/alpha-cpo-cover.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/alpha-cpo-2.mp4`,
+    alt: 'Video comercial ALPHA CPO SERVICES - Producción Audiovisual - ROMPPAO filmmaker Madrid',
+    title: 'ALPHA CPO SERVICES',
+    description: 'Producción Audiovisual'
+  },
+  {
+    id: 73,
+    type: 'video',
+    category: 'Comercial',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/alpha-cpo-cover.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/alpha-cpo-3.mp4`,
+    alt: 'Video comercial ALPHA CPO SERVICES - Producción Audiovisual - ROMPPAO filmmaker Madrid',
+    title: 'ALPHA CPO SERVICES',
+    description: 'Producción Audiovisual'
+  },
+  {
+    id: 74,
+    type: 'video',
+    category: 'Comercial',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/alpha-cpo-cover.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/alpha-cpo-4.mp4`,
+    alt: 'Video comercial ALPHA CPO SERVICES - Producción Audiovisual - ROMPPAO filmmaker Madrid',
+    title: 'ALPHA CPO SERVICES',
+    description: 'Producción Audiovisual'
+  },
+  {
+    id: 75,
+    type: 'video',
+    category: 'Comercial',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/alpha-cpo-cover.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/alpha-cpo-5.mp4`,
+    alt: 'Video comercial ALPHA CPO SERVICES - Producción Audiovisual - ROMPPAO filmmaker Madrid',
+    title: 'ALPHA CPO SERVICES',
+    description: 'Producción Audiovisual'
+  },
+  {
+    id: 76,
+    type: 'video',
+    category: 'Comercial',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/alpha-cpo-cover.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/alpha-cpo-6.mp4`,
+    alt: 'Video comercial ALPHA CPO SERVICES - Producción Audiovisual - ROMPPAO filmmaker Madrid',
+    title: 'ALPHA CPO SERVICES',
+    description: 'Producción Audiovisual'
+  },
   {
     id: 38,
     type: 'video',
@@ -289,7 +462,7 @@ const portfolioItems = [
 
 const App = () => {
   const [filter, setFilter] = useState('photo');
-  const [videoSubFilter, setVideoSubFilter] = useState('Videoclip');
+  const [videoSubFilter, setVideoSubFilter] = useState('Contenido Artistas');
   const [photoSubFilter, setPhotoSubFilter] = useState('Boxeo');
   const [selectedItem, setSelectedItem] = useState(null);
 
@@ -337,7 +510,7 @@ const App = () => {
 
   const handleMainFilterChange = (newFilter) => {
     setFilter(newFilter);
-    if (newFilter !== 'video') setVideoSubFilter('Videoclip');
+    if (newFilter !== 'video') setVideoSubFilter('Contenido Artistas');
     if (newFilter !== 'photo') setPhotoSubFilter('Boxeo');
   };
 
@@ -425,6 +598,9 @@ const App = () => {
 
           {filter === 'video' && (
             <div className="flex justify-center flex-wrap gap-2 animate-[fadeIn_0.5s_ease-out]">
+              <button onClick={() => setVideoSubFilter('Contenido Artistas')} className={`px-4 py-1.5 rounded-full text-xs font-medium border flex items-center transition-all ${videoSubFilter === 'Contenido Artistas' ? 'border-red-500 text-red-500 bg-red-500/10' : 'border-neutral-800 text-neutral-500 hover:border-neutral-600 hover:text-neutral-300'}`}>
+                <User className="w-3 h-3 mr-1.5" /> Contenido Artistas
+              </button>
               <button onClick={() => setVideoSubFilter('Videoclip')} className={`px-4 py-1.5 rounded-full text-xs font-medium border flex items-center transition-all ${videoSubFilter === 'Videoclip' ? 'border-red-500 text-red-500 bg-red-500/10' : 'border-neutral-800 text-neutral-500 hover:border-neutral-600 hover:text-neutral-300'}`}>
                 <Film className="w-3 h-3 mr-1.5" /> Videoclips
               </button>
@@ -452,8 +628,9 @@ const App = () => {
             filteredItems.map((item) => (
               <div
                 key={item.id}
-                className={`group relative cursor-pointer overflow-hidden rounded-lg bg-neutral-900 ${item.type === 'video' ? 'aspect-video' : 'aspect-[4/5]'
-                  }`}
+                className={`group relative cursor-pointer overflow-hidden rounded-lg bg-neutral-900 ${
+                  item.category === 'Contenido Artistas' ? 'aspect-[9/16]' : item.type === 'video' ? 'aspect-video' : 'aspect-[4/5]'
+                }`}
                 onClick={() => setSelectedItem(item)}
               >
                 <img
@@ -660,7 +837,9 @@ const App = () => {
           </button>
           <div className="max-w-5xl w-full max-h-[90vh] flex flex-col items-center" onClick={e => e.stopPropagation()}>
             {selectedItem.type === 'video' ? (
-              <div className="w-full aspect-video bg-black rounded-lg overflow-hidden border border-neutral-800 shadow-2xl">
+              <div className={`bg-black rounded-lg overflow-hidden border border-neutral-800 shadow-2xl ${
+                selectedItem.category === 'Contenido Artistas' ? 'h-[70vh] max-h-[800px] aspect-[9/16]' : 'w-full aspect-video'
+              }`}>
                 {isYouTubeVideo(selectedItem.videoUrl) ? (
                   <iframe
                     width="100%"
