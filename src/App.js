@@ -205,6 +205,46 @@ const portfolioItems = [
     description: 'Momentos previos a mi última pelea en boxeo amateur'
   },
   {
+    id: 88,
+    type: 'video',
+    category: 'BTS',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/bts-sativa-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/bts-sativa.mp4`,
+    alt: 'BTS SATIVA - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
+  },
+  {
+    id: 89,
+    type: 'video',
+    category: 'BTS',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/bts-villaverde-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/bts-villaverde.mp4`,
+    alt: 'BTS VILLAVERDE - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
+  },
+  {
+    id: 90,
+    type: 'video',
+    category: 'BTS',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/bts-richi-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/bts-richi.mp4`,
+    alt: 'BTS RICHI - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
+  },
+  {
+    id: 91,
+    type: 'video',
+    category: 'BTS',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/bts-mmtlk-bobee-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/bts-mmtlk-bobee.mp4`,
+    alt: 'BTS MMTLK B.O BEE - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
+  },
+  {
     id: 83,
     type: 'video',
     category: 'Contenido Artistas',
@@ -705,6 +745,9 @@ const App = () => {
               <button onClick={() => setVideoSubFilter('Videoclip')} className={`px-4 py-1.5 rounded-full text-xs font-medium border flex items-center transition-all ${videoSubFilter === 'Videoclip' ? 'border-red-500 text-red-500 bg-red-500/10' : 'border-neutral-800 text-neutral-500 hover:border-neutral-600 hover:text-neutral-300'}`}>
                 <Film className="w-3 h-3 mr-1.5" /> Videoclips
               </button>
+              <button onClick={() => setVideoSubFilter('BTS')} className={`px-4 py-1.5 rounded-full text-xs font-medium border flex items-center transition-all ${videoSubFilter === 'BTS' ? 'border-red-500 text-red-500 bg-red-500/10' : 'border-neutral-800 text-neutral-500 hover:border-neutral-600 hover:text-neutral-300'}`}>
+                <Clapperboard className="w-3 h-3 mr-1.5" /> BTS
+              </button>
               <button onClick={() => setVideoSubFilter('Comercial')} className={`px-4 py-1.5 rounded-full text-xs font-medium border flex items-center transition-all ${videoSubFilter === 'Comercial' ? 'border-red-500 text-red-500 bg-red-500/10' : 'border-neutral-800 text-neutral-500 hover:border-neutral-600 hover:text-neutral-300'}`}>
                 <Tv className="w-3 h-3 mr-1.5" /> Comercial
               </button>
@@ -730,7 +773,7 @@ const App = () => {
               <div
                 key={item.id}
                 className={`group relative cursor-pointer overflow-hidden rounded-lg bg-neutral-900 ${
-                  item.category === 'Contenido Artistas' ? 'aspect-[9/16]' : item.type === 'video' ? 'aspect-video' : 'aspect-[4/5]'
+                  (item.category === 'Contenido Artistas' || item.category === 'BTS') ? 'aspect-[9/16]' : item.type === 'video' ? 'aspect-video' : 'aspect-[4/5]'
                 }`}
                 onClick={() => setSelectedItem(item)}
               >
