@@ -165,6 +165,16 @@ const portfolioItems = [
     description: ''
   },
   {
+    id: 87,
+    type: 'video',
+    category: 'Vlogging',
+    src: 'https://img.youtube.com/vi/KhGZPbKrgUE/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/KhGZPbKrgUE?si=0nGp3g_LkdAjzpi3',
+    alt: 'Vlog - Filmado por ROMPPAO',
+    title: '',
+    description: ''
+  },
+  {
     id: 80,
     type: 'video',
     category: 'Vlogging',
@@ -193,6 +203,46 @@ const portfolioItems = [
     alt: 'Vlog Relapse 01-X - Momentos previos a pelea de boxeo amateur - Filmado por ROMPPAO',
     title: 'Relapse 01-X',
     description: 'Momentos previos a mi última pelea en boxeo amateur'
+  },
+  {
+    id: 83,
+    type: 'video',
+    category: 'Contenido Artistas',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-bombofire-vitoria-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-bombofire-vitoria.mp4`,
+    alt: 'Contenido Artistas BOMBOFIRE Vitoria - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
+  },
+  {
+    id: 84,
+    type: 'video',
+    category: 'Contenido Artistas',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-mk-p1-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-mk-p1.mp4`,
+    alt: 'Contenido Artistas MK - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
+  },
+  {
+    id: 85,
+    type: 'video',
+    category: 'Contenido Artistas',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-mk-p2-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-mk-p2.mp4`,
+    alt: 'Contenido Artistas MK - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
+  },
+  {
+    id: 86,
+    type: 'video',
+    category: 'Contenido Artistas',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-mk-p4-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-mk-p4.mp4`,
+    alt: 'Contenido Artistas MK - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
   },
   {
     id: 61,
