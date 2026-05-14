@@ -33,6 +33,17 @@ const portfolioItems = [
   
 
   
+
+  {
+    id: 82,
+    type: 'video',
+    category: 'Videoclip',
+    src: 'https://img.youtube.com/vi/r0aQy-6RpxE/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/r0aQy-6RpxE?si=eFkyzFpzM-bteCXK',
+    alt: 'Videoclip - Video musical filmado por ROMPPAO',
+    title: '',
+    description: ''
+  },
   {
     id: 5,
     type: 'video',
@@ -142,6 +153,26 @@ const portfolioItems = [
     alt: 'Videoclip MI BIG BEN - Villaverde - Video musical filmado por ROMPPAO',
     title: 'VILLAVERDE - MI BIG BEN',
     description: 'Video oficial. Filmado por ROMPPAO.'
+  },
+  {
+    id: 81,
+    type: 'video',
+    category: 'Videoclip',
+    src: 'https://img.youtube.com/vi/FJ9u5-RiRes/hqdefault.jpg',
+    videoUrl: 'https://youtu.be/FJ9u5-RiRes?si=FJeE9E-Qeinc6Ra8',
+    alt: 'Videoclip - Video musical filmado por ROMPPAO',
+    title: '',
+    description: ''
+  },
+  {
+    id: 80,
+    type: 'video',
+    category: 'Vlogging',
+    src: 'https://img.youtube.com/vi/8tzggIOeGz0/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/8tzggIOeGz0?si=l2Jh52nKfwOioB97',
+    alt: 'Vlog - Filmado por ROMPPAO',
+    title: '',
+    description: ''
   },
   {
     id: 37,
@@ -260,6 +291,26 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-kai-cenat-mkbloond-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-kai-cenat-mkbloond.mp4`,
     alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
+  },
+  {
+    id: 78,
+    type: 'video',
+    category: 'Contenido Artistas',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-boxeo-romppao-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-boxeo-romppao.mp4`,
+    alt: 'Contenido Artistas Boxeo - ROMPPAO filmmaker Madrid',
+    title: '',
+    description: ''
+  },
+  {
+    id: 79,
+    type: 'video',
+    category: 'Contenido Artistas',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-boxeo-king-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-boxeo-king.mp4`,
+    alt: 'Contenido Artistas Boxeo KING - ROMPPAO filmmaker Madrid',
     title: '',
     description: ''
   },
