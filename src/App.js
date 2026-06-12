@@ -165,26 +165,6 @@ const portfolioItems = [
     description: ''
   },
   {
-    id: 87,
-    type: 'video',
-    category: 'Vlogging',
-    src: 'https://img.youtube.com/vi/KhGZPbKrgUE/maxresdefault.jpg',
-    videoUrl: 'https://youtu.be/KhGZPbKrgUE?si=0nGp3g_LkdAjzpi3',
-    alt: 'Vlog - Filmado por ROMPPAO',
-    title: '',
-    description: ''
-  },
-  {
-    id: 80,
-    type: 'video',
-    category: 'Vlogging',
-    src: 'https://img.youtube.com/vi/8tzggIOeGz0/maxresdefault.jpg',
-    videoUrl: 'https://youtu.be/8tzggIOeGz0?si=l2Jh52nKfwOioB97',
-    alt: 'Vlog - Filmado por ROMPPAO',
-    title: '',
-    description: ''
-  },
-  {
     id: 37,
     type: 'video',
     category: 'Vlogging',
