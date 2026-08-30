@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Camera, Clapperboard, Mail, Instagram, X as CloseIcon, ChevronRight, Play, Film, Tv, Video, User, Moon, Mountain, Trophy, Phone } from 'lucide-react';
+import { Camera, Clapperboard, Mail, Instagram, X as CloseIcon, ChevronRight, Play, Film, Tv, Video, User, Trophy, Phone } from 'lucide-react';
 // Cache buster: 2024-12-02-21:28 - Removed 'Todo' filters
 
 // =========================================================================
