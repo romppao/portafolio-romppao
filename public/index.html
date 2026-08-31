@@ -6,9 +6,11 @@
   <!-- Force deployment: 2025-12-13-22:30 -->
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#dc2626" />
+  <meta name="theme-color" content="#0B0B0C" />
 
   <!-- Performance: Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://img.youtube.com" crossorigin>
   <link rel="dns-prefetch" href="https://www.youtube.com">
 
@@ -17,7 +19,7 @@
 
   <!-- Security: Content Security Policy -->
   <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self'; img-src 'self' https://img.youtube.com data:; frame-src https://www.youtube.com; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src 'self';">
+    content="default-src 'self'; img-src 'self' https://img.youtube.com data:; frame-src https://www.youtube.com; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self'; media-src 'self' blob:;">
 
   <!-- Primary Meta Tags -->
   <meta name="title" content="ROMPPAO | Fotógrafo y Filmmaker Profesional en Madrid" />
