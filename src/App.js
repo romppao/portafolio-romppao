@@ -790,7 +790,7 @@ const App = () => {
   };
 
   return (
-    <div className="bg-[#0B0B0C] text-[#F4F3F1] min-h-screen font-['Gloria_Hallelujah'] selection:bg-[#FF4A1C] selection:text-[#0B0B0C]">
+    <div className="bg-[#0B0B0C] text-[#F4F3F1] min-h-screen font-['Archivo'] selection:bg-[#FF4A1C] selection:text-[#0B0B0C]">
       
       {/* Grano / Ruido Visual */}
       <canvas ref={canvasRef} className="fixed inset-0 z-40 pointer-events-none opacity-[0.026] mix-blend-screen w-full h-full"></canvas>
@@ -799,16 +799,16 @@ const App = () => {
       <div className="sticky top-0 z-50">
         <div className="bg-[#0B0B0C]/90 backdrop-blur-md border-b border-[#F4F3F1]/10">
           <div className="max-w-[1440px] mx-auto px-5 md:px-14 h-[74px] flex items-center justify-between">
-            <div className="font-bold text-[17px] tracking-[0.06em] font-['Gloria_Hallelujah'] cursor-pointer" onClick={() => setView('home')}>
+            <div className="font-bold text-[17px] tracking-[0.06em] font-['Archivo'] cursor-pointer" onClick={() => setView('home')}>
               ROMPPAO
             </div>
             <div className="flex items-center gap-4 md:gap-8">
-              <div className="font-['Gloria_Hallelujah'] text-[11px] tracking-[0.14em] text-[#F4F3F1]/40 hidden md:block">
+              <div className="font-['Space_Mono'] text-[11px] tracking-[0.14em] text-[#F4F3F1]/40 hidden md:block">
                 MADRID {clock}
               </div>
               <div 
                 onClick={() => setMenu(!menu)} 
-                className="font-['Gloria_Hallelujah'] font-medium text-[11px] tracking-[0.18em] px-4 py-3 border border-[#F4F3F1]/20 cursor-pointer hover:bg-[#F4F3F1] hover:text-[#0B0B0C] hover:border-[#F4F3F1] transition-all"
+                className="font-['Space_Mono'] font-medium text-[11px] tracking-[0.18em] px-4 py-3 border border-[#F4F3F1]/20 cursor-pointer hover:bg-[#F4F3F1] hover:text-[#0B0B0C] hover:border-[#F4F3F1] transition-all"
               >
                 {menu ? 'CERRAR' : 'MENÚ'}
               </div>
@@ -822,7 +822,7 @@ const App = () => {
         <div className="fixed inset-0 z-[60] bg-[#0B0B0C] flex flex-col p-6 md:p-16 overflow-y-auto">
           <div className="flex justify-between items-center mb-10">
             <div className="font-bold text-[17px] tracking-[0.06em]">ROMPPAO</div>
-            <div onClick={() => setMenu(false)} className="font-['Gloria_Hallelujah'] font-medium text-[11px] tracking-[0.18em] px-4 py-3 border border-[#F4F3F1]/20 cursor-pointer hover:bg-[#F4F3F1] hover:text-[#0B0B0C]">
+            <div onClick={() => setMenu(false)} className="font-['Space_Mono'] font-medium text-[11px] tracking-[0.18em] px-4 py-3 border border-[#F4F3F1]/20 cursor-pointer hover:bg-[#F4F3F1] hover:text-[#0B0B0C]">
               CERRAR
             </div>
           </div>
@@ -835,16 +835,16 @@ const App = () => {
               { num: '05', name: 'Contacto', link: '#contacto' }
             ].map(item => (
               <a key={item.num} href={item.link} onClick={() => { setView('home'); setMenu(false); }} className="flex gap-6 items-baseline py-3 border-t border-[#F4F3F1]/10 text-[#F4F3F1] hover:text-[#FF4A1C] transition-colors group">
-                <span className="font-['Gloria_Hallelujah'] text-[12px] text-[#FF4A1C] min-w-[34px]">[{item.num}]</span>
-                <span className="font-['Gloria_Hallelujah'] text-4xl md:text-6xl tracking-tight">{item.name}</span>
+                <span className="font-['Space_Mono'] text-[12px] text-[#FF4A1C] min-w-[34px]">[{item.num}]</span>
+                <span className="font-['Anton'] text-4xl md:text-6xl tracking-tight">{item.name}</span>
               </a>
             ))}
             <div onClick={() => { setView('archivo'); setMenu(false); window.scrollTo(0,0); }} className="flex gap-6 items-baseline py-3 border-y border-[#F4F3F1]/10 text-[#F4F3F1] hover:text-[#FF4A1C] transition-colors cursor-pointer">
-              <span className="font-['Gloria_Hallelujah'] text-[12px] text-[#FF4A1C] min-w-[34px]">[06]</span>
-              <span className="font-['Gloria_Hallelujah'] text-4xl md:text-6xl tracking-tight">Archivo completo</span>
+              <span className="font-['Space_Mono'] text-[12px] text-[#FF4A1C] min-w-[34px]">[06]</span>
+              <span className="font-['Anton'] text-4xl md:text-6xl tracking-tight">Archivo completo</span>
             </div>
           </div>
-          <div className="mt-auto flex gap-10 flex-wrap font-['Gloria_Hallelujah'] text-[13px] text-[#F4F3F1]/50">
+          <div className="mt-auto flex gap-10 flex-wrap font-['Archivo'] text-[13px] text-[#F4F3F1]/50">
             <a href="mailto:rompaoondo@gmail.com" className="hover:text-[#F4F3F1]">rompaoondo@gmail.com</a>
             <a href="https://wa.me/34602360254" className="hover:text-[#F4F3F1]">+34 602 360 254</a>
             <a href="https://instagram.com/hakemm.l" className="hover:text-[#F4F3F1]">@hakemm.l</a>
@@ -879,11 +879,11 @@ const App = () => {
             <div className="absolute inset-0 bg-[radial-gradient(120%_80%_at_50%_45%,transparent_40%,rgba(11,11,12,0.86)_100%)]"></div>
             
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center max-w-[1440px] mx-auto px-6 py-12 overflow-hidden">
-              <div className="font-['Gloria_Hallelujah'] font-medium text-[10.5px] tracking-[0.28em] text-[#FF4A1C] mb-4">REEL EN REPRODUCCIÓN</div>
-              <h1 className="font-['Gloria_Hallelujah'] text-5xl md:text-[130px] leading-[0.92] tracking-tight mb-6 max-w-[14ch]">
+              <div className="font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.28em] text-[#FF4A1C] mb-4">REEL EN REPRODUCCIÓN</div>
+              <h1 className="font-['Anton'] text-5xl md:text-[130px] leading-[0.92] tracking-tight mb-6 max-w-[14ch]">
                 Capturando la esencia en cada frame.
               </h1>
-              <p className="font-['Gloria_Hallelujah'] text-[15px] md:text-[18px] text-[#F4F3F1]/70 mb-8 max-w-[40ch]">
+              <p className="font-['Archivo'] text-[15px] md:text-[18px] text-[#F4F3F1]/70 mb-8 max-w-[40ch]">
                 Transformando lo cotidiano en momentos inolvidables. Fotografía y Filmmaking desde Madrid.
               </p>
               <div className="flex gap-3 flex-wrap justify-center">
@@ -896,7 +896,7 @@ const App = () => {
               </div>
             </div>
             
-            <div className="absolute left-0 right-0 bottom-0 p-4 md:p-6 flex justify-between items-center gap-4 font-['Gloria_Hallelujah'] font-medium text-[10.5px] tracking-[0.16em] text-[#F4F3F1]/60 pointer-events-none">
+            <div className="absolute left-0 right-0 bottom-0 p-4 md:p-6 flex justify-between items-center gap-4 font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.16em] text-[#F4F3F1]/60 pointer-events-none">
               <span>{currentHero.title} {currentHero.type === 'video' ? '— CLIP' : `/ ${heroItems.length}`}</span>
               <span>{clock}</span>
             </div>
@@ -919,14 +919,14 @@ const App = () => {
           <section id="trabajo" className="max-w-[1440px] mx-auto px-5 md:px-14 py-16 md:py-24">
             <div className="flex justify-between items-baseline gap-5 flex-wrap mb-10">
               <div>
-                <div className="font-['Gloria_Hallelujah'] font-medium text-[10.5px] tracking-[0.2em] text-[#FF4A1C] mb-4">[02] TRABAJO</div>
-                <h2 className="font-['Gloria_Hallelujah'] text-4xl md:text-[80px] tracking-tight m-0">Lo que he rodado</h2>
+                <div className="font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.2em] text-[#FF4A1C] mb-4">[02] TRABAJO</div>
+                <h2 className="font-['Anton'] text-4xl md:text-[80px] tracking-tight m-0">Lo que he rodado</h2>
               </div>
               <div className="flex flex-col items-end gap-4">
-                <div className="font-['Gloria_Hallelujah'] text-[10.5px] leading-[1.7] tracking-[0.14em] text-[#F4F3F1]/40 text-right hidden sm:block">
+                <div className="font-['Space_Mono'] text-[10.5px] leading-[1.7] tracking-[0.14em] text-[#F4F3F1]/40 text-right hidden sm:block">
                   ALPHA-CPO-1.MP4<br/>BTS-SATIVA.MP4
                 </div>
-                <div onClick={() => { setView('archivo'); window.scrollTo(0,0); }} className="font-['Gloria_Hallelujah'] font-medium text-[10.5px] tracking-[0.16em] px-4 py-3 border border-[#F4F3F1]/20 cursor-pointer hover:bg-[#F4F3F1] hover:text-[#0B0B0C] transition-all whitespace-nowrap">
+                <div onClick={() => { setView('archivo'); window.scrollTo(0,0); }} className="font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.16em] px-4 py-3 border border-[#F4F3F1]/20 cursor-pointer hover:bg-[#F4F3F1] hover:text-[#0B0B0C] transition-all whitespace-nowrap">
                   VER ARCHIVO COMPLETO →
                 </div>
               </div>
@@ -939,9 +939,9 @@ const App = () => {
                   const modeItemsCount = portfolioItems.filter(i => (m.key === 'foto' ? isFoto(i.category) : !isFoto(i.category))).length;
                   return (
                     <div key={m.key} onClick={() => handleMode(m.key)} className={`cursor-pointer p-6 transition-colors ${on ? 'bg-[#FF4A1C]' : 'bg-[#0B0B0C]'}`}>
-                      <div className={`font-['Gloria_Hallelujah'] font-medium text-[9.5px] tracking-[0.2em] mb-3 ${on ? 'text-[#0B0B0C]/50' : 'text-[#FF4A1C]'}`}>[ 0{k + 1} ]</div>
-                      <div className={`font-['Gloria_Hallelujah'] text-3xl md:text-[39px] tracking-tight ${on ? 'text-[#0B0B0C]' : 'text-[#F4F3F1]'}`}>{m.label}</div>
-                      <div className={`font-['Gloria_Hallelujah'] text-[10.5px] tracking-[0.14em] mt-3 ${on ? 'text-[#0B0B0C]/60' : 'text-[#F4F3F1]/40'}`}>{modeItemsCount} PIEZAS</div>
+                      <div className={`font-['Space_Mono'] font-medium text-[9.5px] tracking-[0.2em] mb-3 ${on ? 'text-[#0B0B0C]/50' : 'text-[#FF4A1C]'}`}>[ 0{k + 1} ]</div>
+                      <div className={`font-['Anton'] text-3xl md:text-[39px] tracking-tight ${on ? 'text-[#0B0B0C]' : 'text-[#F4F3F1]'}`}>{m.label}</div>
+                      <div className={`font-['Space_Mono'] text-[10.5px] tracking-[0.14em] mt-3 ${on ? 'text-[#0B0B0C]/60' : 'text-[#F4F3F1]/40'}`}>{modeItemsCount} PIEZAS</div>
                     </div>
                   );
                 })}
@@ -950,7 +950,7 @@ const App = () => {
                 {getSubcats(mode).map(c => {
                   const on = c === cat;
                   return (
-                    <div key={c} onClick={() => setCat(c)} className={`font-['Gloria_Hallelujah'] font-medium text-[10.5px] tracking-[0.14em] px-4 py-3 cursor-pointer transition-all border ${on ? 'bg-[#FF4A1C] text-[#0B0B0C] border-[#FF4A1C]' : 'bg-transparent text-[#F4F3F1]/50 border-[#F4F3F1]/10 hover:border-[#F4F3F1]/30'}`}>
+                    <div key={c} onClick={() => setCat(c)} className={`font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.14em] px-4 py-3 cursor-pointer transition-all border ${on ? 'bg-[#FF4A1C] text-[#0B0B0C] border-[#FF4A1C]' : 'bg-transparent text-[#F4F3F1]/50 border-[#F4F3F1]/10 hover:border-[#F4F3F1]/30'}`}>
                       {c.toUpperCase()}
                     </div>
                   );
@@ -967,11 +967,11 @@ const App = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0C]/90 to-[#0B0B0C]/0 pointer-events-none"></div>
                     <div className={`absolute left-0 right-0 bottom-0 pointer-events-none flex justify-between items-end gap-3 ${isWide ? 'p-4 md:p-5' : 'p-3 md:p-4'}`}>
                       <div>
-                        <div className="font-['Gloria_Hallelujah'] font-medium text-[9.5px] tracking-[0.18em] text-[#FF4A1C] mb-2 uppercase">{it.category}</div>
+                        <div className="font-['Space_Mono'] font-medium text-[9.5px] tracking-[0.18em] text-[#FF4A1C] mb-2 uppercase">{it.category}</div>
                         <div className="font-semibold text-[14px] md:text-[16px] leading-[1.15] tracking-tight">{it.title || 'Sin Título'}</div>
                       </div>
                       {isWide && (
-                        <div className="font-['Gloria_Hallelujah'] font-medium text-[10px] border border-[#F4F3F1]/30 px-3 py-2 whitespace-nowrap text-[#F4F3F1]/70 group-hover:text-[#F4F3F1] transition-colors">▶</div>
+                        <div className="font-['Space_Mono'] font-medium text-[10px] border border-[#F4F3F1]/30 px-3 py-2 whitespace-nowrap text-[#F4F3F1]/70 group-hover:text-[#F4F3F1] transition-colors">▶</div>
                       )}
                     </div>
                   </div>
@@ -987,22 +987,22 @@ const App = () => {
                 <img src={`${process.env.PUBLIC_URL}/images/profile.jpg`} alt="ROMPPAO" className="w-full h-full object-cover grayscale-[0.3] contrast-105" />
               </div>
               <div>
-                <div className="font-['Gloria_Hallelujah'] font-medium text-[10.5px] tracking-[0.2em] text-[#FF4A1C] mb-4">[03] SOBRE MÍ</div>
-                <h2 className="font-['Gloria_Hallelujah'] text-4xl md:text-[66px] tracking-tight mb-8">Sobre mi</h2>
-                <p className="font-['Gloria_Hallelujah'] text-[16px] md:text-[20px] leading-[1.6] text-[#F4F3F1]/70 mb-10 max-w-[46ch]">
+                <div className="font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.2em] text-[#FF4A1C] mb-4">[03] SOBRE MÍ</div>
+                <h2 className="font-['Anton'] text-4xl md:text-[66px] tracking-tight mb-8">Sobre mi</h2>
+                <p className="font-['Archivo'] text-[16px] md:text-[20px] leading-[1.6] text-[#F4F3F1]/70 mb-10 max-w-[46ch]">
                   Soy un creador visual, fotógrafo, filmmaker independiente con base en Madrid. Mi trabajo es más que sujetar una cámara y darle a un botón, intento transformar lo más cotidiano en momentos inolvidables.
                 </p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-[1px] bg-[#F4F3F1]/10">
                   <div className="bg-[#0B0B0C] py-5 pr-4">
-                    <div className="font-['Gloria_Hallelujah'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-2.5">ZONA</div>
+                    <div className="font-['Space_Mono'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-2.5">ZONA</div>
                     <div className="font-semibold text-[15px] leading-[1.3]">Madrid y alrededores</div>
                   </div>
                   <div className="bg-[#0B0B0C] p-5">
-                    <div className="font-['Gloria_Hallelujah'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-2.5">ENTREGA</div>
+                    <div className="font-['Space_Mono'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-2.5">ENTREGA</div>
                     <div className="font-semibold text-[15px] leading-[1.3]">1–2 semanas foto<br/>2 semanas vídeo</div>
                   </div>
                   <div className="bg-[#0B0B0C] p-5 col-span-2 sm:col-span-1">
-                    <div className="font-['Gloria_Hallelujah'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-2.5">EXPRESS</div>
+                    <div className="font-['Space_Mono'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-2.5">EXPRESS</div>
                     <div className="font-semibold text-[15px] leading-[1.3]">Con coste adicional</div>
                   </div>
                 </div>
@@ -1014,8 +1014,8 @@ const App = () => {
           <section id="servicios" className="max-w-[1440px] mx-auto px-5 md:px-14 py-16 md:py-24 border-t border-[#F4F3F1]/10">
             <div className="flex justify-between items-baseline gap-5 flex-wrap mb-10 md:mb-12">
               <div>
-                <div className="font-['Gloria_Hallelujah'] font-medium text-[10.5px] tracking-[0.2em] text-[#FF4A1C] mb-4">[04] SERVICIOS</div>
-                <h2 className="font-['Gloria_Hallelujah'] text-4xl md:text-[80px] tracking-tight m-0">Servicios</h2>
+                <div className="font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.2em] text-[#FF4A1C] mb-4">[04] SERVICIOS</div>
+                <h2 className="font-['Anton'] text-4xl md:text-[80px] tracking-tight m-0">Servicios</h2>
               </div>
             </div>
             
@@ -1028,17 +1028,17 @@ const App = () => {
               ].map(s => (
                 <div key={s.num} className="border-b border-[#F4F3F1]/10">
                   <div onClick={() => setOpenService(openService === s.num ? null : s.num)} className="flex gap-4 md:gap-9 items-center py-6 md:py-8 cursor-pointer hover:bg-[#141416]/50 transition-colors">
-                    <div className="font-['Gloria_Hallelujah'] text-[12px] text-[#FF4A1C] min-w-[30px] md:min-w-[44px]">{s.num}</div>
-                    <h3 className="font-['Gloria_Hallelujah'] text-2xl md:text-[44px] tracking-tight m-0 flex-1">{s.name}</h3>
-                    <div className="font-['Gloria_Hallelujah'] text-[22px] text-[#F4F3F1]/50">{openService === s.num ? '−' : '+'}</div>
+                    <div className="font-['Space_Mono'] text-[12px] text-[#FF4A1C] min-w-[30px] md:min-w-[44px]">{s.num}</div>
+                    <h3 className="font-['Anton'] text-2xl md:text-[44px] tracking-tight m-0 flex-1">{s.name}</h3>
+                    <div className="font-['Space_Mono'] text-[22px] text-[#F4F3F1]/50">{openService === s.num ? '−' : '+'}</div>
                   </div>
                   {openService === s.num && (
                     <div className="pb-10 md:pb-16 pl-12 md:pl-20 flex flex-col md:flex-row gap-10 md:gap-16 items-center animate-fade-in">
                       <div className="w-full md:w-1/3 flex flex-col gap-6 md:gap-8">
                         {s.body.split('\n').map((line, i) => (
                           <div key={i} className="flex items-start gap-4 group cursor-default">
-                            <div className="font-['Gloria_Hallelujah'] text-[#FF4A1C] text-[13px] md:text-[15px] pt-2 opacity-50 group-hover:opacity-100 transition-opacity">0{i+1}</div>
-                            <div className="font-['Gloria_Hallelujah'] font-medium text-[18px] md:text-[24px] lg:text-[26px] text-[#F4F3F1]/80 leading-snug group-hover:text-[#F4F3F1] group-hover:translate-x-1 transition-all">
+                            <div className="font-['Space_Mono'] text-[#FF4A1C] text-[13px] md:text-[15px] pt-2 opacity-50 group-hover:opacity-100 transition-opacity">0{i+1}</div>
+                            <div className="font-['Archivo'] font-medium text-[18px] md:text-[24px] lg:text-[26px] text-[#F4F3F1]/80 leading-snug group-hover:text-[#F4F3F1] group-hover:translate-x-1 transition-all">
                               {line}
                             </div>
                           </div>
@@ -1058,7 +1058,7 @@ const App = () => {
                 </div>
               ))}
             </div>
-            <p className="font-['Gloria_Hallelujah'] text-[15px] leading-[1.7] text-[#F4F3F1]/50 mt-8 md:mt-11 max-w-[52ch]">
+            <p className="font-['Archivo'] text-[15px] leading-[1.7] text-[#F4F3F1]/50 mt-8 md:mt-11 max-w-[52ch]">
               Para información detallada sobre disponibilidad específica y presupuestos personalizados, contáctame por correo o WhatsApp.
             </p>
           </section>
@@ -1067,27 +1067,27 @@ const App = () => {
           <section id="reservas" className="border-t border-[#F4F3F1]/10 bg-[#141416]">
             <div className="max-w-[1440px] mx-auto px-5 md:px-14 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
               <div>
-                <div className="font-['Gloria_Hallelujah'] font-medium text-[10.5px] tracking-[0.2em] text-[#FF4A1C] mb-4">RESERVAS · WHATSAPP.LNK</div>
-                <h2 className="font-['Gloria_Hallelujah'] text-4xl md:text-[68px] tracking-tight mb-6">Reserva tu sesión</h2>
-                <p className="font-['Gloria_Hallelujah'] text-[15px] md:text-[18px] leading-[1.65] text-[#F4F3F1]/60 mb-8 max-w-[42ch]">
+                <div className="font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.2em] text-[#FF4A1C] mb-4">RESERVAS · WHATSAPP.LNK</div>
+                <h2 className="font-['Anton'] text-4xl md:text-[68px] tracking-tight mb-6">Reserva tu sesión</h2>
+                <p className="font-['Archivo'] text-[15px] md:text-[18px] leading-[1.65] text-[#F4F3F1]/60 mb-8 max-w-[42ch]">
                   Escríbeme por WhatsApp con la fecha, el tipo de sesión y la zona. Te confirmo disponibilidad y presupuesto en el mismo hilo.
                 </p>
                 <a href="https://wa.me/34602360254" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 bg-[#FF4A1C] text-[#0B0B0C] font-bold text-[15px] px-8 py-5 hover:bg-[#F4F3F1] transition-colors">
-                  Solicitar presupuesto por WhatsApp <span className="font-['Gloria_Hallelujah'] font-normal text-[16px]">→</span>
+                  Solicitar presupuesto por WhatsApp <span className="font-['Space_Mono'] font-normal text-[16px]">→</span>
                 </a>
               </div>
               <div className="grid grid-cols-1 gap-[1px] bg-[#F4F3F1]/10">
                 <div className="bg-[#141416] py-5">
-                  <div className="font-['Gloria_Hallelujah'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-2.5">HORARIOS</div>
-                  <div className="font-['Gloria_Hallelujah'] text-[15.5px] leading-[1.5] text-[#F4F3F1]/80">Tardes/noches entre semana, fines de semana completos</div>
+                  <div className="font-['Space_Mono'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-2.5">HORARIOS</div>
+                  <div className="font-['Archivo'] text-[15.5px] leading-[1.5] text-[#F4F3F1]/80">Tardes/noches entre semana, fines de semana completos</div>
                 </div>
                 <div className="bg-[#141416] py-5">
-                  <div className="font-['Gloria_Hallelujah'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-2.5">SESIONES</div>
-                  <div className="font-['Gloria_Hallelujah'] text-[15.5px] leading-[1.5] text-[#F4F3F1]/80">Hasta 3h entre semana / 6h fin de semana</div>
+                  <div className="font-['Space_Mono'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-2.5">SESIONES</div>
+                  <div className="font-['Archivo'] text-[15.5px] leading-[1.5] text-[#F4F3F1]/80">Hasta 3h entre semana / 6h fin de semana</div>
                 </div>
                 <div className="bg-[#141416] py-5">
-                  <div className="font-['Gloria_Hallelujah'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-2.5">DISPONIBILIDAD</div>
-                  <div className="font-['Gloria_Hallelujah'] text-[15.5px] leading-[1.5] text-[#F4F3F1]/80">Aceptando proyectos para finales de 2025</div>
+                  <div className="font-['Space_Mono'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-2.5">DISPONIBILIDAD</div>
+                  <div className="font-['Archivo'] text-[15.5px] leading-[1.5] text-[#F4F3F1]/80">Aceptando proyectos para finales de 2025</div>
                 </div>
               </div>
             </div>
@@ -1095,7 +1095,7 @@ const App = () => {
 
           {/* Banner Animado Inferior */}
           <a href="https://wa.me/34602360254" target="_blank" rel="noopener noreferrer" className="block overflow-hidden border-y border-[#F4F3F1]/10 py-6 md:py-8 text-[#F4F3F1] hover:text-[#F4F3F1]">
-            <div className="flex gap-6 md:gap-10 whitespace-nowrap font-['Gloria_Hallelujah'] text-3xl md:text-[74px] tracking-tight" style={{ animation: 'mqs 26s linear infinite' }}>
+            <div className="flex gap-6 md:gap-10 whitespace-nowrap font-['Anton'] text-3xl md:text-[74px] tracking-tight" style={{ animation: 'mqs 26s linear infinite' }}>
               <span>RESERVAR SESIÓN</span><span className="text-[#FF4A1C]">—</span><span>VER PORTFOLIO</span><span className="text-[#FF4A1C]">—</span><span>ESCRÍBEME</span><span className="text-[#FF4A1C]">—</span>
               <span>RESERVAR SESIÓN</span><span className="text-[#FF4A1C]">—</span><span>VER PORTFOLIO</span><span className="text-[#FF4A1C]">—</span><span>ESCRÍBEME</span><span className="text-[#FF4A1C]">—</span>
               <span>RESERVAR SESIÓN</span><span className="text-[#FF4A1C]">—</span><span>VER PORTFOLIO</span><span className="text-[#FF4A1C]">—</span><span>ESCRÍBEME</span><span className="text-[#FF4A1C]">—</span>
@@ -1108,14 +1108,14 @@ const App = () => {
         <section id="trabajo" className="max-w-[1440px] mx-auto px-5 md:px-14 py-12 md:py-24">
           <div className="flex justify-between items-baseline gap-5 flex-wrap mb-8 md:mb-10">
             <div>
-              <div className="font-['Gloria_Hallelujah'] font-medium text-[10.5px] tracking-[0.2em] text-[#FF4A1C] mb-4">[06] ARCHIVO COMPLETO</div>
-              <h2 className="font-['Gloria_Hallelujah'] text-4xl md:text-[80px] tracking-tight m-0">Archivo</h2>
+              <div className="font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.2em] text-[#FF4A1C] mb-4">[06] ARCHIVO COMPLETO</div>
+              <h2 className="font-['Anton'] text-4xl md:text-[80px] tracking-tight m-0">Archivo</h2>
             </div>
-            <div onClick={() => { setView('home'); window.scrollTo(0,0); }} className="font-['Gloria_Hallelujah'] font-medium text-[10.5px] tracking-[0.16em] px-4 py-3 border border-[#F4F3F1]/20 cursor-pointer hover:bg-[#F4F3F1] hover:text-[#0B0B0C] transition-all">
+            <div onClick={() => { setView('home'); window.scrollTo(0,0); }} className="font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.16em] px-4 py-3 border border-[#F4F3F1]/20 cursor-pointer hover:bg-[#F4F3F1] hover:text-[#0B0B0C] transition-all">
               ← VOLVER A LA PORTADA
             </div>
           </div>
-          <div className="font-['Gloria_Hallelujah'] text-[11px] leading-[1.6] tracking-[0.12em] text-[#F4F3F1]/40 border-y border-[#F4F3F1]/10 py-4 mb-6 md:mb-7">
+          <div className="font-['Space_Mono'] text-[11px] leading-[1.6] tracking-[0.12em] text-[#F4F3F1]/40 border-y border-[#F4F3F1]/10 py-4 mb-6 md:mb-7">
             {totalItems} PIEZAS · FOTOGRAFÍA, VIDEOCLIP, CONTENIDO ARTISTAS, BTS, COMERCIAL, VLOGGING
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
@@ -1126,7 +1126,7 @@ const App = () => {
                   <img src={it.src} alt={it.title} loading="lazy" className="w-full h-full object-cover grayscale-[0.4] contrast-105 transition-all duration-700 ease-in-out group-hover:scale-105 group-hover:grayscale-0" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0C]/90 to-[#0B0B0C]/0 pointer-events-none"></div>
                   <div className="absolute left-0 right-0 bottom-0 p-3 md:p-3.5 pointer-events-none">
-                    <div className="font-['Gloria_Hallelujah'] font-medium text-[9.5px] tracking-[0.18em] text-[#FF4A1C] mb-1.5 uppercase">{it.category}</div>
+                    <div className="font-['Space_Mono'] font-medium text-[9.5px] tracking-[0.18em] text-[#FF4A1C] mb-1.5 uppercase">{it.category}</div>
                     <div className="font-semibold text-[13px] md:text-[14px] leading-[1.2] tracking-tight truncate">{it.title || 'Sin Título'}</div>
                   </div>
                 </div>
@@ -1138,26 +1138,26 @@ const App = () => {
 
       {/* Footer */}
       <footer id="contacto" className="max-w-[1440px] mx-auto px-5 md:px-14 py-16 md:py-24">
-        <div className="font-['Gloria_Hallelujah'] font-medium text-[10.5px] tracking-[0.2em] text-[#FF4A1C] mb-5">[05] CONTACTO</div>
-        <h2 className="font-['Gloria_Hallelujah'] text-5xl md:text-[108px] leading-[0.98] tracking-tight mb-6">¿Trabajamos juntos?</h2>
-        <p className="font-['Gloria_Hallelujah'] text-[16px] md:text-[20px] leading-[1.6] text-[#F4F3F1]/60 mb-10 md:mb-14 max-w-[40ch]">
+        <div className="font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.2em] text-[#FF4A1C] mb-5">[05] CONTACTO</div>
+        <h2 className="font-['Anton'] text-5xl md:text-[108px] leading-[0.98] tracking-tight mb-6">¿Trabajamos juntos?</h2>
+        <p className="font-['Archivo'] text-[16px] md:text-[20px] leading-[1.6] text-[#F4F3F1]/60 mb-10 md:mb-14 max-w-[40ch]">
           Actualmente aceptando proyectos para finales de 2025.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[1px] bg-[#F4F3F1]/10 mb-10 md:mb-14">
           <a href="mailto:rompaoondo@gmail.com" className="bg-[#0B0B0C] p-6 hover:bg-[#141416] transition-colors">
-            <div className="font-['Gloria_Hallelujah'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-3">CORREO</div>
+            <div className="font-['Space_Mono'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-3">CORREO</div>
             <div className="font-semibold text-[15px] md:text-[19px] leading-[1.3] break-all">rompaoondo@gmail.com</div>
           </a>
           <a href="https://wa.me/34602360254" className="bg-[#0B0B0C] p-6 hover:bg-[#141416] transition-colors">
-            <div className="font-['Gloria_Hallelujah'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-3">WHATSAPP</div>
+            <div className="font-['Space_Mono'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-3">WHATSAPP</div>
             <div className="font-semibold text-[15px] md:text-[19px] leading-[1.3]">+34 602 360 254</div>
           </a>
           <a href="https://instagram.com/hakemm.l" className="bg-[#0B0B0C] p-6 hover:bg-[#141416] transition-colors">
-            <div className="font-['Gloria_Hallelujah'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-3">INSTAGRAM</div>
+            <div className="font-['Space_Mono'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-3">INSTAGRAM</div>
             <div className="font-semibold text-[15px] md:text-[19px] leading-[1.3]">@hakemm.l</div>
           </a>
         </div>
-        <div className="flex justify-between gap-5 flex-wrap pt-6 border-t border-[#F4F3F1]/10 font-['Gloria_Hallelujah'] text-[11px] leading-[1.6] tracking-[0.1em] text-[#F4F3F1]/40">
+        <div className="flex justify-between gap-5 flex-wrap pt-6 border-t border-[#F4F3F1]/10 font-['Space_Mono'] text-[11px] leading-[1.6] tracking-[0.1em] text-[#F4F3F1]/40">
           <span>© 2025 ROMPPAO. Todos los derechos reservados.</span>
           <span>MADRID · {clock}</span>
         </div>
@@ -1167,8 +1167,8 @@ const App = () => {
       {sel && (
         <div onClick={() => setSel(null)} className="fixed inset-0 z-[125] bg-[#0B0B0C]/95 backdrop-blur-lg flex flex-col p-4 md:p-10">
           <div className="flex justify-between items-center gap-4 mb-5">
-            <div className="font-['Gloria_Hallelujah'] font-medium text-[10.5px] tracking-[0.18em] text-[#FF4A1C] uppercase">{sel.category}</div>
-            <div onClick={() => setSel(null)} className="font-['Gloria_Hallelujah'] font-medium text-[11px] tracking-[0.18em] px-4 py-3 border border-[#F4F3F1]/20 cursor-pointer hover:bg-[#F4F3F1] hover:text-[#0B0B0C]">
+            <div className="font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.18em] text-[#FF4A1C] uppercase">{sel.category}</div>
+            <div onClick={() => setSel(null)} className="font-['Space_Mono'] font-medium text-[11px] tracking-[0.18em] px-4 py-3 border border-[#F4F3F1]/20 cursor-pointer hover:bg-[#F4F3F1] hover:text-[#0B0B0C]">
               CERRAR ✕
             </div>
           </div>
@@ -1193,7 +1193,7 @@ const App = () => {
           </div>
           <div className="mt-6 text-center">
             <div className="font-semibold text-xl md:text-3xl tracking-tight">{sel.title}</div>
-            <div className="font-['Gloria_Hallelujah'] text-[14.5px] text-[#F4F3F1]/55 mt-2">{sel.description}</div>
+            <div className="font-['Archivo'] text-[14.5px] text-[#F4F3F1]/55 mt-2">{sel.description}</div>
           </div>
         </div>
       )}

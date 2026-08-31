@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -15,7 +15,7 @@ body {
   margin: 0;
   background: #0B0B0C;
   color: #F4F3F1;
-  font-family: 'Gloria Hallelujah', cursive, system-ui, sans-serif;
+  font-family: Archivo, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
