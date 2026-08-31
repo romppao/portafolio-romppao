@@ -35,6 +35,16 @@ const portfolioItems = [
   
 
   {
+    id: 102,
+    type: 'video',
+    category: 'Videoclip',
+    src: 'https://img.youtube.com/vi/saZd4C_OqUw/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/saZd4C_OqUw',
+    alt: 'Videoclip BLACKTAWSA, DRACO LA B - ATRACTIVA - Filmado por ROMPPAO',
+    title: 'BLACKTAWSA, DRACO LA B - ATRACTIVA',
+    description: 'Videoclip oficial. Filmado por ROMPPAO.'
+  },
+  {
     id: 95,
     type: 'video',
     category: 'Videoclip',
