@@ -271,7 +271,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/bts-sativa-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/bts-sativa.mp4`,
     alt: 'BTS SATIVA - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'BIGSTEPPERS CUP 1',
     description: ''
   },
   {
@@ -281,7 +281,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/bts-villaverde-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/bts-villaverde.mp4`,
     alt: 'BTS VILLAVERDE - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'BTS VILLAVERDE',
     description: ''
   },
   {
@@ -291,7 +291,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/bts-richi-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/bts-richi.mp4`,
     alt: 'BTS RICHI - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'BTS RICHI',
     description: ''
   },
   {
@@ -301,7 +301,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/bts-mmtlk-bobee-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/bts-mmtlk-bobee.mp4`,
     alt: 'BTS MMTLK B.O BEE - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'BTS MMTLK BOBEE',
     description: ''
   },
   {
@@ -311,7 +311,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-bombofire-vitoria-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-bombofire-vitoria.mp4`,
     alt: 'Contenido Artistas BOMBOFIRE Vitoria - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'ARTISTAS BOMBOFIRE VITORIA',
     description: ''
   },
   {
@@ -321,7 +321,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-mk-p1-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-mk-p1.mp4`,
     alt: 'Contenido Artistas MK - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'ARTISTAS MK P1',
     description: ''
   },
   {
@@ -331,7 +331,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-mk-p2-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-mk-p2.mp4`,
     alt: 'Contenido Artistas MK - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'ARTISTAS MK P2',
     description: ''
   },
   {
@@ -341,7 +341,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-mk-p4-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-mk-p4.mp4`,
     alt: 'Contenido Artistas MK - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'ARTISTAS MK P4',
     description: ''
   },
   {
@@ -351,7 +351,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-vertical-ig-wg-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-vertical-ig-wg.mp4`,
     alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'ARTISTAS VERTICAL IG WG',
     description: ''
   },
   {
@@ -361,7 +361,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-tr-1-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-tr-1.mp4`,
     alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'ARTISTAS TR 1',
     description: ''
   },
   {
@@ -371,7 +371,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-tr-10-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-tr-10.mp4`,
     alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'ARTISTAS TR 10',
     description: ''
   },
   {
@@ -381,7 +381,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-mk-120-1-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-mk-120-1.mp4`,
     alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'ARTISTAS MK 120 1',
     description: ''
   },
   {
@@ -391,7 +391,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-kaneis-1k-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-kaneis-1k.mp4`,
     alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'ARTISTAS KANEIS 1K',
     description: ''
   },
   {
@@ -401,7 +401,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-kaneis-kyla-ig-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-kaneis-kyla-ig.mp4`,
     alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'ARTISTAS KANEIS KYLA IG',
     description: ''
   },
   {
@@ -411,7 +411,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-kkk-y1-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-kkk-y1.mp4`,
     alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'ARTISTAS KKK Y1',
     description: ''
   },
   {
@@ -421,7 +421,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-kkk-y3-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-kkk-y3.mp4`,
     alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'ARTISTAS KKK Y3',
     description: ''
   },
   {
@@ -431,7 +431,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-mk-4-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-mk-4.mp4`,
     alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'ARTISTAS MK 4',
     description: ''
   },
   {
@@ -441,7 +441,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-kai-cenat-mkbloond-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-kai-cenat-mkbloond.mp4`,
     alt: 'Contenido Artistas - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'ARTISTAS KAI CENAT MKBLOOND',
     description: ''
   },
   {
@@ -451,7 +451,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-boxeo-romppao-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-boxeo-romppao.mp4`,
     alt: 'Contenido Artistas Boxeo - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'ARTISTAS BOXEO ROMPPAO',
     description: ''
   },
   {
@@ -461,7 +461,7 @@ const portfolioItems = [
     src: `${process.env.PUBLIC_URL}/videos/thumbnails/artistas-boxeo-king-thumb.jpg`,
     videoUrl: `${process.env.PUBLIC_URL}/videos/artistas-boxeo-king.mp4`,
     alt: 'Contenido Artistas Boxeo KING - ROMPPAO filmmaker Madrid',
-    title: '',
+    title: 'ARTISTAS BOXEO KING',
     description: ''
   },
   // =========================================================================
@@ -1021,10 +1021,10 @@ const App = () => {
             
             <div className="border-t border-[#F4F3F1]/10">
               {[
-                { num: '01', name: 'Fotografía', body: 'Retratos\nFotografía deportiva (boxeo, eventos deportivos)\nCobertura de eventos y celebraciones\nFotografía de paisajes', vidSrc: `${process.env.PUBLIC_URL}/videos/el-bus.mov` },
+                { num: '01', name: 'Fotografía', body: 'Retratos\nFotografía deportiva (boxeo, eventos deportivos)\nCobertura de eventos y celebraciones\nFotografía de paisajes', vidSrc: `${process.env.PUBLIC_URL}/videos/el-bus.mp4` },
                 { num: '02', name: 'Videografía', body: 'Vlogs y contenido deportivo\nAftermovies de eventos\nVídeos promocionales y redes sociales\nProyectos creativos personalizados', vidSrc: `${process.env.PUBLIC_URL}/videos/cap1-esto-es-boxeo.mp4` },
                 { num: '03', name: 'Edición y postproducción', body: 'Color grading\nEdición de vídeo\nRetoque fotográfico\nEdición y diseño de sonido', vidSrc: `${process.env.PUBLIC_URL}/videos/buena-intro.mp4` },
-                { num: '04', name: 'Disponibilidad', body: 'Zona: Madrid y alrededores\nHorarios: tardes/noches entre semana, fines de semana completos\nSesiones: hasta 3h entre semana / 6h fin de semana', vidSrc: `${process.env.PUBLIC_URL}/videos/romppao-x-urko.mov` }
+                { num: '04', name: 'Disponibilidad', body: 'Zona: Madrid y alrededores\nHorarios: tardes/noches entre semana, fines de semana completos\nSesiones: hasta 3h entre semana / 6h fin de semana', vidSrc: `${process.env.PUBLIC_URL}/videos/romppao-x-urko.mp4` }
               ].map(s => (
                 <div key={s.num} className="border-b border-[#F4F3F1]/10">
                   <div onClick={() => setOpenService(openService === s.num ? null : s.num)} className="flex gap-4 md:gap-9 items-center py-6 md:py-8 cursor-pointer hover:bg-[#141416]/50 transition-colors">
