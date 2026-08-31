@@ -797,18 +797,34 @@ const App = () => {
 
       {/* Navegación superior */}
       <div className="sticky top-0 z-50">
-        <div className="bg-[#0B0B0C]/90 backdrop-blur-md border-b border-[#F4F3F1]/10">
-          <div className="max-w-[1440px] mx-auto px-5 md:px-14 h-[74px] flex items-center justify-between">
-            <div className="font-bold text-[17px] tracking-[0.06em] font-['Archivo'] cursor-pointer" onClick={() => setView('home')}>
-              ROMPPAO
+        <div className="bg-[#0B0B0C]/90 backdrop-blur-md border-b border-[#F4F3F1]/10 overflow-hidden relative cursor-pointer" onClick={() => setView('home')}>
+          <div className="flex items-center h-[74px]">
+            {/* Marquee Header */}
+            <div className="flex gap-6 md:gap-10 whitespace-nowrap font-['Anton'] text-3xl md:text-[42px] tracking-tight" style={{ animation: 'mq 20s linear infinite' }}>
+              <span>ROMPPAO</span><span className="text-[#FF4A1C]">-</span>
+              <span>ROMPPAO</span><span className="text-[#FF4A1C]">-</span>
+              <span>ROMPPAO</span><span className="text-[#FF4A1C]">-</span>
+              <span>ROMPPAO</span><span className="text-[#FF4A1C]">-</span>
+              <span>ROMPPAO</span><span className="text-[#FF4A1C]">-</span>
+              <span>ROMPPAO</span><span className="text-[#FF4A1C]">-</span>
+              <span>ROMPPAO</span><span className="text-[#FF4A1C]">-</span>
+              <span>ROMPPAO</span><span className="text-[#FF4A1C]">-</span>
+              <span>ROMPPAO</span><span className="text-[#FF4A1C]">-</span>
+              <span>ROMPPAO</span><span className="text-[#FF4A1C]">-</span>
+              <span>ROMPPAO</span><span className="text-[#FF4A1C]">-</span>
+              <span>ROMPPAO</span><span className="text-[#FF4A1C]">-</span>
+              <span>ROMPPAO</span><span className="text-[#FF4A1C]">-</span>
+              <span>ROMPPAO</span><span className="text-[#FF4A1C]">-</span>
+              <span>ROMPPAO</span><span className="text-[#FF4A1C]">-</span>
             </div>
-            <div className="flex items-center gap-4 md:gap-8">
-              <div className="font-['Space_Mono'] text-[11px] tracking-[0.14em] text-[#F4F3F1]/40 hidden md:block">
+            
+            <div className="absolute right-5 md:right-14 flex items-center gap-4 md:gap-8 z-10" onClick={(e) => e.stopPropagation()}>
+              <div className="font-['Space_Mono'] text-[11px] tracking-[0.14em] text-[#F4F3F1]/40 hidden md:block bg-[#0B0B0C] px-3 py-1">
                 MADRID {clock}
               </div>
               <div 
                 onClick={() => setMenu(!menu)} 
-                className="font-['Space_Mono'] font-medium text-[11px] tracking-[0.18em] px-4 py-3 border border-[#F4F3F1]/20 cursor-pointer hover:bg-[#F4F3F1] hover:text-[#0B0B0C] hover:border-[#F4F3F1] transition-all"
+                className="font-['Space_Mono'] font-medium text-[11px] tracking-[0.18em] px-4 py-3 border border-[#F4F3F1]/20 cursor-pointer bg-[#0B0B0C] hover:bg-[#F4F3F1] hover:text-[#0B0B0C] hover:border-[#F4F3F1] transition-all"
               >
                 {menu ? 'CERRAR' : 'MENÚ'}
               </div>
