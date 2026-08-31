@@ -55,3 +55,13 @@ Tailwind utility classes inline in JSX; no component library. Note the Tailwind 
 
 - `README.md` is a full Spanish-language, non-technical editing guide for the site owner (line-number references to `App.js` sections, redeploy steps, troubleshooting). It's the source of truth for the intended manual-editing workflow — prefer keeping edits consistent with the patterns it documents (e.g. thumbnail URL conventions, id numbering).
 - Deploy target is fixed to `https://romppao.es/` via `homepage` in `package.json` and `public/CNAME`; `npm run deploy` pushes straight to GitHub Pages via `gh-pages`.
+
+## graphify
+
+This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
+
+Rules:
+- For codebase questions, first run `graphify query "<question>"` when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
+- If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
+- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
+- After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
