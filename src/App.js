@@ -824,7 +824,7 @@ const App = () => {
               </div>
               <div 
                 onClick={() => setMenu(!menu)} 
-                className="font-['Space_Mono'] font-medium text-[11px] tracking-[0.18em] px-4 py-3 border border-[#F4F3F1]/20 cursor-pointer bg-[#0B0B0C] hover:bg-[#F4F3F1] hover:text-[#0B0B0C] hover:border-[#F4F3F1] transition-all"
+                className="font-['Space_Mono'] font-bold text-[13px] md:text-[15px] tracking-[0.18em] px-6 py-4 md:px-8 md:py-5 cursor-pointer bg-[#F4F3F1] text-[#0B0B0C] hover:bg-[#FF4A1C] hover:text-[#F4F3F1] transition-all shadow-lg"
               >
                 {menu ? 'CERRAR' : 'MENÚ'}
               </div>
