@@ -785,7 +785,7 @@ const App = () => {
     };
   }, [heroIndex, heroItems, view, menu, sel]);
 
-  const isFoto = (category) => category === 'Boxeo';
+  const isFoto = (item) => item.type === 'photo';
   
   const MODES = [
     { key: 'foto', label: 'Fotografía' },
@@ -802,7 +802,7 @@ const App = () => {
     setCat(getSubcats(m)[0]);
   };
 
-  const filteredItems = portfolioItems.filter(item => item.category === cat);
+  const filteredItems = portfolioItems.filter(item => item.category === cat && (mode === 'foto' ? item.type === 'photo' : item.type === 'video'));
   const totalItems = portfolioItems.length;
   const currentHero = heroItems[heroIndex];
 
@@ -982,7 +982,7 @@ const App = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-[1px] bg-[#F4F3F1]/10">
                 {MODES.map((m, k) => {
                   const on = m.key === mode;
-                  const modeItemsCount = portfolioItems.filter(i => (m.key === 'foto' ? isFoto(i.category) : !isFoto(i.category))).length;
+                  const modeItemsCount = portfolioItems.filter(i => (m.key === 'foto' ? i.type === 'photo' : i.type === 'video')).length;
                   return (
                     <div key={m.key} onClick={() => handleMode(m.key)} className={`cursor-pointer p-6 transition-colors ${on ? 'bg-[#FF4A1C]' : 'bg-[#0B0B0C]'}`}>
                       <div className={`font-['Space_Mono'] font-medium text-[9.5px] tracking-[0.2em] mb-3 ${on ? 'text-[#0B0B0C]/50' : 'text-[#FF4A1C]'}`}>[ 0{k + 1} ]</div>
