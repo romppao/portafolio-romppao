@@ -7,32 +7,32 @@ import { Camera, Clapperboard, Mail, Instagram, X as CloseIcon, ChevronRight, Pl
 // =========================================================================
 
 const portfolioItems = [
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   {
     id: 96,
@@ -629,16 +629,16 @@ const portfolioItems = [
     title: 'LAYALI',
     description: 'Producción Audiovisual'
   },
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
 
   {
     id: 8,
@@ -685,7 +685,7 @@ const portfolioItems = [
     title: 'La Esquina',
     description: 'Consejos que cambian el rumbo.'
   },
-  ];
+];
 
 // =========================================================================
 //  COMPONENTE PRINCIPAL
@@ -699,7 +699,7 @@ const App = () => {
   const [sel, setSel] = useState(null);
   const [openService, setOpenService] = useState('01');
   const [clock, setClock] = useState('');
-  
+
   const [heroIndex, setHeroIndex] = useState(0);
   const videoRef = React.useRef(null);
 
@@ -732,7 +732,7 @@ const App = () => {
       const d = img.data;
       for (let i = 0; i < d.length; i += 4) {
         const v = Math.random() * 255;
-        d[i] = d[i+1] = d[i+2] = v; d[i+3] = 255;
+        d[i] = d[i + 1] = d[i + 2] = v; d[i + 3] = 255;
       }
       ctx.putImageData(img, 0, 0);
     };
@@ -766,8 +766,8 @@ const App = () => {
       };
       const checkTime = () => {
         if (videoRef.current && videoRef.current.currentTime >= 12) {
-           videoRef.current.pause();
-           setHeroIndex(i => (i + 1) % heroItems.length);
+          videoRef.current.pause();
+          setHeroIndex(i => (i + 1) % heroItems.length);
         }
       };
       videoRef.current.ontimeupdate = checkTime;
@@ -786,7 +786,7 @@ const App = () => {
   }, [heroIndex, heroItems, view, menu, sel]);
 
   const isFoto = (item) => item.type === 'photo';
-  
+
   const MODES = [
     { key: 'foto', label: 'Fotografía' },
     { key: 'video', label: 'Vídeo' }
@@ -821,7 +821,7 @@ const App = () => {
 
   return (
     <div className="bg-[#0B0B0C] text-[#F4F3F1] min-h-screen font-['Archivo'] selection:bg-[#FF4A1C] selection:text-[#0B0B0C]">
-      
+
       {/* Grano / Ruido Visual */}
       <canvas ref={canvasRef} className="fixed inset-0 z-40 pointer-events-none opacity-[0.026] mix-blend-screen w-full h-full"></canvas>
 
@@ -847,13 +847,13 @@ const App = () => {
               <span>ROMPPAO</span><span className="text-[#FF4A1C]">-</span>
               <span>ROMPPAO</span><span className="text-[#FF4A1C]">-</span>
             </div>
-            
+
             <div className="absolute right-5 md:right-14 flex items-center gap-4 md:gap-8 z-10" onClick={(e) => e.stopPropagation()}>
               <div className="font-['Space_Mono'] text-[11px] tracking-[0.14em] text-[#F4F3F1]/40 hidden md:block bg-[#0B0B0C] px-3 py-1">
                 MADRID {clock}
               </div>
-              <div 
-                onClick={() => setMenu(!menu)} 
+              <div
+                onClick={() => setMenu(!menu)}
                 className="font-['Space_Mono'] font-bold text-[13px] md:text-[15px] tracking-[0.18em] px-6 py-4 md:px-8 md:py-5 cursor-pointer bg-[#F4F3F1] text-[#0B0B0C] hover:bg-[#FF4A1C] hover:text-[#F4F3F1] transition-all shadow-lg"
               >
                 {menu ? 'CERRAR' : 'MENÚ'}
@@ -885,7 +885,7 @@ const App = () => {
                 <span className="font-['Anton'] text-4xl md:text-6xl tracking-tight">{item.name}</span>
               </a>
             ))}
-            <div onClick={() => { setView('archivo'); setMenu(false); window.scrollTo(0,0); }} className="flex gap-6 items-baseline py-3 border-y border-[#F4F3F1]/10 text-[#F4F3F1] hover:text-[#FF4A1C] transition-colors cursor-pointer">
+            <div onClick={() => { setView('archivo'); setMenu(false); window.scrollTo(0, 0); }} className="flex gap-6 items-baseline py-3 border-y border-[#F4F3F1]/10 text-[#F4F3F1] hover:text-[#FF4A1C] transition-colors cursor-pointer">
               <span className="font-['Space_Mono'] text-[12px] text-[#FF4A1C] min-w-[34px]">[06]</span>
               <span className="font-['Anton'] text-4xl md:text-6xl tracking-tight">Archivo completo</span>
             </div>
@@ -905,25 +905,25 @@ const App = () => {
           <section id="portada" className="relative h-[min(88vh,860px)] min-h-[600px] overflow-hidden bg-[#141416]">
             {heroItems.map((item, idx) => (
               item.type === 'photo' ? (
-                <img 
+                <img
                   key={idx}
-                  src={item.src} 
-                  alt="ROMPPAO" 
+                  src={item.src}
+                  alt="ROMPPAO"
                   className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${idx === heroIndex ? 'opacity-100' : 'opacity-0'}`}
                 />
               ) : null
             ))}
-            <video 
+            <video
               ref={videoRef}
               muted playsInline
               className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out pointer-events-none ${currentHero.type === 'video' ? 'opacity-100' : 'opacity-0'}`}
               src={currentHero.type === 'video' ? currentHero.src : ''}
               poster={currentHero.type === 'video' ? currentHero.poster : ''}
             ></video>
-            
+
             <div className="absolute inset-0 bg-[repeating-linear-gradient(to_bottom,rgba(0,0,0,0.22)_0_1px,transparent_1px_3px)] mix-blend-multiply pointer-events-none"></div>
             <div className="absolute inset-0 bg-[radial-gradient(120%_80%_at_50%_45%,transparent_40%,rgba(11,11,12,0.86)_100%)]"></div>
-            
+
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center max-w-[1440px] mx-auto px-6 py-12 overflow-hidden">
               <div className="font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.28em] text-[#FF4A1C] mb-4">REEL EN REPRODUCCIÓN</div>
               <h1 className="font-['Anton'] text-5xl md:text-[130px] leading-[0.92] tracking-tight mb-6 max-w-[14ch]">
@@ -941,7 +941,7 @@ const App = () => {
                 </a>
               </div>
             </div>
-            
+
             <div className="absolute left-0 right-0 bottom-0 p-4 md:p-6 flex justify-between items-center gap-4 font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.16em] text-[#F4F3F1]/60 pointer-events-none">
               <span>{currentHero.title} {currentHero.type === 'video' ? '— CLIP' : `/ ${heroItems.length}`}</span>
               <span>{clock}</span>
@@ -970,9 +970,9 @@ const App = () => {
               </div>
               <div className="flex flex-col items-end gap-4">
                 <div className="font-['Space_Mono'] text-[10.5px] leading-[1.7] tracking-[0.14em] text-[#F4F3F1]/40 text-right hidden sm:block">
-                  ALPHA-CPO-1.MP4<br/>BTS-SATIVA.MP4
+                  ALPHA-CPO-1.MP4<br />BTS-SATIVA.MP4
                 </div>
-                <div onClick={() => { setView('archivo'); window.scrollTo(0,0); }} className="font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.16em] px-4 py-3 border border-[#F4F3F1]/20 cursor-pointer hover:bg-[#F4F3F1] hover:text-[#0B0B0C] transition-all whitespace-nowrap">
+                <div onClick={() => { setView('archivo'); window.scrollTo(0, 0); }} className="font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.16em] px-4 py-3 border border-[#F4F3F1]/20 cursor-pointer hover:bg-[#F4F3F1] hover:text-[#0B0B0C] transition-all whitespace-nowrap">
                   VER ARCHIVO COMPLETO →
                 </div>
               </div>
@@ -1045,7 +1045,7 @@ const App = () => {
                   </div>
                   <div className="bg-[#0B0B0C] p-5">
                     <div className="font-['Space_Mono'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-2.5">ENTREGA</div>
-                    <div className="font-semibold text-[15px] leading-[1.3]">1–2 semanas foto<br/>2 semanas vídeo</div>
+                    <div className="font-semibold text-[15px] leading-[1.3]">1–2 semanas foto<br />2 semanas vídeo</div>
                   </div>
                   <div className="bg-[#0B0B0C] p-5 col-span-2 sm:col-span-1">
                     <div className="font-['Space_Mono'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-2.5">EXPRESS</div>
@@ -1064,7 +1064,7 @@ const App = () => {
                 <h2 className="font-['Anton'] text-4xl md:text-[80px] tracking-tight m-0">Servicios</h2>
               </div>
             </div>
-            
+
             <div className="border-t border-[#F4F3F1]/10">
               {[
                 { num: '01', name: 'Fotografía', body: 'Retratos\nFotografía deportiva (boxeo, eventos deportivos)\nCobertura de eventos y celebraciones\nFotografía de paisajes', vidSrc: `${process.env.PUBLIC_URL}/videos/el-bus.mp4` },
@@ -1083,7 +1083,7 @@ const App = () => {
                       <div className="w-full md:w-1/3 flex flex-col gap-6 md:gap-8">
                         {s.body.split('\n').map((line, i) => (
                           <div key={i} className="flex items-start gap-4 group cursor-default">
-                            <div className="font-['Space_Mono'] text-[#FF4A1C] text-[13px] md:text-[15px] pt-2 opacity-50 group-hover:opacity-100 transition-opacity">0{i+1}</div>
+                            <div className="font-['Space_Mono'] text-[#FF4A1C] text-[13px] md:text-[15px] pt-2 opacity-50 group-hover:opacity-100 transition-opacity">0{i + 1}</div>
                             <div className="font-['Archivo'] font-medium text-[18px] md:text-[24px] lg:text-[26px] text-[#F4F3F1]/80 leading-snug group-hover:text-[#F4F3F1] group-hover:translate-x-1 transition-all">
                               {line}
                             </div>
@@ -1157,7 +1157,7 @@ const App = () => {
               <div className="font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.2em] text-[#FF4A1C] mb-4">[06] ARCHIVO COMPLETO</div>
               <h2 className="font-['Anton'] text-4xl md:text-[80px] tracking-tight m-0">Archivo</h2>
             </div>
-            <div onClick={() => { setView('home'); window.scrollTo(0,0); }} className="font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.16em] px-4 py-3 border border-[#F4F3F1]/20 cursor-pointer hover:bg-[#F4F3F1] hover:text-[#0B0B0C] transition-all">
+            <div onClick={() => { setView('home'); window.scrollTo(0, 0); }} className="font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.16em] px-4 py-3 border border-[#F4F3F1]/20 cursor-pointer hover:bg-[#F4F3F1] hover:text-[#0B0B0C] transition-all">
               ← VOLVER A LA PORTADA
             </div>
           </div>
@@ -1247,10 +1247,10 @@ const App = () => {
       {/* Botones Flotantes (Contenedor) */}
       <div className="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[100] flex flex-col gap-4 items-center">
         {/* Botón Programa Boxeo */}
-        <a 
-          href={`https://wa.me/34602360254?text=${encodeURIComponent('Hola ROMPPAO! 👋 Me interesa tu programa audiovisual de boxeo.\n\n*Nombre:* [Escribe aquí tu nombre]\n*Ciudad:* [Tu ciudad de residencia]\n*Gimnasio:* [Gimnasio al que perteneces]\n*Fecha del evento:* [Indicar fecha - MÍNIMO 2 semanas de antelación]\n\n¡Hablemos!')}`}
-          target="_blank" 
-          rel="noopener noreferrer" 
+        <a
+          href={`https://wa.me/34602360254?text=${encodeURIComponent('¡Qué pasa ROMPPAO! 🥊 He visto tu proyecto audiovisual de boxeo y quiero participar.\n\n👉 Mi nombre: [Tu nombre]\n👉 Mi ciudad: [Tu ciudad]\n👉 Mi gimnasio: [Tu gimnasio]\n👉 Próxima pelea: [Fecha - mín. 2 semanas]\n\n¡Dime cómo lo hacemos!')}`}
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-[#D32F2F] text-white p-4 rounded-full shadow-2xl hover:scale-110 hover:shadow-[0_0_20px_rgba(211,47,47,0.5)] transition-all duration-300 flex items-center justify-center group"
           aria-label="Programa Audiovisual de Boxeo"
         >
@@ -1258,15 +1258,15 @@ const App = () => {
         </a>
 
         {/* Botón Flotante de WhatsApp Normal */}
-        <a 
+        <a
           href={`https://wa.me/34602360254?text=${encodeURIComponent('Hola ROMPPAO! 👋 Mi nombre es [Escribe aquí tu nombre]. He visto tu portafolio y me gustaría pedirte información/presupuesto.\n\n*El proyecto sería para:* [EJ. Videoclip, Evento, Sesión de fotos...]\n*Fecha aproximada:* [Indicar fecha o mes]\n*Más detalles:* [Escribe aquí lo que necesites...]\n\nQuedo a la espera de tu respuesta. ¡Gracias!')}`}
-          target="_blank" 
-          rel="noopener noreferrer" 
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 hover:shadow-[0_0_20px_rgba(37,211,102,0.5)] transition-all duration-300 flex items-center justify-center group"
           aria-label="Contactar por WhatsApp"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
           </svg>
         </a>
       </div>
