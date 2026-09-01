@@ -1248,7 +1248,7 @@ const App = () => {
       <div className="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[100] flex flex-col gap-4 items-center">
         {/* Botón Programa Boxeo */}
         <a
-          href={`https://wa.me/34602360254?text=${encodeURIComponent('¡Qué pasa ROMPPAO! 🥊 He visto tu proyecto audiovisual de boxeo y quiero participar.\n\n👉 Mi nombre: [Tu nombre]\n👉 Mi ciudad: [Tu ciudad]\n👉 Mi gimnasio: [Tu gimnasio]\n👉 Próxima pelea: [Fecha - mín. 2 semanas]\n\n¡Dime cómo lo hacemos!')}`}
+          href={`https://wa.me/34602360254?text=${encodeURIComponent('Hola ROMPPAO 🥊 Me interesa tu programa para boxeadores. Aquí tienes mi info:\n\n*Nombre:* [Tu nombre]\n*Ciudad:* [Tu ciudad]\n*Gym:* [Tu gimnasio]\n*Próximo combate:* [Fecha - Mínimo 2 semanas]\n\n¡A por todas!')}`}
           target="_blank"
           rel="noopener noreferrer"
           className="bg-[#D32F2F] text-white p-4 rounded-full shadow-2xl hover:scale-110 hover:shadow-[0_0_20px_rgba(211,47,47,0.5)] transition-all duration-300 flex items-center justify-center group"
