@@ -35,6 +35,16 @@ const portfolioItems = [
   
 
   {
+    id: 103,
+    type: 'video',
+    category: 'Videoclip',
+    src: 'https://img.youtube.com/vi/4cI7gk_OiW8/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/4cI7gk_OiW8?si=pHFxWa6Q2Hmw6as0',
+    alt: 'TODO EL RATO x KANEIS - Dónde Estás ? - Filmado por ROMPPAO',
+    title: 'TODO EL RATO x KANEIS - DÓNDE ESTÁS ?',
+    description: 'Visualizer Oficial. Filmado por ROMPPAO.'
+  },
+  {
     id: 102,
     type: 'video',
     category: 'Videoclip',
@@ -464,6 +474,26 @@ const portfolioItems = [
     title: 'ARTISTAS BOXEO KING',
     description: ''
   },
+  {
+    id: 104,
+    type: 'video',
+    category: 'Boxeo',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/boxeo-urko-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/boxeo-urko.mp4`,
+    alt: 'ROMPPAO X URKO - Boxeo',
+    title: 'ROMPPAO X URKO',
+    description: 'Video de Boxeo. Filmado por ROMPPAO.'
+  },
+  {
+    id: 105,
+    type: 'video',
+    category: 'Boxeo',
+    src: `${process.env.PUBLIC_URL}/videos/thumbnails/boxeo-cap-1-thumb.jpg`,
+    videoUrl: `${process.env.PUBLIC_URL}/videos/boxeo-cap-1.mp4`,
+    alt: 'ROMPPAO BOX CAP 1 - Boxeo',
+    title: 'ROMPPAO BOX CAP 1',
+    description: 'Video de Boxeo. Filmado por ROMPPAO.'
+  },
   // =========================================================================
   // EJEMPLO: Cómo añadir un video LOCAL en la sección COMERCIAL
   // =========================================================================
@@ -764,7 +794,7 @@ const App = () => {
 
   const getSubcats = (m) => {
     if (m === 'foto') return ['Boxeo'];
-    return ['Videoclip', 'Contenido Artistas', 'BTS', 'Comercial', 'Vlogging'];
+    return ['Videoclip', 'Contenido Artistas', 'BTS', 'Comercial', 'Vlogging', 'Boxeo'];
   };
 
   const handleMode = (m) => {
