@@ -2,39 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    html {
-        scroll-behavior: smooth;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
 
-    * {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  background: #0B0B0C;
+  scroll-behavior: smooth;
 }
 
-@layer utilities {
-    .sr-only {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border-width: 0;
-    }
+body {
+  margin: 0;
+  background: #0B0B0C;
+  color: #F4F3F1;
+  font-family: Archivo, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-    .sr-only:focus,
-    .focus\:not-sr-only:focus {
-        position: static;
-        width: auto;
-        height: auto;
-        padding: inherit;
-        margin: inherit;
-        overflow: visible;
-        clip: auto;
-        white-space: normal;
-    }
+a { color: #FF4A1C; text-decoration: none; }
+a:hover { color: #FF7A55; }
+
+::selection { background: #FF4A1C; color: #0B0B0C; }
+:focus-visible { outline: 2px solid #FF4A1C; outline-offset: 3px; }
+
+@keyframes mq {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes mqs {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
