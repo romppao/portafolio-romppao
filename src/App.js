@@ -1036,7 +1036,7 @@ const App = () => {
                 <div className="font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.2em] text-[#FF4A1C] mb-4">[03] SOBRE MÍ</div>
                 <h2 className="font-['Anton'] text-4xl md:text-[66px] tracking-tight mb-8">Sobre mi</h2>
                 <p className="font-['Archivo'] text-[16px] md:text-[20px] leading-[1.6] text-[#F4F3F1]/70 mb-10 max-w-[46ch]">
-                  Soy un creador visual, fotógrafo, filmmaker independiente con base en Madrid. Mi trabajo es más que sujetar una cámara y darle a un botón, intento transformar lo más cotidiano en momentos inolvidables.
+                  Soy ROMPPAO, también conocido como Rompao: creador visual, fotógrafo y filmmaker independiente con base en Madrid. Mi trabajo es más que sujetar una cámara y darle a un botón, intento transformar lo más cotidiano en momentos inolvidables.
                 </p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-[1px] bg-[#F4F3F1]/10">
                   <div className="bg-[#0B0B0C] py-5 pr-4">
