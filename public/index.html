@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <!-- Force deployment: 2025-12-13-22:30 -->
+  <!-- Force deployment: 2026-10-18 (SEO, entidad de marca y buscadores con IA) -->
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#dc2626" />
@@ -20,56 +20,121 @@
     content="default-src 'self'; img-src 'self' https://img.youtube.com data:; frame-src https://www.youtube.com; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src 'self';">
 
   <!-- Primary Meta Tags -->
-  <meta name="title" content="ROMPPAO | Fotógrafo y Filmmaker Profesional en Madrid" />
+  <title>ROMPPAO (Rompao) | Filmmaker y videógrafo en Madrid · Videoclips y boxeo</title>
+  <meta name="title" content="ROMPPAO (Rompao) | Filmmaker y videógrafo en Madrid · Videoclips y boxeo" />
   <meta name="description"
-    content="ROMPPAO - Fotógrafo profesional y filmmaker en Madrid. Especializado en retratos, fotografía de boxeo, paisajes, y videoclips musicales. Proyectos para KANEIS, Bad Key y más." />
+    content="ROMPPAO (Rompao), filmmaker y videógrafo deportivo en Madrid: videoclips de trap, drill y rap, fotografía y documental de boxeo, aftermovies y vlogs. Videoclips para KANEIS, Bad Key, MKBLOOND y más." />
   <meta name="keywords"
-    content="fotógrafo Madrid, filmmaker Madrid, fotografía retratos, videoclips musicales, fotografía boxeo, fotografía paisajes, ROMPPAO, portfolio fotografía, videografía profesional" />
-  <meta name="author" content="ROMPPAO" />
-  <meta name="robots" content="index, follow" />
+    content="ROMPPAO, Rompao, Romppao, filmmaker Madrid, videógrafo Madrid, videógrafo deportivo, videoclips trap Madrid, videoclips drill, videoclips rap, fotografía de boxeo Madrid, documental de boxeo, aftermovies Madrid, vlogger Madrid, creador de contenido para artistas" />
+  <meta name="author" content="ROMPPAO (Hakeem)" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-video-preview:-1" />
   <link rel="canonical" href="https://romppao.es/" />
 
   <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="profile" />
   <meta property="og:url" content="https://romppao.es/" />
-  <meta property="og:site_name" content="ROMPPAO Portfolio" />
-  <meta property="og:title" content="ROMPPAO | Fotógrafo y Filmmaker Profesional en Madrid" />
+  <meta property="og:site_name" content="ROMPPAO" />
+  <meta property="og:title" content="ROMPPAO (Rompao) | Filmmaker y videógrafo en Madrid" />
   <meta property="og:description"
-    content="Portfolio profesional de fotografía y filmmaking. Retratos, paisajes, fotografía de boxeo y videoclips musicales. Basado en Madrid, España." />
-  <meta property="og:image" content="%PUBLIC_URL%/images/profile.jpg" />
+    content="Videoclips de trap, drill y rap, fotografía y documental de boxeo, aftermovies y vlogs en Madrid." />
+  <meta property="og:image" content="https://romppao.es/images/profile.jpg" />
   <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta property="og:image:height" content="1200" />
+  <meta property="og:image:alt" content="ROMPPAO, filmmaker y videógrafo en Madrid" />
   <meta property="og:locale" content="es_ES" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content="https://romppao.es/" />
-  <meta name="twitter:title" content="ROMPPAO | Fotógrafo y Filmmaker Profesional en Madrid" />
+  <meta name="twitter:title" content="ROMPPAO (Rompao) | Filmmaker y videógrafo en Madrid" />
   <meta name="twitter:description"
-    content="Portfolio profesional de fotografía y filmmaking. Retratos, paisajes, fotografía de boxeo y videoclips musicales." />
-  <meta name="twitter:image" content="%PUBLIC_URL%/images/profile.jpg" />
+    content="Videoclips de trap, drill y rap, fotografía y documental de boxeo, aftermovies y vlogs en Madrid." />
+  <meta name="twitter:image" content="https://romppao.es/images/profile.jpg" />
   <meta name="twitter:creator" content="@romppao" />
 
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="alternate" type="text/plain" href="https://romppao.es/llms.txt" title="Resumen para asistentes de IA" />
 
-  <!-- Schema.org Structured Data (JSON-LD) -->
+  <!-- Datos estructurados (schema.org). ROMPPAO, Rompao y Romppao son la misma persona y la misma marca. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://romppao.es/#website",
+        "url": "https://romppao.es/",
+        "name": "ROMPPAO",
+        "alternateName": ["Rompao", "Romppao", "ROMPPAO Filmmaker"],
+        "inLanguage": "es-ES",
+        "publisher": { "@id": "https://romppao.es/#person" }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://romppao.es/#profilepage",
+        "url": "https://romppao.es/",
+        "name": "ROMPPAO (Rompao) · Filmmaker y videógrafo en Madrid",
+        "inLanguage": "es-ES",
+        "isPartOf": { "@id": "https://romppao.es/#website" },
+        "mainEntity": { "@id": "https://romppao.es/#person" },
+        "primaryImageOfPage": { "@id": "https://romppao.es/#profileimage" }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://romppao.es/#profileimage",
+        "url": "https://romppao.es/images/profile.jpg",
+        "contentUrl": "https://romppao.es/images/profile.jpg",
+        "width": 1200,
+        "height": 1200,
+        "caption": "ROMPPAO, filmmaker y videógrafo en Madrid"
+      },
+      {
         "@type": "Person",
         "@id": "https://romppao.es/#person",
         "name": "ROMPPAO",
-        "jobTitle": "Fotógrafo y Filmmaker",
-        "description": "Fotógrafo profesional y filmmaker especializado en retratos, fotografía de boxeo, paisajes y videoclips musicales en Madrid.",
+        "alternateName": ["Rompao", "Romppao", "Hakeem"],
+        "givenName": "Hakeem",
+        "jobTitle": "Filmmaker y videógrafo deportivo",
+        "description": "ROMPPAO (también escrito Rompao) es el nombre artístico de Hakeem, filmmaker y videógrafo deportivo independiente en Madrid. Graba y edita videoclips de música urbana (trap, drill y rap), fotografía y documental de boxeo, aftermovies de eventos y vlogs.",
+        "url": "https://romppao.es/",
+        "image": { "@id": "https://romppao.es/#profileimage" },
+        "email": "rompaoondo@gmail.com",
+        "homeLocation": { "@type": "City", "name": "Madrid", "address": { "@type": "PostalAddress", "addressLocality": "Madrid", "addressRegion": "Comunidad de Madrid", "addressCountry": "ES" } },
+        "knowsAbout": ["Videoclips musicales", "Trap", "Drill", "Rap", "Fotografía de boxeo", "Documental deportivo", "Aftermovies", "Vlogging", "Edición de vídeo", "Postproducción", "Contenido para redes sociales"],
+        "knowsLanguage": "es",
+        "sameAs": [
+          "https://www.instagram.com/romppao",
+          "https://www.instagram.com/hakemm.l",
+          "https://www.youtube.com/@romppao"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://romppao.es/#service",
+        "name": "ROMPPAO · Filmmaker y videógrafo en Madrid",
+        "alternateName": "Rompao",
         "url": "https://romppao.es/",
         "image": "https://romppao.es/images/profile.jpg",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Madrid",
-          "addressCountry": "ES"
+        "email": "rompaoondo@gmail.com",
+        "description": "Producción de videoclips de música urbana (trap, drill y rap), fotografía y documental de boxeo, aftermovies de eventos, vlogs y contenido para artistas y marcas en Madrid.",
+        "founder": { "@id": "https://romppao.es/#person" },
+        "areaServed": [
+          { "@type": "City", "name": "Madrid" },
+          { "@type": "AdministrativeArea", "name": "Comunidad de Madrid" }
+        ],
+        "knowsLanguage": "es",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios de ROMPPAO",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Videoclips de música urbana", "description": "Grabación y edición de videoclips de trap, drill y rap en Madrid." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fotografía y documental de boxeo", "description": "Fotografía deportiva, vídeo de veladas y documental de boxeo." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aftermovies de eventos", "description": "Vídeo resumen de conciertos, fiestas y eventos." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vlogs y contenido deportivo", "description": "Vlogs, contenido deportivo y piezas para redes sociales." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Contenido para artistas", "description": "Clips verticales, detrás de las cámaras y promoción en redes para artistas." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Edición y postproducción", "description": "Montaje, color y acabado de vídeo." } }
+          ]
         },
         "sameAs": [
           "https://www.instagram.com/romppao",
@@ -77,37 +142,64 @@
         ]
       },
       {
-        "@type": "ProfessionalService",
-        "@id": "https://romppao.es/#service",
-        "name": "ROMPPAO Fotografía y Filmmaking",
-        "description": "Servicios profesionales de fotografía y filmmaking en Madrid. Especializado en retratos, fotografía deportiva (boxeo), paisajes y videoclips musicales.",
-        "provider": {
-          "@id": "https://romppao.es/#person"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Madrid"
-        },
-        "serviceType": ["Fotografía de Retratos", "Fotografía Deportiva", "Fotografía de Paisajes", "Videoclips Musicales", "Filmmaking"]
-      },
-      {
-        "@type": "ImageGallery",
-        "@id": "https://romppao.es/#gallery",
-        "name": "Portfolio ROMPPAO",
-        "description": "Galería de trabajos de fotografía y filmmaking",
-        "creator": {
-          "@id": "https://romppao.es/#person"
-        }
+        "@type": "FAQPage",
+        "@id": "https://romppao.es/#faq",
+        "inLanguage": "es-ES",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Quién es ROMPPAO (Rompao)?",
+            "acceptedAnswer": { "@type": "Answer", "text": "ROMPPAO, también escrito Rompao o Romppao, es Hakeem, filmmaker y videógrafo deportivo independiente con base en Madrid. Está especializado en videoclips de música urbana, fotografía y documental de boxeo, aftermovies y vlogs." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué servicios ofrece ROMPPAO en Madrid?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Videoclips de trap, drill y rap; fotografía y documental de boxeo; aftermovies de eventos; vlogs y contenido deportivo; contenido vertical para artistas y redes sociales; y edición y postproducción de vídeo." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Con qué artistas ha trabajado ROMPPAO?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Ha filmado videoclips para KANEIS, Aitor, Bad Key, Vare Gang, MKBLOOND, KXNNZ, GCD, Candy Live, Flame YRN, Abacrime, B.O Bee y Villaverde, entre otros." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿ROMPPAO hace fotografía y vídeo de boxeo?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sí. Hace fotografía deportiva de boxeo y vídeo documental del deporte, y conoce el boxeo desde dentro: ha competido en boxeo amateur y lo cuenta en su vlog «Relapse 01-X»." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo se contrata a ROMPPAO o se pide presupuesto?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Por correo electrónico en rompaoondo@gmail.com, por WhatsApp desde el botón de contacto de romppao.es o por Instagram en @romppao. El presupuesto depende de cada proyecto." }
+          }
+        ]
       }
     ]
   }
   </script>
-
-  <title>ROMPPAO | Fotógrafo y Filmmaker Profesional en Madrid</title>
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <noscript>
+    <!-- Contenido de texto para buscadores y asistentes de IA que no ejecutan JavaScript. La web completa necesita JavaScript. -->
+    <main>
+      <h1>ROMPPAO (Rompao) · Filmmaker y videógrafo en Madrid</h1>
+      <p>ROMPPAO, también escrito Rompao o Romppao, es el nombre artístico de Hakeem, filmmaker y videógrafo deportivo independiente en Madrid.</p>
+      <h2>Servicios</h2>
+      <ul>
+        <li>Videoclips de música urbana: trap, drill y rap.</li>
+        <li>Fotografía y documental de boxeo.</li>
+        <li>Aftermovies de eventos.</li>
+        <li>Vlogs y contenido deportivo.</li>
+        <li>Contenido vertical para artistas y redes sociales.</li>
+        <li>Edición y postproducción de vídeo.</li>
+      </ul>
+      <h2>Videoclips</h2>
+      <p>KANEIS y Aitor «LAKYLA», KANEIS «GENES» y «SOUVENIR», Bad Key «PASO DE ELLA», Vare Gang con MKBLOOND y KXNNZ «NO WORRIES», MKBLOOND «MALA», GCD con Candy Live «NOS VEMOS EN BLAI», Flame YRN «BENZEMA», Abacrime y B.O. «JOHN CENA», B.O Bee con Abacrime «QUIEN ES MÓNICA?» y Villaverde «MI BIG BEN».</p>
+      <h2>Contacto</h2>
+      <p>Correo: <a href="mailto:rompaoondo@gmail.com">rompaoondo@gmail.com</a> · Instagram: <a href="https://www.instagram.com/romppao">@romppao</a> · YouTube: <a href="https://www.youtube.com/@romppao">@romppao</a></p>
+      <p>Para ver el portfolio completo, activa JavaScript en tu navegador.</p>
+    </main>
+  </noscript>
   <div id="root"></div>
 </body>
 

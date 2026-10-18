@@ -1,50 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  
-  <!-- Main Portfolio Page -->
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <!-- Portada: única página de la web. Imágenes y vídeos que se ven en ella (18-10-2026). -->
   <url>
     <loc>https://romppao.es/</loc>
-    <lastmod>2025-12-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    
-    <!-- Portfolio Images -->
-    <image:image>
-      <image:loc>https://romppao.es/images/profile.jpg</image:loc>
-      <image:caption>ROMPPAO - Fotógrafo y Filmmaker Profesional</image:caption>
-      <image:title>Foto de perfil ROMPPAO</image:title>
-    </image:image>
-    
-    <image:image>
-      <image:loc>https://romppao.es/images/retrato-1.jpg</image:loc>
-      <image:caption>Mirada Urban - Sesión de moda en Madrid centro</image:caption>
-      <image:title>Fotografía de retrato urbano</image:title>
-    </image:image>
-    
-    <image:image>
-      <image:loc>https://romppao.es/images/blancoynegro-1.jpg</image:loc>
-      <image:caption>Sombras - La elegancia no tiene color</image:caption>
-      <image:title>Fotografía en blanco y negro</image:title>
-    </image:image>
-    
-    <image:image>
-      <image:loc>https://romppao.es/images/paisaje-1.jpg</image:loc>
-      <image:caption>Amanecer en la pedriza - Fotografía de paisaje</image:caption>
-      <image:title>Fotografía de paisaje en la Pedriza</image:title>
-    </image:image>
-    
-   <image:image>
-      <image:loc>https://romppao.es/images/boxeo-1.jpg</image:loc>
-      <image:caption>Saul - Instantes previos a la guerra</image:caption>
-      <image:title>Fotografía de boxeo</image:title>
-    </image:image>
-    
-    <image:image>
-      <image:loc>https://romppao.es/images/paisaje-2.jpg</image:loc>
-      <image:caption>Lejos del ruido - Refugio en los bosques de la pedriza</image:caption>
-      <image:title>Fotografía de paisaje vertical</image:title>
-    </image:image>
+    <lastmod>2026-10-18</lastmod>
+
+    <image:image><image:loc>https://romppao.es/images/profile.jpg</image:loc></image:image>
+    <image:image><image:loc>https://romppao.es/images/boxeo-1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://romppao.es/images/boxeo-2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://romppao.es/images/boxeo-3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://romppao.es/images/boxeo-4.jpg</image:loc></image:image>
+    <image:image><image:loc>https://romppao.es/images/boxeo-5.jpg</image:loc></image:image>
+
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/lEz1hHGvNMc/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>KANEIS, AITOR - LAKYLA (videoclip filmado por ROMPPAO)</video:title>
+      <video:description>Videoclip oficial de LAKYLA, de KANEIS y Aitor. Filmado por ROMPPAO, filmmaker en Madrid.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/lEz1hHGvNMc</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/SnJWY2C5VKs/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>KANEIS - GENES (videoclip filmado por ROMPPAO)</video:title>
+      <video:description>Videoclip oficial de GENES, de KANEIS. Filmado por ROMPPAO, filmmaker en Madrid.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/SnJWY2C5VKs</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/CWED5hhsGu0/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>BAD KEY - PASO DE ELLA (videoclip filmado por ROMPPAO)</video:title>
+      <video:description>Videoclip oficial de PASO DE ELLA, de Bad Key. Filmado por ROMPPAO, filmmaker en Madrid.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/CWED5hhsGu0</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/RS-8J4NYboc/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>VARE GANG, MKBLOOND, KXNNZ - NO WORRIES (videoclip filmado por ROMPPAO)</video:title>
+      <video:description>Videoclip oficial de NO WORRIES, de Vare Gang con MKBLOOND y KXNNZ. Filmado por ROMPPAO, filmmaker en Madrid.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/RS-8J4NYboc</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/1e4-du2hsR4/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>MKBLOOND - MALA (videoclip filmado por ROMPPAO)</video:title>
+      <video:description>Videoclip oficial de MALA, de MKBLOOND. Filmado por ROMPPAO, filmmaker en Madrid.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/1e4-du2hsR4</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/NWiLvYD6t4c/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>KANEIS - SOUVENIR (videoclip filmado por ROMPPAO)</video:title>
+      <video:description>Vídeo oficial de SOUVENIR, de KANEIS. Filmado por ROMPPAO, filmmaker en Madrid.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/NWiLvYD6t4c</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/z__HOyy9EDk/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>GCD ft. CANDY LIVE - NOS VEMOS EN BLAI (videoclip filmado por ROMPPAO)</video:title>
+      <video:description>Videoclip oficial de NOS VEMOS EN BLAI, de GCD con Candy Live. Filmado por ROMPPAO, filmmaker en Madrid.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/z__HOyy9EDk</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/oszaHeElRqI/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>FLAME YRN - BENZEMA (videoclip filmado por ROMPPAO)</video:title>
+      <video:description>Videoclip oficial de BENZEMA, de Flame YRN. Filmado por ROMPPAO, filmmaker en Madrid.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/oszaHeElRqI</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/Kqal00ww6vw/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>ABACRIME, B.O. - JOHN CENA (videoclip filmado por ROMPPAO)</video:title>
+      <video:description>Videoclip oficial de JOHN CENA, de Abacrime y B.O. Filmado por ROMPPAO, filmmaker en Madrid.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/Kqal00ww6vw</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/GvHB-xgc-SE/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>B.O BEE ft. ABACRIME - QUIEN ES MÓNICA? (videoclip filmado por ROMPPAO)</video:title>
+      <video:description>Videoclip oficial de QUIEN ES MÓNICA?, de B.O Bee con Abacrime. Filmado por ROMPPAO, filmmaker en Madrid.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/GvHB-xgc-SE</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/TmBApAvamjI/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>VILLAVERDE - MI BIG BEN (videoclip filmado por ROMPPAO)</video:title>
+      <video:description>Vídeo oficial de MI BIG BEN, de Villaverde. Filmado por ROMPPAO, filmmaker en Madrid.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/TmBApAvamjI</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/sJ7J5kEa2pE/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Gudus Live - 48 h en Andorra (vlog filmado por ROMPPAO)</video:title>
+      <video:description>Vlog de Gudus Live en Andorra. Filmado por ROMPPAO, videógrafo y vlogger en Madrid.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/sJ7J5kEa2pE</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/d_8lvXGRqhM/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Relapse 01-X: antes de una pelea de boxeo amateur (vlog de ROMPPAO)</video:title>
+      <video:description>Vlog de ROMPPAO con los momentos previos a su última pelea de boxeo amateur.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/d_8lvXGRqhM</video:player_loc>
+    </video:video>
   </url>
-  
 </urlset>
