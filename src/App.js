@@ -1009,7 +1009,7 @@ const App = () => {
                 const isWide = cat === 'Videoclip' || cat === 'Comercial' || cat === 'Vlogging';
                 return (
                   <div key={it.id} onClick={() => setSel(it)} className={`relative overflow-hidden bg-[#141416] cursor-pointer group ${isWide ? 'aspect-video' : 'aspect-[4/5] sm:aspect-[9/16]'}`}>
-                    <img src={it.src} alt={it.title} loading="lazy" className={`w-full h-full object-cover transition-all duration-700 ease-in-out group-hover:scale-105 ${!isWide ? 'grayscale-[0.35] contrast-105 group-hover:grayscale-0' : ''}`} />
+                    <img src={it.src} alt={`${it.title || 'Trabajo audiovisual'} | ROMPPAO - Filmmaker y Videógrafo Madrid`} loading="lazy" className={`w-full h-full object-cover transition-all duration-700 ease-in-out group-hover:scale-105 ${!isWide ? 'grayscale-[0.35] contrast-105 group-hover:grayscale-0' : ''}`} />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0C]/90 to-[#0B0B0C]/0 pointer-events-none"></div>
                     <div className={`absolute left-0 right-0 bottom-0 pointer-events-none flex justify-between items-end gap-3 ${isWide ? 'p-4 md:p-5' : 'p-3 md:p-4'}`}>
                       <div>
@@ -1030,7 +1030,7 @@ const App = () => {
           <section id="sobre" className="max-w-[1440px] mx-auto px-5 md:px-14 py-16 md:py-24 border-t border-[#F4F3F1]/10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center">
               <div className="relative overflow-hidden aspect-square rounded-full bg-[#141416] w-[80%] max-w-[400px] mx-auto md:ml-0 md:mr-auto">
-                <img src={`${process.env.PUBLIC_URL}/images/profile.jpg`} alt="ROMPPAO" className="w-full h-full object-cover grayscale-[0.3] contrast-105" />
+                <img src={`${process.env.PUBLIC_URL}/images/profile.jpg`} alt="ROMPPAO (rompao) - Filmmaker, Videógrafo Deportivo y Fotógrafo en Madrid" className="w-full h-full object-cover grayscale-[0.3] contrast-105" />
               </div>
               <div>
                 <div className="font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.2em] text-[#FF4A1C] mb-4">[03] SOBRE MÍ</div>
@@ -1133,7 +1133,7 @@ const App = () => {
                 </div>
                 <div className="bg-[#141416] py-5">
                   <div className="font-['Space_Mono'] text-[10px] tracking-[0.16em] text-[#F4F3F1]/40 mb-2.5">DISPONIBILIDAD</div>
-                  <div className="font-['Archivo'] text-[15.5px] leading-[1.5] text-[#F4F3F1]/80">Aceptando proyectos para finales de 2025</div>
+                  <div className="font-['Archivo'] text-[15.5px] leading-[1.5] text-[#F4F3F1]/80">Aceptando proyectos para 2026</div>
                 </div>
               </div>
             </div>
@@ -1169,7 +1169,7 @@ const App = () => {
               const isWide = !isFoto(it.category);
               return (
                 <div key={it.id} onClick={() => setSel(it)} className={`relative overflow-hidden bg-[#141416] cursor-pointer group ${isWide ? 'aspect-[16/9]' : 'aspect-[4/5]'}`}>
-                  <img src={it.src} alt={it.title} loading="lazy" className="w-full h-full object-cover grayscale-[0.4] contrast-105 transition-all duration-700 ease-in-out group-hover:scale-105 group-hover:grayscale-0" />
+                  <img src={it.src} alt={`${it.title || 'Trabajo audiovisual'} | ROMPPAO - Filmmaker y Videógrafo Madrid`} loading="lazy" className="w-full h-full object-cover grayscale-[0.4] contrast-105 transition-all duration-700 ease-in-out group-hover:scale-105 group-hover:grayscale-0" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0C]/90 to-[#0B0B0C]/0 pointer-events-none"></div>
                   <div className="absolute left-0 right-0 bottom-0 p-3 md:p-3.5 pointer-events-none">
                     <div className="font-['Space_Mono'] font-medium text-[9.5px] tracking-[0.18em] text-[#FF4A1C] mb-1.5 uppercase">{it.category}</div>
@@ -1187,7 +1187,7 @@ const App = () => {
         <div className="font-['Space_Mono'] font-medium text-[10.5px] tracking-[0.2em] text-[#FF4A1C] mb-5">[05] CONTACTO</div>
         <h2 className="font-['Anton'] text-5xl md:text-[108px] leading-[0.98] tracking-tight mb-6">¿Trabajamos juntos?</h2>
         <p className="font-['Archivo'] text-[16px] md:text-[20px] leading-[1.6] text-[#F4F3F1]/60 mb-10 md:mb-14 max-w-[40ch]">
-          Actualmente aceptando proyectos para finales de 2025.
+          Actualmente aceptando proyectos para 2026.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[1px] bg-[#F4F3F1]/10 mb-10 md:mb-14">
           <a href="mailto:rompaoondo@gmail.com" className="bg-[#0B0B0C] p-6 hover:bg-[#141416] transition-colors">
@@ -1204,7 +1204,7 @@ const App = () => {
           </a>
         </div>
         <div className="flex justify-between gap-5 flex-wrap pt-6 border-t border-[#F4F3F1]/10 font-['Space_Mono'] text-[11px] leading-[1.6] tracking-[0.1em] text-[#F4F3F1]/40">
-          <span>© 2025 ROMPPAO. Todos los derechos reservados.</span>
+          <span>© 2026 ROMPPAO. Todos los derechos reservados.</span>
           <span>MADRID · {clock}</span>
         </div>
       </footer>

@@ -1,50 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  
-  <!-- Main Portfolio Page -->
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <!-- Portafolio Principal ROMPPAO -->
   <url>
     <loc>https://romppao.es/</loc>
-    <lastmod>2025-12-13</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    
-    <!-- Portfolio Images -->
+
+    <!-- Fotografías Destacadas -->
     <image:image>
       <image:loc>https://romppao.es/images/profile.jpg</image:loc>
-      <image:caption>ROMPPAO - Fotógrafo y Filmmaker Profesional</image:caption>
-      <image:title>Foto de perfil ROMPPAO</image:title>
+      <image:caption>ROMPPAO (rompao) - Filmmaker, Videógrafo Deportivo y Fotógrafo en Madrid</image:caption>
+      <image:title>ROMPPAO Filmmaker Madrid</image:title>
     </image:image>
-    
+
     <image:image>
-      <image:loc>https://romppao.es/images/retrato-1.jpg</image:loc>
-      <image:caption>Mirada Urban - Sesión de moda en Madrid centro</image:caption>
-      <image:title>Fotografía de retrato urbano</image:title>
-    </image:image>
-    
-    <image:image>
-      <image:loc>https://romppao.es/images/blancoynegro-1.jpg</image:loc>
-      <image:caption>Sombras - La elegancia no tiene color</image:caption>
-      <image:title>Fotografía en blanco y negro</image:title>
-    </image:image>
-    
-    <image:image>
-      <image:loc>https://romppao.es/images/paisaje-1.jpg</image:loc>
-      <image:caption>Amanecer en la pedriza - Fotografía de paisaje</image:caption>
-      <image:title>Fotografía de paisaje en la Pedriza</image:title>
-    </image:image>
-    
-   <image:image>
       <image:loc>https://romppao.es/images/boxeo-1.jpg</image:loc>
-      <image:caption>Saul - Instantes previos a la guerra</image:caption>
-      <image:title>Fotografía de boxeo</image:title>
+      <image:caption>Fotografía de boxeo profesional en Madrid - Saul antes de la batalla - ROMPPAO</image:caption>
+      <image:title>Fotografía de Boxeo Madrid - Saul</image:title>
     </image:image>
-    
+
     <image:image>
-      <image:loc>https://romppao.es/images/paisaje-2.jpg</image:loc>
-      <image:caption>Lejos del ruido - Refugio en los bosques de la pedriza</image:caption>
-      <image:title>Fotografía de paisaje vertical</image:title>
+      <image:loc>https://romppao.es/images/boxeo-2.jpg</image:loc>
+      <image:caption>Fotografía de boxeo y entrenamiento en Madrid - Bajo las cuerdas - ROMPPAO</image:caption>
+      <image:title>Fotografía Deportiva Boxeo - Bajo las Cuerdas</image:title>
     </image:image>
+
+    <image:image>
+      <image:loc>https://romppao.es/images/boxeo-3.jpg</image:loc>
+      <image:caption>Fotografía de boxeo profesional - Boxeador en guardia - ROMPPAO Madrid</image:caption>
+      <image:title>Fotografía de Boxeo - En Guardia</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://romppao.es/images/boxeo-4.jpg</image:loc>
+      <image:caption>Fotografía deportiva de boxeo - Concentración y mentalidad de campeón - ROMPPAO</image:caption>
+      <image:title>Fotografía de Boxeo - Mentalidad de Campeón</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://romppao.es/images/boxeo-5.jpg</image:loc>
+      <image:caption>Fotografía de boxeo en la esquina del ring con entrenador - ROMPPAO Madrid</image:caption>
+      <image:title>Fotografía de Boxeo - La Esquina</image:title>
+    </image:image>
+
+    <!-- Vídeos Destacados (Videoclips, Boxeo, Vlogs) -->
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/d1wOBbh17JY/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>ESCALABUSY (FT. JMZZ) - Videoclip Oficial | ROMPPAO Filmmaker Madrid</video:title>
+      <video:description>Videoclip oficial de Escalabusy ft. Jmzz rodado y dirigido por ROMPPAO. Grabación cinematográfica urbana en Madrid.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/d1wOBbh17JY</video:player_loc>
+      <video:publication_date>2024-01-01T00:00:00+01:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/TmBApAvamjI/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>VILLAVERDE - MI BIG BEN | Videoclip Oficial por ROMPPAO</video:title>
+      <video:description>Video musical oficial de Villaverde - Mi Big Ben filmado por el filmmaker ROMPPAO en Madrid.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/TmBApAvamjI</video:player_loc>
+      <video:publication_date>2024-01-01T00:00:00+01:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/SnJWY2C5VKs/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>KANEIS - GENES | Videoclip Oficial filmado por ROMPPAO</video:title>
+      <video:description>Producción y videoclip oficial de Kaneis - Genes. Dirección visual por ROMPPAO en Madrid.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/SnJWY2C5VKs</video:player_loc>
+      <video:publication_date>2024-01-01T00:00:00+01:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/lEz1hHGvNMc/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>KANEIS, AITOR - LAKYLA | Videoclip Oficial por ROMPPAO</video:title>
+      <video:description>Videoclip musical oficial de Kaneis y Aitor - Lakyla. Producción audiovisual por ROMPPAO.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/lEz1hHGvNMc</video:player_loc>
+      <video:publication_date>2024-01-01T00:00:00+01:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+
+    <video:video>
+      <video:thumbnail_loc>https://romppao.es/videos/thumbnails/bigsteppers-cup-1-thumb.jpg</video:thumbnail_loc>
+      <video:title>BIGSTEPPERS CUP ED1 - HAKEMM | Vlog y Videografía Deportiva</video:title>
+      <video:description>Vlog y cobertura audiovisual del torneo Bigsteppers Cup Edición 1 por ROMPPAO en Madrid.</video:description>
+      <video:content_loc>https://romppao.es/videos/bigsteppers-cup-1.mp4</video:content_loc>
+      <video:publication_date>2024-01-01T00:00:00+01:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+
+    <video:video>
+      <video:thumbnail_loc>https://romppao.es/videos/thumbnails/bigsteppers-cup-2-thumb.jpg</video:thumbnail_loc>
+      <video:title>BIGSTEPPERS CUP ED2 - HAKEMM | Videografía Deportiva Madrid</video:title>
+      <video:description>Vlog y cobertura deportiva de la segunda edición de Bigsteppers Cup filmado por ROMPPAO.</video:description>
+      <video:content_loc>https://romppao.es/videos/bigsteppers-cup-2.mp4</video:content_loc>
+      <video:publication_date>2024-01-01T00:00:00+01:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+
+    <video:video>
+      <video:thumbnail_loc>https://romppao.es/videos/thumbnails/boxeo-cap-1-thumb.jpg</video:thumbnail_loc>
+      <video:title>ESTO ES BOXEO - Capítulo 1 | Videografía y Documental de Boxeo</video:title>
+      <video:description>Producción y vídeo documental de boxeo en Madrid por ROMPPAO. La disciplina, los guantes y la preparación del púgil.</video:description>
+      <video:content_loc>https://romppao.es/videos/cap1-esto-es-boxeo.mp4</video:content_loc>
+      <video:publication_date>2024-01-01T00:00:00+01:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+
+    <video:video>
+      <video:thumbnail_loc>https://romppao.es/videos/thumbnails/boxeo-urko-thumb.jpg</video:thumbnail_loc>
+      <video:title>ROMPPAO x URKO | Sesión de Boxeo y Preparación de Combate</video:title>
+      <video:description>Vídeo de boxeo y entrenamiento de combate filmado por ROMPPAO en Madrid.</video:description>
+      <video:content_loc>https://romppao.es/videos/romppao-x-urko.mp4</video:content_loc>
+      <video:publication_date>2024-01-01T00:00:00+01:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
   </url>
-  
+
 </urlset>
